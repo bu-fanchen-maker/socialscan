@@ -63,7 +63,7 @@ def main(argv):
             from .classify import classify
             for c, r in zip(survivors, classify([{"id": c["id"], "title": c["title"], "alias": c["alias"], "genre": c["genre"], "punch": c["punch"], "platform": c["platforms"]} for c in survivors])):
                 if not r or r.get("noise"): c["dropped"] = True; continue
-                for key in ("tier", "kind", "region"): 
+                for key in ("tier", "kind", "region", "cat"):
                     if r.get(key): c[key] = r[key]
                 if r.get("game"): c["title"] = r["game"]; c["alias"] = r.get("alias") or c["alias"]
                 if r.get("genre"): c["genre"] = r["genre"]

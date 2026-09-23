@@ -17,7 +17,9 @@ header{position:sticky;top:0;z-index:5;background:linear-gradient(var(--bg) 85%,
 h1{font-size:22px;font-weight:800;letter-spacing:-.02em;margin:0;line-height:1.1}h1 small{display:block;font-size:13px;font-weight:500;color:var(--ink-2);margin-top:3px}
 .controls{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-top:10px}
 .chip{padding:6px 12px;border-radius:999px;border:1px solid var(--line);color:var(--ink-2);font-weight:600;font-size:13px;background:var(--bg)}
-.chip[aria-pressed="true"]{background:var(--amber);color:var(--amber-ink);border-color:var(--amber)}.chip.saved{border-color:var(--amber);color:var(--amber)}
+.chip[aria-pressed="true"]{background:var(--amber);color:var(--amber-ink);border-color:var(--amber)}.chip.saved{border-color:var(--amber);color:var(--amber)}.chip.saved[aria-pressed="true"]{color:var(--amber-ink)}
+details.focus{position:relative}details.focus>summary{list-style:none;cursor:pointer;padding:6px 12px;border-radius:999px;border:1px solid var(--line);color:var(--ink-2);font-weight:600;font-size:13px;background:var(--bg)}details.focus>summary::-webkit-details-marker{display:none}details.focus[open]>summary,details.focus>summary.active{border-color:var(--amber);color:var(--amber)}
+details.focus .menu{position:absolute;top:calc(100% + 6px);left:0;z-index:10;background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:10px 12px;display:flex;flex-direction:column;gap:8px;min-width:170px;box-shadow:0 8px 24px rgba(0,0,0,.35)}
 .controls select,.controls input[type=search]{background:var(--panel);color:var(--ink);border:1px solid var(--line);border-radius:999px;padding:6px 12px;font:inherit;font-size:13px;font-weight:600}
 .controls input[type=search]{min-width:180px}
 .toggle{font-size:13px;color:var(--ink-2);display:inline-flex;align-items:center;gap:6px;font-weight:600}.toggle input{accent-color:var(--amber)}
@@ -69,14 +71,18 @@ footer.legend{margin-top:20px;padding-top:14px;border-top:1px solid var(--line);
     <span id="starcount" style="font-weight:600;color:var(--ink-2)"></span>
   </div>
   <div class="controls">
-    <button class="chip" data-sort="mech" aria-pressed="true">Mechanics</button>
-    <button class="chip" data-sort="surprise" aria-pressed="false">Surprise</button>
-    <button class="chip" data-sort="trend" aria-pressed="false">Trending</button>
-    <button class="chip" data-sort="new" aria-pressed="false">Newest</button>
     <button class="chip saved" id="savedchip" aria-pressed="false">★ Saved</button>
+    <details class="focus" id="focus">
+      <summary id="focuslabel">Focus: all</summary>
+      <div class="menu">
+        <label class="toggle"><input type="checkbox" data-cat="games" checked> Games</label>
+        <label class="toggle"><input type="checkbox" data-cat="mechanics" checked> Mechanics</label>
+        <label class="toggle"><input type="checkbox" data-cat="visuals" checked> Visuals</label>
+        <label class="toggle"><input type="checkbox" data-cat="other" checked> Other trends</label>
+      </div>
+    </details>
     <select id="f-platform"><option value="">All platforms</option></select>
     <select id="f-region"><option value="">All regions</option><option>Global</option><option>CN</option></select>
-    <select id="f-tag"><option value="">All genres</option></select>
     <input type="search" id="q" placeholder="Search title or tag">
     <label class="toggle"><input type="checkbox" id="incmajor"> Include Major / AAA</label>
     <label class="toggle"><input type="checkbox" id="incseq"> Include sequels &amp; remakes</label>
@@ -90,6 +96,7 @@ footer.legend{margin-top:20px;padding-top:14px;border-top:1px solid var(--line);
 <footer class="legend">
   <span>Traction bar (config.yaml): Steam reviews/7d, players now, YouTube views/7d, Bilibili plays/30d, X likes/7d, Reddit upvotes/7d, Roblox CCU. Prototypes carry no traction and are hidden by default</span>
   <span>Amber = punch words · outlined = genre · <b>curated</b> = hand-written, <b>auto</b> = harvested from store data</span>
+  <span>Corner badges = where the signal was measured: <b>S</b> Steam · <b>R</b> Roblox · <b>r</b> Reddit · <b>▶</b> YouTube · <b>b</b> Bilibili · <b>X</b> X</span>
   <span>★ = worth keeping · your saved list is the validation metric</span>
 </footer>
 </div>
@@ -98,7 +105,8 @@ const CARDS = /*CARDS*/[];
 window.__meta = /*META*/{};
 const PLAT={reddit:"r",youtube:"▶",tiktok:"t",steam:"S",x:"X",bilibili:"b",douyin:"d",wechat:"w",mobile:"m",article:"↗",roblox:"R",web:"W",itch:"i"};
 const PLATNAME={reddit:"Reddit",youtube:"YouTube",tiktok:"TikTok",steam:"Steam",x:"X",bilibili:"Bilibili",douyin:"Douyin",wechat:"WeChat mini game",mobile:"Mobile store",article:"Article",roblox:"Roblox",web:"Web (CrazyGames)",itch:"itch.io"};
-const state={isFile:location.protocol==="file:",autoplay:true,sort:"mech",incMajor:false,incSeq:false,incProto:false,savedOnly:false,platform:"",region:"",tag:"",q:"",hideAAA:false,stars:new Set(),open:new Set(),shown:0};
+const CATS=["games","mechanics","visuals","other"];
+const state={isFile:location.protocol==="file:",autoplay:true,sort:"mech",incMajor:false,incSeq:false,incProto:false,savedOnly:false,platform:"",region:"",q:"",hideAAA:false,cats:new Set(CATS),stars:new Set(),open:new Set(),shown:0};
 try{JSON.parse(localStorage.getItem("socialscan_stars")||"[]").forEach(x=>state.stars.add(x))}catch(e){}
 const esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 const fmtDate=s=>s?new Date(s+"T00:00:00").toLocaleDateString("en-GB",{weekday:"short",day:"numeric",month:"short"}):"TBA";
@@ -110,9 +118,9 @@ function visible(){
   if(!state.incMajor) rows=rows.filter(c=>c.tier!=="Major");
   if(!state.incSeq) rows=rows.filter(c=>c.kind==="new IP");
   if(!state.incProto) rows=rows.filter(c=>c.tier!=="Prototype");
+  if(state.cats.size<CATS.length) rows=rows.filter(c=>state.cats.has(c.cat||"games"));
   if(state.platform) rows=rows.filter(c=>c.platforms.includes(state.platform));
   if(state.region) rows=rows.filter(c=>c.region===state.region);
-  if(state.tag) rows=rows.filter(c=>c.genre.includes(state.tag));
   if(state.q){const q=state.q.toLowerCase();rows=rows.filter(c=>(c.title+" "+(c.alias||"")+" "+c.genre.join(" ")+" "+c.punch.join(" ")).toLowerCase().includes(q))}
   const key={mech:c=>c.mech||0,surprise:c=>c.surprise||-99,trend:c=>c.score||0,new:c=>c.surfaced,eng:c=>c.eng||0,rating:c=>(c.rating??-1)*1e6+(c.eng||0)}[state.sort];
   rows.sort((a,b)=>key(b)>key(a)?1:key(b)<key(a)?-1:0);
@@ -210,20 +218,25 @@ function observe(){
 
 (function(){
   const ps=[...new Set(CARDS.flatMap(c=>c.platforms))],sel=document.getElementById("f-platform");ps.forEach(p=>{const o=document.createElement("option");o.value=p;o.textContent=PLATNAME[p]||p;sel.appendChild(o)});
-  const cnt={};CARDS.forEach(c=>c.genre.forEach(t=>cnt[t]=(cnt[t]||0)+1));const tsel=document.getElementById("f-tag");Object.entries(cnt).sort((a,b)=>b[1]-a[1]).forEach(([t,n])=>{const o=document.createElement("option");o.value=t;o.textContent=`${t} (${n})`;tsel.appendChild(o)});
 })();
+document.querySelectorAll("#focus [data-cat]").forEach(cb=>cb.addEventListener("change",()=>{
+  cb.checked?state.cats.add(cb.dataset.cat):state.cats.delete(cb.dataset.cat);
+  const lbl=document.getElementById("focuslabel");
+  lbl.textContent=state.cats.size===CATS.length?"Focus: all":`Focus: ${[...state.cats].join(", ")||"none"}`;
+  lbl.classList.toggle("active",state.cats.size<CATS.length);
+  render();
+}));
 document.addEventListener("click",e=>{
+  if(!e.target.closest("#focus")) document.getElementById("focus").removeAttribute("open");
   const b=e.target.closest("button");if(!b)return;
-  if(b.dataset.sort){state.sort=b.dataset.sort;document.querySelectorAll("[data-sort]").forEach(x=>x.setAttribute("aria-pressed",x===b));render()}
-  else if(b.id==="savedchip"){state.savedOnly=!state.savedOnly;render()}
+  if(b.id==="savedchip"){state.savedOnly=!state.savedOnly;render()}
   else if(b.dataset.star){const id=b.dataset.star;state.stars.has(id)?state.stars.delete(id):state.stars.add(id);try{localStorage.setItem("socialscan_stars",JSON.stringify([...state.stars]))}catch(err){}
     const art=b.closest(".card");art.classList.toggle("starred",state.stars.has(id));b.setAttribute("aria-pressed",state.stars.has(id));b.textContent=state.stars.has(id)?"★":"☆";document.getElementById("starcount").textContent=state.stars.size?`★ ${state.stars.size} saved`:""}
   else if(b.dataset.src){const id=b.dataset.src;const art=b.closest(".card");const s=art.querySelector(".srcs");state.open.has(id)?state.open.delete(id):state.open.add(id);s.classList.toggle("open");b.textContent=state.open.has(id)?"less":"+"+s.children.length}
-  else if(b.dataset.tag){state.tag=b.dataset.tag;document.getElementById("f-tag").value=state.tag;render()}
+  else if(b.dataset.tag){state.q=b.dataset.tag;document.getElementById("q").value=state.q;render()}
 });
 document.getElementById("f-platform").addEventListener("change",e=>{state.platform=e.target.value;render()});
 document.getElementById("f-region").addEventListener("change",e=>{state.region=e.target.value;render()});
-document.getElementById("f-tag").addEventListener("change",e=>{state.tag=e.target.value;render()});
 document.getElementById("q").addEventListener("input",e=>{state.q=e.target.value.trim();render()});
 document.getElementById("incmajor").addEventListener("change",e=>{state.incMajor=e.target.checked;render()});
 document.getElementById("incseq").addEventListener("change",e=>{state.incSeq=e.target.checked;render()});

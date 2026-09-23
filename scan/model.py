@@ -20,6 +20,7 @@ class Card:
     decon: list = field(default_factory=list)      # deconstruction articles
     tier: str = "Indie"                             # Major|Indie|Prototype
     kind: str = "new IP"                            # new IP | franchise / sequel / remake
+    cat: str = "games"                              # games | mechanics | visuals | other (focus category, set by classifier)
     velocity: dict = field(default_factory=dict)   # raw measured numbers (never estimated)
     yt: Optional[dict] = None
     bili: Optional[dict] = None
