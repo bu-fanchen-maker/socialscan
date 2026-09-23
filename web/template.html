@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Social Scan · feed</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#1F2637;--panel:#2A3247;--panel-2:#333C55;--line:#3E4863;--ink:#EEF1F7;--ink-2:#AEB7CB;--ink-3:#7E89A3;--amber:#F5B942;--amber-ink:#2A1F05;--up:#7FD8A1;
+--reddit:#FF6A3D;--yt:#FF4D4D;--tiktok:#6EE7E7;--steam:#7FA6FF;--x:#D6DBE6;--bili:#FF8FC0;--douyin:#B49CFF;--wechat:#7BE07B;--mobile:#F5B942;--r:10px;font-family:"Manrope",system-ui,-apple-system,"Segoe UI",sans-serif}
+*{box-sizing:border-box}html,body{margin:0;background:var(--bg);color:var(--ink)}body{font-size:15px;line-height:1.45;padding-bottom:80px}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}button:focus-visible,a:focus-visible,input:focus-visible{outline:2px solid var(--amber);outline-offset:2px}a{color:var(--ink-2)}
+.wrap{max-width:1280px;margin:0 auto;padding:0 20px}
+header{position:sticky;top:0;z-index:5;background:linear-gradient(var(--bg) 85%,transparent);padding:18px 0 10px}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+h1{font-size:22px;font-weight:800;letter-spacing:-.02em;margin:0;line-height:1.1}h1 small{display:block;font-size:13px;font-weight:500;color:var(--ink-2);margin-top:3px}
+.controls{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-top:10px}
+.chip{padding:6px 12px;border-radius:999px;border:1px solid var(--line);color:var(--ink-2);font-weight:600;font-size:13px;background:var(--bg)}
+.chip[aria-pressed="true"]{background:var(--amber);color:var(--amber-ink);border-color:var(--amber)}.chip.saved{border-color:var(--amber);color:var(--amber)}
+.controls select,.controls input[type=search]{background:var(--panel);color:var(--ink);border:1px solid var(--line);border-radius:999px;padding:6px 12px;font:inherit;font-size:13px;font-weight:600}
+.controls input[type=search]{min-width:180px}
+.toggle{font-size:13px;color:var(--ink-2);display:inline-flex;align-items:center;gap:6px;font-weight:600}.toggle input{accent-color:var(--amber)}
+.hint{color:var(--ink-3);font-size:13px;margin-left:auto}
+.banner{margin:10px 0 0;padding:12px 14px;border:1px solid var(--amber);border-radius:var(--r);background:rgba(245,185,66,.08);font-size:13.5px;color:var(--ink-2);line-height:1.55}.banner b{color:var(--ink)}.banner code{background:var(--panel-2);padding:2px 6px;border-radius:4px;color:var(--ink);font-size:12.5px}
+.divider{grid-column:1/-1;display:flex;align-items:center;gap:12px;color:var(--ink-2);font-weight:700;font-size:14px;margin:14px 0 -4px}.divider::after{content:"";flex:1;height:1px;background:var(--line)}.divider small{color:var(--ink-3);font-weight:500}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:16px;padding:8px 0}
+.card{background:var(--panel);border-radius:var(--r);overflow:hidden;display:flex;flex-direction:column;border:1px solid var(--line)}.card.starred{border-color:var(--amber)}
+.hero{position:relative;aspect-ratio:16/9;background:var(--panel-2);overflow:hidden}
+.hero iframe,.hero video,.hero img.full{position:absolute;inset:0;width:100%;height:100%;border:0;object-fit:cover;background:#000}
+.hero:has(iframe[src*="twitter"]){aspect-ratio:auto;min-height:320px;max-height:420px;overflow:auto}
+.hero .ph{position:absolute;inset:0;display:grid;place-items:center;color:var(--line);font-size:80px;font-weight:800;letter-spacing:-.04em;user-select:none}
+.hero .ph.bili{background:linear-gradient(135deg,#3b2a3f,#2A3247);color:rgba(255,143,192,.3)}
+.hero .plats{position:absolute;top:10px;right:10px;display:flex;gap:4px;z-index:2}
+.pl{width:22px;height:22px;border-radius:6px;display:grid;place-items:center;font-size:11px;font-weight:800;color:#141826}
+.pl.reddit{background:var(--reddit)}.pl.youtube{background:var(--yt)}.pl.tiktok{background:var(--tiktok)}.pl.steam{background:var(--steam)}.pl.x{background:var(--x)}.pl.bilibili{background:var(--bili)}.pl.douyin{background:var(--douyin)}.pl.wechat{background:var(--wechat)}.pl.mobile{background:var(--mobile)}.pl.article{background:var(--ink-3)}
+.hero .tag-src{position:absolute;bottom:10px;left:10px;z-index:2;background:rgba(31,38,55,.85);backdrop-filter:blur(4px);border-radius:6px;padding:3px 8px;font-size:11.5px;font-weight:700;color:var(--ink-2)}
+.hero .tag-src.cur{color:var(--amber)}
+.body{padding:12px 14px 10px;display:flex;flex-direction:column;gap:8px;flex:1}
+.title{display:flex;justify-content:space-between;gap:10px;align-items:flex-start}.title h2{margin:0;font-size:17px;font-weight:800;letter-spacing:-.01em;line-height:1.2}.title h2 small{display:block;font-weight:500;color:var(--ink-3);font-size:12.5px;margin-top:2px}
+.star{font-size:20px;line-height:1;color:var(--ink-3);padding:2px 4px}.star[aria-pressed="true"]{color:var(--amber)}
+.tags{display:flex;gap:6px;flex-wrap:wrap}.tag{font-size:12.5px;padding:4px 9px;border-radius:5px;font-weight:600;background:var(--panel-2);color:var(--ink-2)}
+.tag.genre{background:transparent;border:1px solid var(--line);color:var(--ink-3)}.tag.punch{background:rgba(245,185,66,.14);color:var(--ink);font-weight:700}.tag.aaa{border-color:var(--ink-2);color:var(--ink)}
+.meta{display:flex;gap:14px;font-size:12.5px;color:var(--ink-3);flex-wrap:wrap}.meta b{color:var(--ink-2);font-weight:600}.meta b.maj{color:var(--ink)}.meta.scores b{color:var(--amber)}
+.decon a{display:block;font-size:12.5px;color:var(--ink-2);text-decoration:none;padding:6px 8px;border-radius:6px;background:var(--panel-2);margin-top:2px}.decon a:hover{color:var(--ink);text-decoration:underline}
+.ev.rb{color:#FF8A8A;background:rgba(255,77,77,.10);border-color:rgba(255,77,77,.25)}.ev.web{color:#C6B7FF;background:rgba(180,156,255,.12);border-color:rgba(180,156,255,.3)}.ev.x{color:var(--x);background:rgba(214,219,230,.10);border-color:rgba(214,219,230,.3)}.ev.rd{color:#FFB08A;background:rgba(255,106,61,.12);border-color:rgba(255,106,61,.3)}.ev.mob{color:var(--amber);background:rgba(245,185,66,.12);border-color:rgba(245,185,66,.3)}
+.pl.roblox{background:#FF4D4D}.pl.web{background:#B49CFF}.pl.itch{background:#FA5C5C}
+.evidence{display:flex;gap:6px;flex-wrap:wrap;border-top:1px dashed var(--line);margin-top:2px;padding-top:8px}.ev{font-size:12.5px;font-weight:700;padding:4px 9px;border-radius:5px;background:rgba(127,216,161,.12);color:var(--up);border:1px solid rgba(127,216,161,.25)}.ev.steam{color:#9DB8FF;background:rgba(127,166,255,.12);border-color:rgba(127,166,255,.25)}.ev.yt{color:#FF8A8A;background:rgba(255,77,77,.12);border-color:rgba(255,77,77,.25)}.ev.bili{color:var(--bili);background:rgba(255,143,192,.12);border-color:rgba(255,143,192,.25)}.ev.down,.ev.flat{color:var(--ink-2);background:var(--panel-2);border-color:var(--line)}.ev.new{color:var(--amber);background:rgba(245,185,66,.12);border-color:rgba(245,185,66,.3)}
+.foot{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:10px 14px;border-top:1px solid var(--line);font-size:13px;color:var(--ink-3)}
+.foot .top{display:flex;align-items:center;gap:8px;color:var(--ink);text-decoration:none;font-weight:600;min-width:0}.foot .top span.t{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.foot .top:hover span.t{text-decoration:underline}.foot .top .pl{flex:none}
+.foot button{color:var(--ink-2);font-weight:600;flex:none}
+.srcs{display:none;padding:0 14px 12px;font-size:13px}.srcs.open{display:block}.srcs a{display:block;padding:4px 0;color:var(--ink-2);text-decoration:none;word-break:break-all}.srcs a:hover{color:var(--ink);text-decoration:underline}
+.sentinel{grid-column:1/-1;text-align:center;color:var(--ink-3);padding:26px;font-size:13px}
+.empty{padding:60px 20px;text-align:center;color:var(--ink-2)}.empty b{display:block;color:var(--ink);font-size:18px;margin-bottom:6px}
+details.rising-wrap{margin:6px 0 0}details.rising-wrap summary{cursor:pointer;color:var(--ink-2);font-weight:600;font-size:13.5px;padding:6px 0;list-style:none}details.rising-wrap summary::before{content:"▸ ";color:var(--ink-3)}details.rising-wrap[open] summary::before{content:"▾ "}
+.rising{padding:10px 0 14px;display:grid;grid-template-columns:1.1fr .9fr;gap:24px}.rising h3{margin:0 0 8px;font-size:15px;font-weight:800}
+.bar2{display:grid;grid-template-columns:190px 1fr 56px;gap:10px;align-items:center;padding:5px 0;font-size:13.5px}.bar2 .track{height:10px;background:var(--panel-2);border-radius:5px;overflow:hidden}.bar2 .fill{height:100%;background:var(--amber);border-radius:5px}.bar2 .n{text-align:right;color:var(--ink-2);font-weight:700}.bar2 .name small{display:block;color:var(--ink-3);font-size:12px;font-weight:500}
+.note{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);padding:14px;font-size:13.5px;color:var(--ink-2)}.note p{margin:0 0 8px}.note p:last-child{margin:0}
+footer.legend{margin-top:20px;padding-top:14px;border-top:1px solid var(--line);font-size:12.5px;color:var(--ink-3);display:flex;gap:18px;flex-wrap:wrap}
+@media (max-width:760px){.rising{grid-template-columns:1fr}.bar2{grid-template-columns:120px 1fr 48px}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <div class="bar">
+    <h1>Social Scan<small id="subtitle"></small></h1>
+    <span id="starcount" style="font-weight:600;color:var(--ink-2)"></span>
+  </div>
+  <div class="controls">
+    <button class="chip" data-sort="mech" aria-pressed="true">Mechanics</button>
+    <button class="chip" data-sort="surprise" aria-pressed="false">Surprise</button>
+    <button class="chip" data-sort="trend" aria-pressed="false">Trending</button>
+    <button class="chip" data-sort="new" aria-pressed="false">Newest</button>
+    <button class="chip saved" id="savedchip" aria-pressed="false">★ Saved</button>
+    <select id="f-platform"><option value="">All platforms</option></select>
+    <select id="f-region"><option value="">All regions</option><option>Global</option><option>CN</option></select>
+    <select id="f-tag"><option value="">All genres</option></select>
+    <input type="search" id="q" placeholder="Search title or tag">
+    <label class="toggle"><input type="checkbox" id="incmajor"> Include Major / AAA</label>
+    <label class="toggle"><input type="checkbox" id="incseq"> Include sequels &amp; remakes</label>
+    <label class="toggle"><input type="checkbox" id="incproto"> Include prototypes (no traction data)</label>
+    <label class="toggle" id="previewtoggle"><input type="checkbox" id="autoplay" checked> Auto-play in view</label>
+    <span class="hint" id="hint"></span>
+  </div>
+  <div class="banner" id="filebanner" hidden><b>Videos can't play from a local file.</b> Serve the folder over http: <code>cd ~/Downloads &amp;&amp; python3 -m http.server 8787</code> then open <code>http://localhost:8787/social_scan_feed.html</code>. Steam gameplay loops still play; YouTube and Bilibili need http.</div>
+</header>
+<div id="content"></div>
+<footer class="legend">
+  <span>Traction bar (config.yaml): Steam reviews/7d, players now, YouTube views/7d, Bilibili plays/30d, X likes/7d, Reddit upvotes/7d, Roblox CCU. Prototypes carry no traction and are hidden by default</span>
+  <span>Amber = punch words · outlined = genre · <b>curated</b> = hand-written, <b>auto</b> = harvested from store data</span>
+  <span>★ = worth keeping · your saved list is the validation metric</span>
+</footer>
+</div>
+<script>
+const CARDS = /*CARDS*/[];
+window.__meta = /*META*/{};
+const PLAT={reddit:"r",youtube:"▶",tiktok:"t",steam:"S",x:"X",bilibili:"b",douyin:"d",wechat:"w",mobile:"m",article:"↗",roblox:"R",web:"W",itch:"i"};
+const PLATNAME={reddit:"Reddit",youtube:"YouTube",tiktok:"TikTok",steam:"Steam",x:"X",bilibili:"Bilibili",douyin:"Douyin",wechat:"WeChat mini game",mobile:"Mobile store",article:"Article",roblox:"Roblox",web:"Web (CrazyGames)",itch:"itch.io"};
+const state={isFile:location.protocol==="file:",autoplay:true,sort:"mech",incMajor:false,incSeq:false,incProto:false,savedOnly:false,platform:"",region:"",tag:"",q:"",hideAAA:false,stars:new Set(),open:new Set(),shown:0};
+try{JSON.parse(localStorage.getItem("socialscan_stars")||"[]").forEach(x=>state.stars.add(x))}catch(e){}
+const esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const fmtDate=s=>s?new Date(s+"T00:00:00").toLocaleDateString("en-GB",{weekday:"short",day:"numeric",month:"short"}):"TBA";
+const PAGE=15;
+
+function visible(){
+  let rows=CARDS.slice();
+  if(state.savedOnly) rows=rows.filter(c=>state.stars.has(c.id));
+  if(!state.incMajor) rows=rows.filter(c=>c.tier!=="Major");
+  if(!state.incSeq) rows=rows.filter(c=>c.kind==="new IP");
+  if(!state.incProto) rows=rows.filter(c=>c.tier!=="Prototype");
+  if(state.platform) rows=rows.filter(c=>c.platforms.includes(state.platform));
+  if(state.region) rows=rows.filter(c=>c.region===state.region);
+  if(state.tag) rows=rows.filter(c=>c.genre.includes(state.tag));
+  if(state.q){const q=state.q.toLowerCase();rows=rows.filter(c=>(c.title+" "+(c.alias||"")+" "+c.genre.join(" ")+" "+c.punch.join(" ")).toLowerCase().includes(q))}
+  const key={mech:c=>c.mech||0,surprise:c=>c.surprise||-99,trend:c=>c.score||0,new:c=>c.surfaced,eng:c=>c.eng||0,rating:c=>(c.rating??-1)*1e6+(c.eng||0)}[state.sort];
+  rows.sort((a,b)=>key(b)>key(a)?1:key(b)<key(a)?-1:0);
+  return rows;
+}
+
+function mediaHTML(c){
+  const m=c.media||{};const k=m.kind;
+  if(k==="mp4") return `<video src="${m.src}" muted loop playsinline preload="metadata" ${state.autoplay?"autoplay":""} controls></video>`;
+  if(state.isFile && (k==="yt"||k==="ytlist"||k==="bili"||k==="x")) return `<a class="ph" href="${k==="bili"?"https://www.bilibili.com/video/"+m.id+"/":k==="yt"?"https://www.youtube.com/watch?v="+m.id:"https://www.youtube.com/playlist?list="+m.id}" target="_blank" rel="noopener" style="text-decoration:none;font-size:18px;color:var(--ink-2)">opens on ${k==="bili"?"Bilibili":"YouTube"} (serve over http to play here)</a>`;
+  const ap=state.autoplay?1:0;
+  if(k==="yt") return `<iframe src="https://www.youtube-nocookie.com/embed/${m.id}?autoplay=${ap}&mute=1&loop=1&playlist=${m.id}&rel=0&playsinline=1" referrerpolicy="strict-origin-when-cross-origin" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen title="${esc(c.title)}"></iframe>`;
+  if(k==="ytlist") return `<iframe src="https://www.youtube-nocookie.com/embed/videoseries?list=${m.id}&autoplay=${ap}&mute=1&rel=0&playsinline=1" referrerpolicy="strict-origin-when-cross-origin" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen title="${esc(c.title)}"></iframe>`;
+  if(k==="x") return `<iframe src="https://platform.twitter.com/embed/Tweet.html?id=${m.id}&theme=dark&dnt=true&hideThread=true" style="background:#000" title="${esc(c.title)}"></iframe>`;
+  if(k==="reddit") return `<video src="${m.src}" muted loop playsinline preload="metadata" ${state.autoplay?"autoplay":""} controls></video>`;
+  if(k==="bili") return `<iframe src="https://player.bilibili.com/player.html?bvid=${m.id}&autoplay=${ap}&muted=1&danmaku=0&high_quality=1" referrerpolicy="strict-origin-when-cross-origin" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen title="${esc(c.title)}"></iframe>`;
+  if(k==="img") return `<img class="full" src="${m.src}" alt="" loading="lazy">`;
+  return `<span class="ph">${esc(c.title.slice(0,2))}</span>`;
+}
+function placeholderHTML(c){const k=(c.media||{}).kind;return `<span class="ph ${k==="bili"?"bili":""}">${esc(c.title.slice(0,2))}</span>`}
+
+function card(c){
+  const starred=state.stars.has(c.id);
+  return `<article class="card ${starred?"starred":""}" data-id="${c.id}">
+  <div class="hero" data-hero="${c.id}">${placeholderHTML(c)}
+    <span class="plats">${c.platforms.map(p=>`<span class="pl ${p}" title="${PLATNAME[p]||p}">${PLAT[p]||"?"}</span>`).join("")}</span>
+    <span class="tag-src ${c.curated?"cur":""}">${c.curated?"curated":"auto"}</span>
+  </div>
+  <div class="body">
+    <div class="title"><h2>${esc(c.title)}${c.alias?`<small>${esc(c.alias)}</small>`:""}</h2><button class="star" data-star="${c.id}" aria-pressed="${starred}" title="Worth keeping">${starred?"★":"☆"}</button></div>
+    <div class="tags">${c.genre.map(t=>`<button class="tag genre ${t==="AAA"?"aaa":""}" data-tag="${esc(t)}">${esc(t)}</button>`).join("")}</div>
+    <div class="tags">${c.punch.map(t=>`<span class="tag punch">${esc(t)}</span>`).join("")}</div>
+    <div class="meta"><span><b class="${c.tier==="Major"?"maj":""}">${c.tier}</b> · ${esc(c.kind)}</span><span>${c.released?"Released <b>"+fmtDate(c.released)+"</b>":"Surfaced <b>"+fmtDate(c.surfaced)+"</b>"}</span><span><b>${c.region}</b></span></div>
+    <div class="meta scores"><span>novelty <b>${(c.novelty??0).toFixed(1)}</b></span><span>surprise <b>${(c.surprise??0).toFixed(1)}</b></span><span>traction <b>${(c.score??0).toFixed(1)}</b></span></div>
+    <div class="evidence">${(c.evidence||[]).map(e=>`<span class="ev ${e.v}">${esc(e.t)}</span>`).join("")}</div>
+    ${c.decon&&c.decon.length?`<div class="decon">${c.decon.map(([n,u])=>`<a href="${u}" target="_blank" rel="noopener">Deconstruction → ${esc(n)}</a>`).join("")}</div>`:""}
+  </div>
+  <div class="foot">
+    <a class="top" href="${c.top.url}" target="_blank" rel="noopener"><span class="pl ${c.top.platform}">${PLAT[c.top.platform]||"↗"}</span><span class="t">Top post: ${esc(c.top.label)}</span></a>
+    ${c.more&&c.more.length?`<button data-src="${c.id}">${state.open.has(c.id)?"less":"+"+c.more.length}</button>`:""}
+  </div>
+  <div class="srcs ${state.open.has(c.id)?"open":""}">${(c.more||[]).map(([n,u])=>`<a href="${u}" target="_blank" rel="noopener">${esc(n)}</a>`).join("")}</div>
+</article>`;
+}
+
+function rising(){
+  const score={},games={};
+  CARDS.filter(c=>!c.aaa).forEach(c=>c.genre.concat(c.curated?c.punch:[]).forEach(t=>{const w=Math.log10((c.eng||0)+10);score[t]=(score[t]||0)+w;(games[t]=games[t]||[]).push(c.title)}));
+  const rows=Object.entries(score).sort((a,b)=>b[1]-a[1]).slice(0,14);const max=rows[0]?.[1]||1;
+  return `<div class="rising"><div><h3>Tags with the most weight in this feed</h3>${rows.map(([t,v])=>`<div class="bar2"><span class="name">${esc(t)}<small>${games[t].slice(0,3).join(", ")}${games[t].length>3?" +"+(games[t].length-3):""}</small></span><span class="track"><span class="fill" style="width:${Math.round(v/max*100)}%"></span></span><span class="n">${games[t].length}</span></div>`).join("")}</div>
+  <div class="note"><p>Weight = count of cards carrying the tag, scaled by each card's engagement. With the real harvester this becomes week-over-week momentum.</p><p id="weekly-read">${(window.__meta||{}).read||""}</p></div></div>`;
+}
+
+let rows=[], byDate=null, io=null;
+function render(reset=true){
+  const content=document.getElementById("content");
+  document.getElementById("filebanner").hidden=!state.isFile;
+  document.getElementById("starcount").textContent=state.stars.size?`★ ${state.stars.size} saved`:"";
+  document.getElementById("savedchip").setAttribute("aria-pressed",state.savedOnly);
+  rows=visible(); state.shown=0;
+  document.getElementById("subtitle").textContent=`${visible().length} shown of ${CARDS.length} · Indie + new IP · ${(window.__meta||{}).sources||""} · ${(window.__meta||{}).date||""}`;
+  document.getElementById("hint").textContent=rows.length?`${rows.length} card${rows.length===1?"":"s"}`:"";
+  content.innerHTML=`<details class="rising-wrap"><summary>Rising tags</summary>${rising()}</details><div class="grid" id="grid"></div>`;
+  if(!rows.length){document.getElementById("grid").innerHTML=`<div class="empty" style="grid-column:1/-1"><b>${state.savedOnly?"Nothing saved yet":"Nothing matches"}</b>${state.savedOnly?"Star a card to build your reference list.":"Clear a filter or the search box."}</div>`;return}
+  more();
+}
+function more(){
+  const grid=document.getElementById("grid"); if(!grid) return;
+  const old=grid.querySelector(".sentinel"); if(old) old.remove();
+  const slice=rows.slice(state.shown,state.shown+PAGE); let html="";
+  let last=state.shown>0?rows[state.shown-1].surfaced:null;
+  for(const c of slice){
+    if(state.sort==="new" && c.surfaced!==last){const n=rows.filter(r=>r.surfaced===c.surfaced).length;html+=`<div class="divider">${fmtDate(c.surfaced)} <small>${n} card${n===1?"":"s"}</small></div>`;last=c.surfaced}
+    html+=card(c);
+  }
+  state.shown+=slice.length;
+  html+=`<div class="sentinel">${state.shown<rows.length?`showing ${state.shown} of ${rows.length} · scroll for more`:`end · ${rows.length} cards`}</div>`;
+  grid.insertAdjacentHTML("beforeend",html);
+  observe();
+}
+function observe(){
+  if(!io){
+    io=new IntersectionObserver(entries=>{
+      for(const e of entries){
+        const el=e.target;
+        if(el.classList.contains("sentinel")){ if(e.isIntersecting && state.shown<rows.length) more(); continue; }
+        const id=el.dataset.hero; const c=CARDS.find(x=>x.id===id); if(!c) continue;
+        if(e.isIntersecting){ if(!el.dataset.live){ el.dataset.live="1"; const ph=el.querySelector(".ph"); if(ph) ph.remove(); el.insertAdjacentHTML("afterbegin",mediaHTML(c)); } }
+        else if(el.dataset.live){ delete el.dataset.live; el.querySelectorAll("video,iframe,img.full,a.ph").forEach(n=>n.remove()); el.insertAdjacentHTML("afterbegin",placeholderHTML(c)); }
+      }
+    },{rootMargin:"400px 0px 600px 0px"});
+  }
+  document.querySelectorAll(".hero:not([data-obs]),.sentinel:not([data-obs])").forEach(el=>{el.dataset.obs="1";io.observe(el)});
+}
+
+(function(){
+  const ps=[...new Set(CARDS.flatMap(c=>c.platforms))],sel=document.getElementById("f-platform");ps.forEach(p=>{const o=document.createElement("option");o.value=p;o.textContent=PLATNAME[p]||p;sel.appendChild(o)});
+  const cnt={};CARDS.forEach(c=>c.genre.forEach(t=>cnt[t]=(cnt[t]||0)+1));const tsel=document.getElementById("f-tag");Object.entries(cnt).sort((a,b)=>b[1]-a[1]).forEach(([t,n])=>{const o=document.createElement("option");o.value=t;o.textContent=`${t} (${n})`;tsel.appendChild(o)});
+})();
+document.addEventListener("click",e=>{
+  const b=e.target.closest("button");if(!b)return;
+  if(b.dataset.sort){state.sort=b.dataset.sort;document.querySelectorAll("[data-sort]").forEach(x=>x.setAttribute("aria-pressed",x===b));render()}
+  else if(b.id==="savedchip"){state.savedOnly=!state.savedOnly;render()}
+  else if(b.dataset.star){const id=b.dataset.star;state.stars.has(id)?state.stars.delete(id):state.stars.add(id);try{localStorage.setItem("socialscan_stars",JSON.stringify([...state.stars]))}catch(err){}
+    const art=b.closest(".card");art.classList.toggle("starred",state.stars.has(id));b.setAttribute("aria-pressed",state.stars.has(id));b.textContent=state.stars.has(id)?"★":"☆";document.getElementById("starcount").textContent=state.stars.size?`★ ${state.stars.size} saved`:""}
+  else if(b.dataset.src){const id=b.dataset.src;const art=b.closest(".card");const s=art.querySelector(".srcs");state.open.has(id)?state.open.delete(id):state.open.add(id);s.classList.toggle("open");b.textContent=state.open.has(id)?"less":"+"+s.children.length}
+  else if(b.dataset.tag){state.tag=b.dataset.tag;document.getElementById("f-tag").value=state.tag;render()}
+});
+document.getElementById("f-platform").addEventListener("change",e=>{state.platform=e.target.value;render()});
+document.getElementById("f-region").addEventListener("change",e=>{state.region=e.target.value;render()});
+document.getElementById("f-tag").addEventListener("change",e=>{state.tag=e.target.value;render()});
+document.getElementById("q").addEventListener("input",e=>{state.q=e.target.value.trim();render()});
+document.getElementById("incmajor").addEventListener("change",e=>{state.incMajor=e.target.checked;render()});
+document.getElementById("incseq").addEventListener("change",e=>{state.incSeq=e.target.checked;render()});
+document.getElementById("incproto").addEventListener("change",e=>{state.incProto=e.target.checked;render()});
+document.getElementById("autoplay").addEventListener("change",e=>{state.autoplay=e.target.checked;document.querySelectorAll(".hero video").forEach(v=>state.autoplay?v.play().catch(()=>{}):v.pause());});
+// ---- per-day loading: harvester writes data/YYYY-MM-DD.json and data/index.json ----
+(async function boot(){
+  try{const idx=await (await fetch("data/index.json",{cache:"no-store"})).json(); window.__days=idx.days||[]; window.__meta=idx.meta||window.__meta;
+    for(const d of window.__days.slice(0,3)){const j=await (await fetch("data/"+d+".json",{cache:"no-store"})).json(); for(const c of j){if(!CARDS.find(x=>x.id===c.id)) CARDS.push(c);} }
+    window.__dayCursor=3;}catch(e){}
+  render();
+})();
+const _more=more; more=async function(){ if(state.shown>=rows.length && window.__days && window.__dayCursor<window.__days.length){ const d=window.__days[window.__dayCursor++]; try{const j=await (await fetch("data/"+d+".json",{cache:"no-store"})).json(); for(const c of j){if(!CARDS.find(x=>x.id===c.id)) CARDS.push(c);} rows=visible();}catch(e){} } _more(); };
+</script>
+</body>
+</html>

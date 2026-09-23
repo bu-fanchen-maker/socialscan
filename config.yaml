@@ -1,0 +1,59 @@
+date_window_days: 7
+thresholds:            # a card needs ANY one of these
+  steam_reviews_7d: 100
+  steam_players_now: 500
+  youtube_views_7d: 100000
+  bilibili_plays_30d: 100000
+  x_likes_7d: 2000
+  reddit_upvotes_7d: 2000
+  roblox_ccu: 5000
+  roblox_rank_move_24h: 2000
+
+steam:
+  lists:
+    - filter=popularnew
+    - filter=topsellers&tags=1716     # roguelike
+    - filter=topsellers&tags=1091588  # roguelike deckbuilder
+    - filter=topsellers&tags=1645     # tower defense
+    - filter=topsellers&tags=1084988  # auto battler
+    - filter=topsellers&tags=42804    # action roguelike
+    - filter=topsellers&tags=1485955  # extraction shooter
+    - filter=topsellers&tags=615955   # idler
+    - filter=topsellers&tags=1685     # co-op
+    - filter=topsellers&tags=3968     # physics
+  released_within_days: 45
+  major_review_total: 15000
+  major_price_usd: 40
+
+youtube:
+  queries_per_game: ["{name} game"]
+  discovery_queries: ["new indie game", "indie game gameplay", "roguelike new", "mobile game gameplay", "小游戏 实机"]
+
+bilibili:
+  queries: ["微信小游戏 新游", "抖音小游戏 爆款", "小游戏 搜打撤", "小游戏 肉鸽 塔防", "小游戏 微恐", "小游戏 自走棋", "手游 新游 实机"]
+
+reddit:
+  subreddits: [IndieGaming, IndieDev, indiegames, roguelikes, incremental_games, iosgaming, AndroidGaming, WebGames, gamedev, Games]
+  min_score: 2000
+
+x:
+  queries:
+    - {q: "(#indiegame OR #indiedev OR #gamedev OR #screenshotsaturday OR #wishlistwednesday)", min_faves: 3000}
+    - {q: "(\"I made a game\" OR \"my game\" OR \"our game\") filter:videos", min_faves: 3000}
+    - {q: "(roguelike OR roguelite OR deckbuilder OR \"tower defense\" OR \"auto battler\" OR \"extraction shooter\")", min_faves: 1000}
+    - {q: "(\"mobile game\" OR 手游 OR 小游戏 OR スマホゲーム)", min_faves: 2000}
+    - {q: "(ゲーム制作 OR インディーゲーム OR 個人制作) filter:videos", min_faves: 3000}
+    - {q: "(wishlists OR \"copies sold\" OR \"concurrent players\") (game OR steam OR indie)", min_faves: 1000}
+    - {q: "(gameplay OR \"game trailer\" OR \"reveal trailer\") filter:videos", min_faves: 10000}
+
+roblox:
+  rotrends_url: https://www.rotrends.com/
+
+gamediscover:
+  rss: https://newsletter.gamediscover.co/feed
+
+tiers:
+  big_publishers: [CAPCOM, "Square Enix", KONAMI, "Bandai Namco", "Infinity Ward", Treyarch, "The Coalition",
+    "Saber Interactive", "Visual Concepts", "Frontier Developments", Mojang, "Nihon Falcom", Jagex, Amplitude,
+    "Iron Gate", Rockstar, Tencent, NetEase, "Epic Games", Nintendo, Sony, Microsoft, Ubisoft, EA, "Take-Two"]
+  sequel_regex: "\\b(2|3|II|III|IV|4)\\b|Remake|Remaster|Definitive|Edition|Legacy|Expansion|DLC|Chapter"
