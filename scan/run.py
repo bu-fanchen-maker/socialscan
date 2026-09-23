@@ -37,7 +37,7 @@ def main(argv):
     for g in roblox.rotrends(cfg["roblox"]["rotrends_url"]):
         c = Card(id=f"rb_{slug(g['name'])}", title=g["name"], alias=g["section"], platforms=["roblox"], surfaced=today(),
                  evidence=[{"t": f"{k(g['ccu'])} CCU · Roblox · today", "v": "rb"}], top={"platform": "roblox", "label": "Rotrends — trending today", "url": cfg["roblox"]["rotrends_url"]}).dict()
-        c["roblox"] = {"ccu": g["ccu"], "move": 0}; cards.append(c)
+        c["roblox"] = {"ccu": g["ccu"], "move": g.get("move", 0)}; cards.append(c)
 
     # 4. X (Playwright) — optional
     if "--no-x" not in argv:

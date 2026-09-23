@@ -1,21 +1,23 @@
 """Steam: discovery lists → appdetails-lite via store page (tags, extras .mp4 loops) → reviews velocity → players now.
 Everything here was validated live on 21 Sep 2026."""
 import re, json, time, datetime
-from html.parser import HTMLParser
+from html import unescape
 from ..util import get, days_ago, k
 
 STORE = "https://store.steampowered.com"
 
 def _rows(html):
     out = []
-    for m in re.finditer(r'<a href="[^"]+" data-ds-appid="(\d+)"[^>]*>(.*?)</a>', html, re.S):
+    # href and data-ds-appid are separated by a newline + tabs since ~Sep 2026; tooltip HTML is entity-escaped.
+    for m in re.finditer(r'<a href="[^"]+"\s+data-ds-appid="(\d+)".*?>(.*?)</a>', html, re.S):
         appid, body = m.group(1), m.group(2)
         title = re.search(r'class="title">([^<]+)<', body)
-        rel = re.search(r'class="col search_released[^"]*">([^<]*)<', body)
+        rel = re.search(r'class="search_released[^"]*">([^<]*)<', body)
         rev = re.search(r'data-tooltip-html="([^"]*)"', body)
-        pct = re.search(r"(\d+)% of the ([\d,]+)", rev.group(1) if rev else "")
+        tooltip = unescape(rev.group(1)) if rev else ""
+        pct = re.search(r"(\d+)% of the ([\d,]+)", tooltip)
         out.append({"id": appid, "name": title.group(1).strip() if title else "", "released": (rel.group(1).strip() if rel else ""),
-                    "review_desc": (rev.group(1).split("<br>")[0] if rev else ""), "pct": int(pct.group(1)) if pct else None,
+                    "review_desc": tooltip.split("<br>")[0], "pct": int(pct.group(1)) if pct else None,
                     "total_reviews": int(pct.group(2).replace(",", "")) if pct else 0})
     return out
 

@@ -1,12 +1,37 @@
-"""Reddit public JSON. Blocked from the Claude.ai sandbox, trivial from anywhere else.
+"""Reddit public JSON. www.reddit.com 403s plain requests (WAF) since ~Sep 2026; a Playwright
+context with a real-Chrome UA that warms up on the homepage first gets the JSON fine.
 Hero: v.redd.it fallback mp4 plays in a <video> tag with no referrer constraints."""
-import time
+import json, time
 from ..util import get, parse_count
+
+CHROME_UA = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36"
+
+def _fetch_json(url):
+    r = get(url, headers={"User-Agent": "social-scan/0.1 by voodoo-publishing"})
+    if r is not None and r.status_code == 200:
+        try: return r.json()
+        except Exception: pass
+    return _fetch_json_playwright(url)
+
+def _fetch_json_playwright(url):
+    from playwright.sync_api import sync_playwright
+    with sync_playwright() as p:
+        b = p.chromium.launch()
+        try:
+            pg = b.new_context(user_agent=CHROME_UA).new_page()
+            pg.goto("https://www.reddit.com/", timeout=30000)
+            pg.wait_for_timeout(1500)
+            pg.goto(url, timeout=30000)
+            return json.loads(pg.evaluate("document.body.innerText"))
+        except Exception as e:
+            print("[reddit] playwright fetch failed:", e); return None
+        finally:
+            b.close()
 
 def top_week(subreddits, min_score=2000, limit=100):
     subs = "+".join(subreddits)
-    r = get(f"https://www.reddit.com/r/{subs}/top.json", params={"t": "week", "limit": limit}, headers={"User-Agent": "social-scan/0.1 by voodoo-publishing"})
-    try: posts = [c["data"] for c in r.json()["data"]["children"]]
+    j = _fetch_json(f"https://www.reddit.com/r/{subs}/top.json?t=week&limit={limit}")
+    try: posts = [c["data"] for c in j["data"]["children"]]
     except Exception: return []
     out = []
     for p in posts:
