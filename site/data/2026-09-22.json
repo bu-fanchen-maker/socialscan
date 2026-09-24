@@ -3986,119 +3986,6 @@
 "mech": 6.22
 },
 {
-"id": "bili_water_world",
-"title": "疯狂水世界 (Crazy Water World)",
-"alias": "广告游戏 · covered by 林虎_LinHu",
-"genre": [
-"Ad-driven mini game",
-"Idle RPG"
-],
-"punch": [
-"ad-first game design",
-"榜一 controls the whole server",
-"1.08M views · 34k likes",
-"pay-to-dominate as content"
-],
-"released": "2026-02-01",
-"surfaced": "2026-02-22",
-"platforms": [
-"wechat",
-"douyin",
-"bilibili"
-],
-"region": "CN",
-"stats": [],
-"media": {
-"kind": "bili",
-"id": "BV1CUfnBjEJf"
-},
-"top": {
-"platform": "bilibili",
-"label": "#疯狂水世界小胖终于打捞到了 · 181.7k plays · 2026-09-18",
-"url": "https://www.bilibili.com/video/BV1Awey6JEsz/"
-},
-"more": [],
-"curated": true,
-"aaa": false,
-"eng": 4560,
-"rating": null,
-"src": "bilibili",
-"bili": {
-"n": 100,
-"sum": 502112,
-"top": "BV1Awey6JEsz",
-"topViews": 181725
-},
-"evidence": [
-{
-"t": "100+ Bilibili clips · 502.1k plays · 30d",
-"v": "bili"
-}
-],
-"score": 4.56,
-"tier": "Indie",
-"kind": "new IP",
-"novelty": 2.74,
-"surprise": 5.1,
-"mech": 8.77
-},
-{
-"id": "bili_fake_ads",
-"title": "逆天游戏广告 (fake-ad creatives)",
-"alias": "艾力弗恩 · UA creative trend",
-"genre": [
-"UA creatives",
-"Trend"
-],
-"punch": [
-"ads that aren't the game",
-"player-side ridicule = reach",
-"479k views",
-"what CN UA looks like from the outside"
-],
-"released": "2025-04-14",
-"surfaced": "2025-04-14",
-"platforms": [
-"bilibili",
-"douyin"
-],
-"region": "CN",
-"stats": [],
-"media": {
-"kind": "bili",
-"id": "BV1xFojYTESD"
-},
-"top": {
-"platform": "bilibili",
-"label": "起猛了！应用商店看到了渔力全开？看广告解锁鱼竿 · 1.7M plays · 2026-08-29",
-"url": "https://www.bilibili.com/video/BV1vE4k65EPv/"
-},
-"more": [],
-"curated": true,
-"aaa": false,
-"eng": 4980,
-"rating": null,
-"src": "bilibili",
-"bili": {
-"n": 16,
-"sum": 1658128,
-"top": "BV1vE4k65EPv",
-"topViews": 1650747
-},
-"evidence": [
-{
-"t": "16 Bilibili clips · 1.7M plays · 30d",
-"v": "bili"
-}
-],
-"score": 4.98,
-"tier": "Indie",
-"kind": "new IP",
-"novelty": 2.74,
-"surprise": 5.62,
-"mech": 9.18
-},
-{
 "id": "bili_wangzhe_wanxiangqi",
 "title": "王者万象棋 (Honor of Kings auto chess)",
 "alias": "Tencent · 季议游新 coverage",
@@ -4540,7 +4427,7 @@
 },
 {
 "id": "cluster_friendslop",
-"title": "Friendslop-adjacent at $5–7",
+"title": "Cheap co-op party games at $5–7",
 "alias": "mechanic cluster · How to Fish, Big Walk, Grain Rot, Bombanana, Mimic Party, WheelMates",
 "genre": [
 "Co-op",
@@ -4799,7 +4686,7 @@
 },
 {
 "id": "x_2101615804190224768",
-"title": "好きなところにマンションを建てるゲーム (build apartments anywhere)",
+"title": "Build apartments anywhere (好きなところにマンションを建てる)",
 "alias": "JP solo dev · #ゲーム制作",
 "genre": [
 "Sandbox builder",
@@ -4856,67 +4743,6 @@
 "x": {
 "likes": 9720,
 "views": 530523
-}
-},
-{
-"id": "x_2100822108976869590",
-"title": "まのさば fan game hits Steam page",
-"alias": "free fan-made derivative game · JP",
-"genre": [
-"Fan game",
-"Visual novel",
-"Community"
-],
-"punch": [
-"fan game of a streamer IP",
-"20.4k likes · 1.0M views",
-"free on Steam",
-"community-made distribution"
-],
-"released": "",
-"surfaced": "2026-09-18",
-"platforms": [
-"x"
-],
-"region": "JP",
-"media": {
-"kind": "x",
-"id": "2100822108976869590"
-},
-"velocity": {},
-"evidence": [
-{
-"t": "20.4k likes · X · 7d",
-"v": "x"
-},
-{
-"t": "1.0M views · X",
-"v": "x"
-},
-{
-"t": "single post",
-"v": "new"
-}
-],
-"top": {
-"platform": "x",
-"label": "TidcmTea — 20.4k likes · 1.0M views",
-"url": "https://x.com/TidcmTea/status/2100822108976869590"
-},
-"more": [],
-"curated": true,
-"aaa": false,
-"score": 8.16,
-"rating": null,
-"tier": "Indie",
-"kind": "new IP",
-"novelty": 2.6,
-"surprise": 5.4,
-"mech": 8.84,
-"eng": 1001157,
-"x": {
-"likes": 20399,
-"views": 1001157
 }
 },
 {
@@ -5122,7 +4948,8 @@
 ],
 "region": "Global",
 "media": {
-"kind": "none"
+"kind": "img",
+"src": "https://tr.rbxcdn.com/180DAY-92bf1e622ae6e5570ce82f0e486b4d4e/768/432/Image/Png/noFilter"
 },
 "velocity": {},
 "evidence": [
@@ -5137,8 +4964,8 @@
 ],
 "top": {
 "platform": "roblox",
-"label": "Rotrends — trending today",
-"url": "https://www.rotrends.com/"
+"label": "Roblox — Judge Simulator",
+"url": "https://www.roblox.com/games/127774488725016"
 },
 "more": [
 [
@@ -5179,7 +5006,8 @@
 ],
 "region": "Global",
 "media": {
-"kind": "none"
+"kind": "img",
+"src": "https://tr.rbxcdn.com/180DAY-a8c2b40f1df2a155c674792847178c5b/768/432/Image/Png/noFilter"
 },
 "velocity": {},
 "evidence": [
@@ -5194,8 +5022,8 @@
 ],
 "top": {
 "platform": "roblox",
-"label": "Rotrends — trending today",
-"url": "https://www.rotrends.com/"
+"label": "Roblox — [🚁] +1 Propeller Jump Escape",
+"url": "https://www.roblox.com/games/83470013542246"
 },
 "more": [
 [
@@ -5236,7 +5064,8 @@
 ],
 "region": "Global",
 "media": {
-"kind": "none"
+"kind": "img",
+"src": "https://tr.rbxcdn.com/180DAY-2526ba2567cd5ac7378b7e511536c749/768/432/Image/Png/noFilter"
 },
 "velocity": {},
 "evidence": [
@@ -5251,8 +5080,8 @@
 ],
 "top": {
 "platform": "roblox",
-"label": "Rotrends — trending today",
-"url": "https://www.rotrends.com/"
+"label": "Roblox — Merge & Cut Grass",
+"url": "https://www.roblox.com/games/115084033895177"
 },
 "more": [
 [
@@ -5293,7 +5122,8 @@
 ],
 "region": "Global",
 "media": {
-"kind": "none"
+"kind": "img",
+"src": "https://tr.rbxcdn.com/180DAY-fad29afebaa67e69267a0305414f9538/768/432/Image/Png/noFilter"
 },
 "velocity": {},
 "evidence": [
@@ -5308,8 +5138,8 @@
 ],
 "top": {
 "platform": "roblox",
-"label": "Rotrends — trending today",
-"url": "https://www.rotrends.com/"
+"label": "Roblox — 🧚 FAIRY",
+"url": "https://www.roblox.com/games/107509356800098"
 },
 "more": [
 [
@@ -5350,7 +5180,8 @@
 ],
 "region": "Global",
 "media": {
-"kind": "none"
+"kind": "img",
+"src": "https://tr.rbxcdn.com/180DAY-cbb151e6ecc5b0b196f6c6482dbf4425/768/432/Image/Png/noFilter"
 },
 "velocity": {},
 "evidence": [
@@ -5365,8 +5196,8 @@
 ],
 "top": {
 "platform": "roblox",
-"label": "Rotrends — trending today",
-"url": "https://www.rotrends.com/"
+"label": "Roblox — +1 Clean Leaves Adventure",
+"url": "https://www.roblox.com/games/114711399407052"
 },
 "more": [
 [
@@ -5407,7 +5238,8 @@
 ],
 "region": "Global",
 "media": {
-"kind": "none"
+"kind": "img",
+"src": "https://tr.rbxcdn.com/180DAY-24e49cdf9ad361fa8d5d8d9b2522e6c1/768/432/Image/Png/noFilter"
 },
 "velocity": {},
 "evidence": [
@@ -5422,8 +5254,8 @@
 ],
 "top": {
 "platform": "roblox",
-"label": "Rotrends — trending today",
-"url": "https://www.rotrends.com/"
+"label": "Roblox — [🧊] Capybaras VS Plants",
+"url": "https://www.roblox.com/games/104973076655377"
 },
 "more": [
 [
@@ -5464,7 +5296,8 @@
 ],
 "region": "Global",
 "media": {
-"kind": "none"
+"kind": "img",
+"src": "https://tr.rbxcdn.com/180DAY-008fc0c90a266d377416ca5f1e50686a/768/432/Image/Png/noFilter"
 },
 "velocity": {},
 "evidence": [
@@ -5479,8 +5312,8 @@
 ],
 "top": {
 "platform": "roblox",
-"label": "Rotrends — trending today",
-"url": "https://www.rotrends.com/"
+"label": "Roblox — [ICE 🧊] How to Really Fish",
+"url": "https://www.roblox.com/games/112778631702542"
 },
 "more": [
 [
@@ -5521,7 +5354,8 @@
 ],
 "region": "Global",
 "media": {
-"kind": "none"
+"kind": "img",
+"src": "https://tr.rbxcdn.com/180DAY-875b2a6dc156ce6dd64eb637e73238ce/768/432/Image/Png/noFilter"
 },
 "velocity": {},
 "evidence": [
@@ -5536,8 +5370,8 @@
 ],
 "top": {
 "platform": "roblox",
-"label": "Rotrends — trending today",
-"url": "https://www.rotrends.com/"
+"label": "Roblox — Steal An Egg",
+"url": "https://www.roblox.com/games/107778070777162"
 },
 "more": [
 [
@@ -5558,7 +5392,7 @@
 },
 {
 "id": "cluster_plus_one",
-"title": "\"+1 per action\" escape / obby",
+"title": "\"+1 per action\" escape games",
 "alias": "mechanic cluster · Roblox + CrazyGames · +1 Propeller Jump, +1 Speed Keyboard, Obby: +1 Laser, +1 Click Wall Breaker",
 "genre": [
 "Obby / escape",
@@ -5580,7 +5414,8 @@
 ],
 "region": "Global",
 "media": {
-"kind": "none"
+"kind": "img",
+"src": "https://tr.rbxcdn.com/180DAY-a8c2b40f1df2a155c674792847178c5b/768/432/Image/Png/noFilter"
 },
 "velocity": {},
 "evidence": [
@@ -5598,9 +5433,9 @@
 }
 ],
 "top": {
-"platform": "web",
-"label": "CrazyGames — Hot games (last 24h)",
-"url": "https://www.crazygames.com/hot"
+"platform": "roblox",
+"label": "Roblox — [🚁] +1 Propeller Jump Escape (top member)",
+"url": "https://www.roblox.com/games/83470013542246"
 },
 "more": [
 [
@@ -5666,9 +5501,9 @@
 }
 ],
 "top": {
-"platform": "roblox",
+"platform": "youtube",
 "label": "Rotrends — Clean Leaves Adventure +7,358 ranks",
-"url": "https://www.rotrends.com/"
+"url": "https://www.youtube.com/watch?v=mu0461eJFaM"
 },
 "more": [
 [
@@ -5686,409 +5521,6 @@
 "surprise": 4.2,
 "mech": 8.1,
 "eng": 1200000
-},
-{
-"id": "itch_recoil-foundry",
-"title": "Recoil Foundry",
-"alias": "Caleb-Guyer · itch.io New & Popular · no traction data",
-"genre": [
-"Action roguelike",
-"Physics"
-],
-"punch": [
-"Build one absurd gun. Use its recoil to stay alive.",
-"prototype radar",
-"plays not public on itch"
-],
-"released": "",
-"surfaced": "2026-09-21",
-"platforms": [
-"itch"
-],
-"region": "Global",
-"media": {
-"kind": "none"
-},
-"velocity": {},
-"evidence": [
-{
-"t": "itch.io New & Popular · roguelike",
-"v": "web"
-},
-{
-"t": "no engagement data — prototype only",
-"v": "flat"
-}
-],
-"top": {
-"platform": "itch",
-"label": "itch.io page",
-"url": "https://caleb-guyer.itch.io/recoil-foundry"
-},
-"more": [],
-"curated": true,
-"aaa": false,
-"score": 0,
-"rating": null,
-"tier": "Prototype",
-"kind": "new IP",
-"novelty": 2.8,
-"surprise": 0,
-"mech": 3.4,
-"eng": 0
-},
-{
-"id": "itch_spellbook",
-"title": "Spellbook — idle deckbuilder on a conveyor belt",
-"alias": "GegX · itch.io New & Popular · no traction data",
-"genre": [
-"Deckbuilder",
-"Idle"
-],
-"punch": [
-"Your deck rides a belt and casts itself; campaign + endless leagues.",
-"prototype radar",
-"plays not public on itch"
-],
-"released": "",
-"surfaced": "2026-09-21",
-"platforms": [
-"itch"
-],
-"region": "Global",
-"media": {
-"kind": "none"
-},
-"velocity": {},
-"evidence": [
-{
-"t": "itch.io New & Popular · roguelike",
-"v": "web"
-},
-{
-"t": "no engagement data — prototype only",
-"v": "flat"
-}
-],
-"top": {
-"platform": "itch",
-"label": "itch.io page",
-"url": "https://gegx.itch.io/spellbook"
-},
-"more": [],
-"curated": true,
-"aaa": false,
-"score": 0,
-"rating": null,
-"tier": "Prototype",
-"kind": "new IP",
-"novelty": 2.8,
-"surprise": 0,
-"mech": 3.4,
-"eng": 0
-},
-{
-"id": "itch_runehero",
-"title": "Runehero",
-"alias": "xavierwwj · itch.io New & Popular · no traction data",
-"genre": [
-"Match-3",
-"Roguelike"
-],
-"punch": [
-"Match-3 meets roguelike: master elements, climb 60 stages.",
-"prototype radar",
-"plays not public on itch"
-],
-"released": "",
-"surfaced": "2026-09-21",
-"platforms": [
-"itch"
-],
-"region": "Global",
-"media": {
-"kind": "none"
-},
-"velocity": {},
-"evidence": [
-{
-"t": "itch.io New & Popular · roguelike",
-"v": "web"
-},
-{
-"t": "no engagement data — prototype only",
-"v": "flat"
-}
-],
-"top": {
-"platform": "itch",
-"label": "itch.io page",
-"url": "https://xavierwwj.itch.io/runehero"
-},
-"more": [],
-"curated": true,
-"aaa": false,
-"score": 0,
-"rating": null,
-"tier": "Prototype",
-"kind": "new IP",
-"novelty": 2.8,
-"surprise": 0,
-"mech": 3.4,
-"eng": 0
-},
-{
-"id": "itch_tomato-god",
-"title": "A Tomato for Your God",
-"alias": "herkermer · itch.io New & Popular · no traction data",
-"genre": [
-"Tower defense",
-"Farming",
-"Roguelike"
-],
-"punch": [
-"Roguelike tower defense farming game; an immortal crow rewards the harvest.",
-"prototype radar",
-"plays not public on itch"
-],
-"released": "",
-"surfaced": "2026-09-21",
-"platforms": [
-"itch"
-],
-"region": "Global",
-"media": {
-"kind": "none"
-},
-"velocity": {},
-"evidence": [
-{
-"t": "itch.io New & Popular · roguelike",
-"v": "web"
-},
-{
-"t": "no engagement data — prototype only",
-"v": "flat"
-}
-],
-"top": {
-"platform": "itch",
-"label": "itch.io page",
-"url": "https://herkermer.itch.io/a-tomato-for-your-god"
-},
-"more": [],
-"curated": true,
-"aaa": false,
-"score": 0,
-"rating": null,
-"tier": "Prototype",
-"kind": "new IP",
-"novelty": 2.8,
-"surprise": 0,
-"mech": 3.4,
-"eng": 0
-},
-{
-"id": "itch_terraformer-wars",
-"title": "Terraformer Wars",
-"alias": "16bitnights · itch.io New & Popular · no traction data",
-"genre": [
-"Autobattler",
-"Incremental",
-"Roguelike"
-],
-"punch": [
-"Autobattler + incremental + roguelike.",
-"prototype radar",
-"plays not public on itch"
-],
-"released": "",
-"surfaced": "2026-09-21",
-"platforms": [
-"itch"
-],
-"region": "Global",
-"media": {
-"kind": "none"
-},
-"velocity": {},
-"evidence": [
-{
-"t": "itch.io New & Popular · roguelike",
-"v": "web"
-},
-{
-"t": "no engagement data — prototype only",
-"v": "flat"
-}
-],
-"top": {
-"platform": "itch",
-"label": "itch.io page",
-"url": "https://16bitnights.itch.io/terraformer-wars"
-},
-"more": [],
-"curated": true,
-"aaa": false,
-"score": 0,
-"rating": null,
-"tier": "Prototype",
-"kind": "new IP",
-"novelty": 2.8,
-"surprise": 0,
-"mech": 3.4,
-"eng": 0
-},
-{
-"id": "itch_copykill",
-"title": "CopyKill",
-"alias": "mavape · itch.io New & Popular · no traction data",
-"genre": [
-"Action roguelike",
-"Tether"
-],
-"punch": [
-"Top-down roguelike with a tether-laser mechanic.",
-"prototype radar",
-"plays not public on itch"
-],
-"released": "",
-"surfaced": "2026-09-21",
-"platforms": [
-"itch"
-],
-"region": "Global",
-"media": {
-"kind": "none"
-},
-"velocity": {},
-"evidence": [
-{
-"t": "itch.io New & Popular · roguelike",
-"v": "web"
-},
-{
-"t": "no engagement data — prototype only",
-"v": "flat"
-}
-],
-"top": {
-"platform": "itch",
-"label": "itch.io page",
-"url": "https://mavape.itch.io/copykill"
-},
-"more": [],
-"curated": true,
-"aaa": false,
-"score": 0,
-"rating": null,
-"tier": "Prototype",
-"kind": "new IP",
-"novelty": 2.8,
-"surprise": 0,
-"mech": 3.4,
-"eng": 0
-},
-{
-"id": "itch_montabi",
-"title": "Montabi",
-"alias": "Akupara Games · $19.99 · itch.io New & Popular · no traction data",
-"genre": [
-"Creature collector",
-"Deckbuilder",
-"Roguelike"
-],
-"punch": [
-"Creature-collector roguelike deckbuilder: tame, collect, fight.",
-"prototype radar",
-"plays not public on itch"
-],
-"released": "",
-"surfaced": "2026-09-21",
-"platforms": [
-"itch"
-],
-"region": "Global",
-"media": {
-"kind": "none"
-},
-"velocity": {},
-"evidence": [
-{
-"t": "itch.io New & Popular · roguelike",
-"v": "web"
-},
-{
-"t": "no engagement data — prototype only",
-"v": "flat"
-}
-],
-"top": {
-"platform": "itch",
-"label": "itch.io page",
-"url": "https://akuparagames.itch.io/montabi"
-},
-"more": [],
-"curated": true,
-"aaa": false,
-"score": 0,
-"rating": null,
-"tier": "Prototype",
-"kind": "new IP",
-"novelty": 2.8,
-"surprise": 0,
-"mech": 3.4,
-"eng": 0
-},
-{
-"id": "itch_pokelucky",
-"title": "Pokelucky RNG",
-"alias": "Toshiropan · itch.io New & Popular · no traction data",
-"genre": [
-"Auto battler",
-"Creature collector"
-],
-"punch": [
-"Pokémon roguelike, auto RNG battle.",
-"prototype radar",
-"plays not public on itch"
-],
-"released": "",
-"surfaced": "2026-09-21",
-"platforms": [
-"itch"
-],
-"region": "Global",
-"media": {
-"kind": "none"
-},
-"velocity": {},
-"evidence": [
-{
-"t": "itch.io New & Popular · roguelike",
-"v": "web"
-},
-{
-"t": "no engagement data — prototype only",
-"v": "flat"
-}
-],
-"top": {
-"platform": "itch",
-"label": "itch.io page",
-"url": "https://toshiropan.itch.io/pokelucky-liveuprailwayapp"
-},
-"more": [],
-"curated": true,
-"aaa": false,
-"score": 0,
-"rating": null,
-"tier": "Prototype",
-"kind": "new IP",
-"novelty": 2.8,
-"surprise": 0,
-"mech": 3.4,
-"eng": 0
 },
 {
 "id": "x_2101271571126206648",
@@ -6153,7 +5585,7 @@
 },
 {
 "id": "x_2100765605578346965",
-"title": "絶望ショッピング — survive 30 days via an online shop",
+"title": "Despair Shopping — survive 30 days of online shopping (絶望ショッピング)",
 "alias": "denfaminicogamer · free · 2026",
 "genre": [
 "Survival horror",

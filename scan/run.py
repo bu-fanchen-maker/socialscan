@@ -33,10 +33,14 @@ def main(argv):
                  top={"platform": "reddit", "label": f"r/{p['sub']} — {k(p['score'])} upvotes", "url": p["url"]}).dict()
         c["reddit"] = {"score": p["score"], "sum": p["score"] * 50}; cards.append(c)
 
-    # 3. Roblox (Rotrends)
+    # 3. Roblox (Rotrends → real game page + official thumbnail)
     for g in roblox.rotrends(cfg["roblox"]["rotrends_url"]):
-        c = Card(id=f"rb_{slug(g['name'])}", title=g["name"], alias=g["section"], platforms=["roblox"], surfaced=today(),
-                 evidence=[{"t": f"{k(g['ccu'])} CCU · Roblox · today", "v": "rb"}], top={"platform": "roblox", "label": "Rotrends — trending today", "url": cfg["roblox"]["rotrends_url"]}).dict()
+        rg = roblox.resolve(g["name"]) or {}
+        c = Card(id=f"rb_{slug(g['name'])}", title=g["name"], alias=g.get("studio") or g["section"], platforms=["roblox"], surfaced=today(),
+                 media={"kind": "img", "src": rg["thumb"]} if rg.get("thumb") else {"kind": "none"},
+                 evidence=[{"t": f"{k(g['ccu'])} CCU · Roblox · today", "v": "rb"}] + ([{"t": f"▲ {k(g['move'])} rank move · 24h", "v": "up"}] if g.get("move") else []),
+                 top={"platform": "roblox", "label": f"Roblox — {rg.get('name') or g['name']}", "url": rg["url"]} if rg.get("url")
+                     else {"platform": "roblox", "label": "Rotrends — trending today", "url": cfg["roblox"]["rotrends_url"]}).dict()
         c["roblox"] = {"ccu": g["ccu"], "move": g.get("move", 0)}; cards.append(c)
 
     # 4. X (Playwright) — optional
@@ -56,8 +60,15 @@ def main(argv):
         try: cards += fn()
         except NotImplementedError as e: print(f"[{fn.__name__}] TODO: {e}")
 
-    # 6. Threshold, then Claude pass only on survivors
-    survivors = [c for c in cards if score.meets_bar(c, th)]
+    # 6. Visual law: the hero must show what it is — an mp4/embed or an informative image. No visual, no card.
+    def has_visual(c):
+        m = c.get("media") or {}
+        return m.get("kind") not in (None, "", "none") and (m.get("kind") != "img" or bool(m.get("src")))
+    no_vis = [c for c in cards if not has_visual(c)]
+    if no_vis: print(f"[visual-law] dropped {len(no_vis)}: " + " | ".join(c["title"][:30] for c in no_vis[:8]))
+
+    # 7. Threshold, then Claude pass only on survivors
+    survivors = [c for c in cards if has_visual(c) and score.meets_bar(c, th)]
     if "--no-llm" not in argv and survivors:
         try:
             from .classify import classify

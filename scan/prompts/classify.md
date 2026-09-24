@@ -12,3 +12,10 @@ For each item (title/text, source, tags, description) return an object:
 Rules: never invent numbers. Taglines are not titles ("Castle on Wheels" → "Wanderburg"). Sequels, remakes,
 1.0 launches out of Early Access, DLC and IP crossovers are "franchise / sequel / remake". A studio with ≥15k
 Steam reviews on the title, a top-30 publisher, or a $40+ price is "Major".
+Language: write "game" (the title) and every punch tag in English; keep an original CN/JP name in
+parentheses only when it helps recognition. Chinese-language source content is fine as-is.
+Identifiability: if you cannot name the specific game OR the specific mechanic a post is about, set
+noise=true — "interesting but unidentifiable" is noise. A post in a language other than English or
+Chinese is noise unless you can resolve the game and retitle it in English.
+Plain words: no scene jargon in titles ("friendslop", "obby" alone). A trend/cluster card must say the
+mechanic in words a producer who never saw the meme understands.

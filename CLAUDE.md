@@ -18,6 +18,14 @@ Owner: Bu Fan (Publishing Manager, Voodoo). Purpose: surface hot new game mechan
 6. **Mechanics sort is the default**: novelty (rare tag combos vs the rolling 30-day Steam baseline)
    + surprise (engagement relative to marketing footprint). Trending is popularity; it is not the goal.
 7. Punch tags over paragraphs. 3–6 short tags, one of them the hook sentence from the store text.
+8. **The visual must show what it is** (Bu Fan, 24 Sep 2026: every card he called garbage had no visual).
+   Preferred: playable loop/clip; an informative image (store art, official Roblox thumbnail) qualifies.
+   No visual after fallbacks → the card is dropped in run.py, never shipped with a placeholder.
+9. **Specific links only.** "Top post" opens the exact game page or post — never a chart homepage
+   (rotrends.com, crazygames.com/hot). Roblox names resolve via omni-search → place page + thumbnail.
+10. **English titles (CN ok), plain words.** Punch tags in English; pure-JP/other posts are noise unless
+    the game resolves to an English title. No scene jargon. Trend-cluster cards need ≥3 measured member
+    games and a hero from the top member — otherwise ship the members as individual game cards.
 
 ## What we learned about each source
 - Steam `appdetails` no longer returns movie URLs; trailers are HLS. Use the `extras/*.mp4` loops in the

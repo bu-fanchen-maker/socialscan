@@ -6065,59 +6065,6 @@
 "dropped": false
 },
 {
-"id": "rd_1wi913g",
-"title": "Original Sony PlayStation 2 security chip ‘broken wide open’ after 26 years — chemical dec",
-"alias": "r/Games",
-"genre": [],
-"punch": [],
-"released": "",
-"surfaced": "2026-09-16",
-"platforms": [
-"reddit"
-],
-"region": "Global",
-"media": {
-"kind": "img",
-"src": ""
-},
-"evidence": [
-{
-"t": "2.5k upvotes · r/Games · 7d",
-"v": "rd"
-},
-{
-"t": "98 comments",
-"v": "rd"
-}
-],
-"top": {
-"platform": "reddit",
-"label": "r/Games — 2.5k upvotes",
-"url": "https://www.reddit.com/r/Games/comments/1wi913g/original_sony_playstation_2_security_chip_broken/"
-},
-"more": [],
-"decon": [],
-"tier": "Indie",
-"kind": "new IP",
-"velocity": {},
-"yt": null,
-"bili": null,
-"x": null,
-"reddit": {
-"score": 2469,
-"sum": 123450
-},
-"score": 4.58,
-"novelty": 0.0,
-"surprise": 4.49,
-"mech": 4.99,
-"eng": 4580,
-"curated": false,
-"aaa": false,
-"rating": null,
-"dropped": false
-},
-{
 "id": "rd_1wmjego",
 "title": "I made an anti-shooter where you must avoid people. You can play the Demo now!!",
 "alias": "r/IndieDev",
@@ -6218,59 +6165,6 @@
 "surprise": 4.47,
 "mech": 4.98,
 "eng": 4560,
-"curated": false,
-"aaa": false,
-"rating": null,
-"dropped": false
-},
-{
-"id": "rd_1wk8rhk",
-"title": "\"The craziest numbers I've seen in 17 years working at Blizzard\": WoW Forever devs seem ge",
-"alias": "r/Games",
-"genre": [],
-"punch": [],
-"released": "",
-"surfaced": "2026-09-19",
-"platforms": [
-"reddit"
-],
-"region": "Global",
-"media": {
-"kind": "img",
-"src": ""
-},
-"evidence": [
-{
-"t": "2.3k upvotes · r/Games · 7d",
-"v": "rd"
-},
-{
-"t": "737 comments",
-"v": "rd"
-}
-],
-"top": {
-"platform": "reddit",
-"label": "r/Games — 2.3k upvotes",
-"url": "https://www.reddit.com/r/Games/comments/1wk8rhk/the_craziest_numbers_ive_seen_in_17_years_working/"
-},
-"more": [],
-"decon": [],
-"tier": "Indie",
-"kind": "new IP",
-"velocity": {},
-"yt": null,
-"bili": null,
-"x": null,
-"reddit": {
-"score": 2270,
-"sum": 113500
-},
-"score": 4.55,
-"novelty": 0.0,
-"surprise": 4.45,
-"mech": 4.96,
-"eng": 4550,
 "curated": false,
 "aaa": false,
 "rating": null,
@@ -6436,108 +6330,6 @@
 "dropped": false
 },
 {
-"id": "rd_1wmgzk8",
-"title": "The Next Chapter for Bungie: Today, we’re sharing more about the future of Bungie, includi",
-"alias": "r/Games",
-"genre": [],
-"punch": [],
-"released": "",
-"surfaced": "2026-09-21",
-"platforms": [
-"reddit"
-],
-"region": "Global",
-"media": {
-"kind": "img",
-"src": ""
-},
-"evidence": [
-{
-"t": "2.0k upvotes · r/Games · 7d",
-"v": "rd"
-},
-{
-"t": "927 comments",
-"v": "rd"
-}
-],
-"top": {
-"platform": "reddit",
-"label": "r/Games — 2.0k upvotes",
-"url": "https://www.reddit.com/r/Games/comments/1wmgzk8/the_next_chapter_for_bungie_today_were_sharing/"
-},
-"more": [],
-"decon": [],
-"tier": "Indie",
-"kind": "new IP",
-"velocity": {},
-"yt": null,
-"bili": null,
-"x": null,
-"reddit": {
-"score": 2012,
-"sum": 100600
-},
-"score": 4.5,
-"novelty": 0.0,
-"surprise": 4.4,
-"mech": 4.92,
-"eng": 4500,
-"curated": false,
-"aaa": false,
-"rating": null,
-"dropped": false
-},
-{
-"id": "rb_sae_moddeds_but_admn_panel_x7777",
-"title": "🌈 SAE MODDEDS BUT ADMN PANEL X7777",
-"alias": "Top Moving Games",
-"genre": [],
-"punch": [],
-"released": "",
-"surfaced": "2026-09-23",
-"platforms": [
-"roblox"
-],
-"region": "Global",
-"media": {
-"kind": "none"
-},
-"evidence": [
-{
-"t": "25.5k CCU · Roblox · today",
-"v": "rb"
-}
-],
-"top": {
-"platform": "roblox",
-"label": "Rotrends — trending today",
-"url": "https://www.rotrends.com/"
-},
-"more": [],
-"decon": [],
-"tier": "Indie",
-"kind": "new IP",
-"velocity": {},
-"yt": null,
-"bili": null,
-"x": null,
-"reddit": null,
-"score": 0.0,
-"novelty": 0.0,
-"surprise": -0.6,
-"mech": 0.92,
-"eng": 0,
-"curated": false,
-"aaa": false,
-"rating": null,
-"dropped": false,
-"roblox": {
-"ccu": 25536,
-"move": 6268
-}
-},
-{
 "id": "rb_1_clean_leaves_adventure",
 "title": "+1 Clean Leaves Adventure",
 "alias": "Top Moving Games",
@@ -6550,7 +6342,8 @@
 ],
 "region": "Global",
 "media": {
-"kind": "none"
+"kind": "img",
+"src": "https://tr.rbxcdn.com/180DAY-cbb151e6ecc5b0b196f6c6482dbf4425/768/432/Image/Png/noFilter"
 },
 "evidence": [
 {
@@ -6560,8 +6353,8 @@
 ],
 "top": {
 "platform": "roblox",
-"label": "Rotrends — trending today",
-"url": "https://www.rotrends.com/"
+"label": "Roblox — +1 Clean Leaves Adventure",
+"url": "https://www.roblox.com/games/114711399407052"
 },
 "more": [],
 "decon": [],
@@ -6599,7 +6392,8 @@
 ],
 "region": "Global",
 "media": {
-"kind": "none"
+"kind": "img",
+"src": "https://tr.rbxcdn.com/180DAY-13d6a4d14405d85ecebe3b5293b16bea/768/432/Image/Png/noFilter"
 },
 "evidence": [
 {
@@ -6609,8 +6403,8 @@
 ],
 "top": {
 "platform": "roblox",
-"label": "Rotrends — trending today",
-"url": "https://www.rotrends.com/"
+"label": "Roblox — 🚨 WANTED",
+"url": "https://www.roblox.com/games/140537941883279"
 },
 "more": [],
 "decon": [],
@@ -6648,7 +6442,8 @@
 ],
 "region": "Global",
 "media": {
-"kind": "none"
+"kind": "img",
+"src": "https://tr.rbxcdn.com/180DAY-ae088ebacf2ae4de364c56acaf635bb8/768/432/GameMediaItem6/Png/noFilter"
 },
 "evidence": [
 {
@@ -6658,8 +6453,8 @@
 ],
 "top": {
 "platform": "roblox",
-"label": "Rotrends — trending today",
-"url": "https://www.rotrends.com/"
+"label": "Roblox — Mysterious",
+"url": "https://www.roblox.com/games/105562162608017"
 },
 "more": [],
 "decon": [],
@@ -6697,7 +6492,8 @@
 ],
 "region": "Global",
 "media": {
-"kind": "none"
+"kind": "img",
+"src": "https://tr.rbxcdn.com/180DAY-b24a2d6cae045041c41e8b06c3f19c11/768/432/Image/Png/noFilter"
 },
 "evidence": [
 {
@@ -6707,8 +6503,8 @@
 ],
 "top": {
 "platform": "roblox",
-"label": "Rotrends — trending today",
-"url": "https://www.rotrends.com/"
+"label": "Roblox — [FREE] ChinaSide Tycoon",
+"url": "https://www.roblox.com/games/88793580588296"
 },
 "more": [],
 "decon": [],
@@ -6746,7 +6542,8 @@
 ],
 "region": "Global",
 "media": {
-"kind": "none"
+"kind": "img",
+"src": "https://tr.rbxcdn.com/180DAY-92bf1e622ae6e5570ce82f0e486b4d4e/768/432/Image/Png/noFilter"
 },
 "evidence": [
 {
@@ -6756,8 +6553,8 @@
 ],
 "top": {
 "platform": "roblox",
-"label": "Rotrends — trending today",
-"url": "https://www.rotrends.com/"
+"label": "Roblox — Judge Simulator",
+"url": "https://www.roblox.com/games/127774488725016"
 },
 "more": [],
 "decon": [],
@@ -6795,7 +6592,8 @@
 ],
 "region": "Global",
 "media": {
-"kind": "none"
+"kind": "img",
+"src": "https://tr.rbxcdn.com/180DAY-08ed0888b66a750dfe7b3e675f38f818/768/432/Image/Png/noFilter"
 },
 "evidence": [
 {
@@ -6805,8 +6603,8 @@
 ],
 "top": {
 "platform": "roblox",
-"label": "Rotrends — trending today",
-"url": "https://www.rotrends.com/"
+"label": "Roblox — +1 Propeller Evolution\t",
+"url": "https://www.roblox.com/games/110791215021427"
 },
 "more": [],
 "decon": [],
@@ -6844,7 +6642,8 @@
 ],
 "region": "Global",
 "media": {
-"kind": "none"
+"kind": "img",
+"src": "https://tr.rbxcdn.com/180DAY-77f9ce8b2354c8b8fe644456d4aa37c2/768/432/Image/Png/noFilter"
 },
 "evidence": [
 {
@@ -6854,8 +6653,8 @@
 ],
 "top": {
 "platform": "roblox",
-"label": "Rotrends — trending today",
-"url": "https://www.rotrends.com/"
+"label": "Roblox — 🌈 SAE MODDEDS SANDBOX 9999X",
+"url": "https://www.roblox.com/games/94334847322194"
 },
 "more": [],
 "decon": [],
@@ -6893,7 +6692,8 @@
 ],
 "region": "Global",
 "media": {
-"kind": "none"
+"kind": "img",
+"src": "https://tr.rbxcdn.com/180DAY-2526ba2567cd5ac7378b7e511536c749/768/432/Image/Png/noFilter"
 },
 "evidence": [
 {
@@ -6903,8 +6703,8 @@
 ],
 "top": {
 "platform": "roblox",
-"label": "Rotrends — trending today",
-"url": "https://www.rotrends.com/"
+"label": "Roblox — Merge & Cut Grass",
+"url": "https://www.roblox.com/games/115084033895177"
 },
 "more": [],
 "decon": [],
@@ -6927,55 +6727,6 @@
 "roblox": {
 "ccu": 18849,
 "move": 2827
-}
-},
-{
-"id": "rb_mount_liyan_fly_with_fairy_transformatio",
-"title": "Mount Liyan  [Fly with Fairy Transformation]",
-"alias": "New and Rising",
-"genre": [],
-"punch": [],
-"released": "",
-"surfaced": "2026-09-23",
-"platforms": [
-"roblox"
-],
-"region": "Global",
-"media": {
-"kind": "none"
-},
-"evidence": [
-{
-"t": "18.3k CCU · Roblox · today",
-"v": "rb"
-}
-],
-"top": {
-"platform": "roblox",
-"label": "Rotrends — trending today",
-"url": "https://www.rotrends.com/"
-},
-"more": [],
-"decon": [],
-"tier": "Indie",
-"kind": "new IP",
-"velocity": {},
-"yt": null,
-"bili": null,
-"x": null,
-"reddit": null,
-"score": 0.0,
-"novelty": 0.0,
-"surprise": -0.6,
-"mech": 0.92,
-"eng": 0,
-"curated": false,
-"aaa": false,
-"rating": null,
-"dropped": false,
-"roblox": {
-"ccu": 18345,
-"move": 3916
 }
 }
 ]
