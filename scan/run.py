@@ -83,7 +83,10 @@ def main(argv):
     save_json("data/_memory.json", memory)
 
     meta = {"date": f"measured {today()}", "sources": "Steam, YouTube, Reddit, Roblox" + (", X" if "--no-x" not in argv else ""), "read": ""}
-    out = build.build(survivors, meta)
+    method = {"thresholds": th, "released_within_days": cfg["steam"]["released_within_days"],
+              "subreddits": cfg["reddit"]["subreddits"], "reddit_min": cfg["reddit"]["min_score"],
+              "x_enabled": "--no-x" not in argv}
+    out = build.build(survivors, meta, method=method)
     print(f"{len(cards)} candidates → {len(survivors)} cards → {out}")
 
 if __name__ == "__main__": main(sys.argv[1:])

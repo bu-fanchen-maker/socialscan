@@ -8,5 +8,32 @@
 "date": "measured 2026-09-23",
 "sources": "Steam, YouTube, Reddit, Roblox",
 "read": ""
+},
+"method": {
+"thresholds": {
+"steam_reviews_7d": 100,
+"steam_players_now": 500,
+"youtube_views_7d": 100000,
+"bilibili_plays_30d": 100000,
+"x_likes_7d": 2000,
+"reddit_upvotes_7d": 2000,
+"roblox_ccu": 5000,
+"roblox_rank_move_24h": 2000
+},
+"released_within_days": 45,
+"subreddits": [
+"IndieGaming",
+"IndieDev",
+"indiegames",
+"roguelikes",
+"incremental_games",
+"iosgaming",
+"AndroidGaming",
+"WebGames",
+"gamedev",
+"Games"
+],
+"reddit_min": 2000,
+"x_enabled": false
 }
 }

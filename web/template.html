@@ -20,6 +20,15 @@ h1{font-size:22px;font-weight:800;letter-spacing:-.02em;margin:0;line-height:1.1
 .chip[aria-pressed="true"]{background:var(--amber);color:var(--amber-ink);border-color:var(--amber)}.chip.saved{border-color:var(--amber);color:var(--amber)}.chip.saved[aria-pressed="true"]{color:var(--amber-ink)}
 details.focus{position:relative}details.focus>summary{list-style:none;cursor:pointer;padding:6px 12px;border-radius:999px;border:1px solid var(--line);color:var(--ink-2);font-weight:600;font-size:13px;background:var(--bg)}details.focus>summary::-webkit-details-marker{display:none}details.focus[open]>summary,details.focus>summary.active{border-color:var(--amber);color:var(--amber)}
 details.focus .menu{position:absolute;top:calc(100% + 6px);left:0;z-index:10;background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:10px 12px;display:flex;flex-direction:column;gap:8px;min-width:170px;box-shadow:0 8px 24px rgba(0,0,0,.35)}
+#method{display:none;max-width:860px}#method.on{display:block}
+#method section{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);padding:16px 18px;margin:14px 0}
+#method h2{margin:0 0 4px;font-size:16px;letter-spacing:-.01em}#method .lead{margin:0 0 12px;color:var(--ink-3);font-size:13px}
+#method p,#method li{color:var(--ink-2);font-size:13.5px;line-height:1.6}#method ul{margin:8px 0 0;padding-left:18px}#method li{margin:6px 0}#method b{color:var(--ink)}
+.srcrow{display:grid;grid-template-columns:170px 1fr;gap:12px;padding:9px 0;border-top:1px dashed var(--line);font-size:13.5px}.srcrow:first-of-type{border-top:0}
+.srcrow .sn{color:var(--ink);font-weight:700}.srcrow .sd{color:var(--ink-2);line-height:1.55}
+.pill{display:inline-block;font-size:10.5px;font-weight:800;border-radius:999px;padding:2px 8px;margin-left:8px;vertical-align:1px;text-transform:uppercase;letter-spacing:.04em}
+.pill.on{background:rgba(127,216,161,.15);color:var(--up)}.pill.off{background:var(--panel-2);color:var(--ink-3)}.pill.todo{background:rgba(245,185,66,.12);color:var(--amber)}
+table.thr{width:100%;border-collapse:collapse;font-size:13.5px;margin-top:4px}table.thr td{padding:8px 8px 8px 0;border-top:1px dashed var(--line);color:var(--ink-2)}table.thr tr:first-child td{border-top:0}table.thr td.n{text-align:right;font-weight:800;color:var(--amber);white-space:nowrap}table.thr td.w{color:var(--ink);font-weight:600;white-space:nowrap}
 .controls select,.controls input[type=search]{background:var(--panel);color:var(--ink);border:1px solid var(--line);border-radius:999px;padding:6px 12px;font:inherit;font-size:13px;font-weight:600}
 .controls input[type=search]{min-width:180px}
 .toggle{font-size:13px;color:var(--ink-2);display:inline-flex;align-items:center;gap:6px;font-weight:600}.toggle input{accent-color:var(--amber)}
@@ -70,7 +79,11 @@ footer.legend{margin-top:20px;padding-top:14px;border-top:1px solid var(--line);
     <h1>Social Scan<small id="subtitle"></small></h1>
     <span id="starcount" style="font-weight:600;color:var(--ink-2)"></span>
   </div>
-  <div class="controls">
+  <div class="controls" id="viewtabs">
+    <button class="chip" data-view="feed" aria-pressed="true">Feed</button>
+    <button class="chip" data-view="method" aria-pressed="false">How it works</button>
+  </div>
+  <div class="controls" id="feedcontrols">
     <button class="chip saved" id="savedchip" aria-pressed="false">★ Saved</button>
     <details class="focus" id="focus">
       <summary id="focuslabel">Focus: all</summary>
@@ -93,6 +106,7 @@ footer.legend{margin-top:20px;padding-top:14px;border-top:1px solid var(--line);
   <div class="banner" id="filebanner" hidden><b>Videos can't play from a local file.</b> Serve the folder over http: <code>cd ~/Downloads &amp;&amp; python3 -m http.server 8787</code> then open <code>http://localhost:8787/social_scan_feed.html</code>. Steam gameplay loops still play; YouTube and Bilibili need http.</div>
 </header>
 <div id="content"></div>
+<div id="method"></div>
 <footer class="legend">
   <span>Traction bar (config.yaml): Steam reviews/7d, players now, YouTube views/7d, Bilibili plays/30d, X likes/7d, Reddit upvotes/7d, Roblox CCU. Prototypes carry no traction and are hidden by default</span>
   <span>Amber = punch words · outlined = genre · <b>curated</b> = hand-written, <b>auto</b> = harvested from store data</span>
@@ -103,6 +117,7 @@ footer.legend{margin-top:20px;padding-top:14px;border-top:1px solid var(--line);
 <script>
 const CARDS = /*CARDS*/[];
 window.__meta = /*META*/{};
+const METHOD = /*METHOD*/{};
 const PLAT={reddit:"r",youtube:"▶",tiktok:"t",steam:"S",x:"X",bilibili:"b",douyin:"d",wechat:"w",mobile:"m",article:"↗",roblox:"R",web:"W",itch:"i"};
 const PLATNAME={reddit:"Reddit",youtube:"YouTube",tiktok:"TikTok",steam:"Steam",x:"X",bilibili:"Bilibili",douyin:"Douyin",wechat:"WeChat mini game",mobile:"Mobile store",article:"Article",roblox:"Roblox",web:"Web (CrazyGames)",itch:"itch.io"};
 const CATS=["games","mechanics","visuals","other"];
@@ -174,6 +189,49 @@ function rising(){
   <div class="note"><p>Weight = count of cards carrying the tag, scaled by each card's engagement. With the real harvester this becomes week-over-week momentum.</p><p id="weekly-read">${(window.__meta||{}).read||""}</p></div></div>`;
 }
 
+const THRL={steam_reviews_7d:["Steam reviews","written in the last 7 days"],steam_players_now:["Steam players","concurrent, measured live"],
+  youtube_views_7d:["YouTube views","summed across this week's clips"],bilibili_plays_30d:["Bilibili plays","summed over the last 30 days"],
+  x_likes_7d:["X likes","on a single post, last 7 days"],reddit_upvotes_7d:["Reddit upvotes","on a single post, last 7 days"],
+  roblox_ccu:["Roblox players","concurrent today"],roblox_rank_move_24h:["Roblox rank climb","places moved in 24 hours"]};
+function methodHTML(){
+  const nf=n=>Number(n).toLocaleString("en-US");
+  const srcs=[
+    ["Steam","New &amp; trending store lists, releases in the last "+(METHOD.released_within_days||45)+" days. For each game we measure review counts in 7 / 14 / 30-day windows, the live player count, and grab the store page's own gameplay loop video as the card hero.","on","active"],
+    ["YouTube","Search limited to this week's uploads, sorted by view count, and title-matched to the game so an unrelated video never counts toward it. Clip count and views are summed per game.","on","active"],
+    ["Reddit","Top posts of the week across "+((METHOD.subreddits||[]).length||10)+" gaming subreddits. A post is only considered at "+nf(METHOD.reddit_min||2000)+"+ upvotes.","on","active"],
+    ["Roblox","Rotrends' <i>Top Moving</i> and <i>New &amp; Rising</i> charts: concurrent players and 24-hour rank movement. Roblox re-implements Steam hits within weeks, so it doubles as a confirmation signal and a preview of mobile-portable loops.","on","active"],
+    ["Bilibili","Newest clips for CN mini-game keywords, plays summed over 30 days. Ready in the pipeline; waiting on a login cookie.","off","off this week"],
+    ["X","Hashtag and milestone searches (#indiedev, “copies sold”, 手游…) with per-query like floors.",METHOD.x_enabled?"on":"off",METHOD.x_enabled?"active":"off this week"],
+    ["GameDiscoverCo","Newsletter deconstructions attached to matching cards as analysis links.","on","active"],
+    ["DataEye · TikTok · Sensor Tower","Douyin/WeChat mini-game charts, trending hashtags in games, breakout downloads and ad-spend ramps.","todo","planned"]];
+  const th=METHOD.thresholds||{};
+  return `
+  <section><h2>Where the data comes from</h2><p class="lead">One harvest per week, Monday 06:00 JST.</p>
+    ${srcs.map(([n,d,cls,lbl])=>`<div class="srcrow"><span class="sn">${n}<span class="pill ${cls}">${lbl}</span></span><span class="sd">${d}</span></div>`).join("")}
+  </section>
+  <section><h2>When something becomes a card</h2>
+    <p class="lead">A candidate becomes a card only if it clears at least one of these bars. The numbers below are read from the pipeline's live configuration at build time — this page can never show stale thresholds.</p>
+    <table class="thr">${Object.entries(th).map(([k,v])=>{const l=THRL[k]||[k,""];return `<tr><td class="w">${l[0]}</td><td>${l[1]}</td><td class="n">≥ ${nf(v)}</td></tr>`}).join("")}</table>
+  </section>
+  <section><h2>House rules</h2>
+    <ul>
+      <li><b>Measured or empty.</b> Every number on a card was returned by the platform it names. Nothing is estimated; a missing measurement shows as "—", never as a guess.</li>
+      <li><b>Three-level dedup.</b> The same post cross-posted, the same game behind different posts, and the same game across weeks are collapsed into one card. A game returns only when its weekly velocity at least doubles.</li>
+      <li><b>Ranking.</b> The feed sorts by a mechanics score: <b>novelty</b> (how rare the game's tag combination is against a rolling 30-day baseline) + <b>surprise</b> (engagement relative to the game's marketing footprint) + measured <b>traction</b>. Popularity alone is not the goal.</li>
+      <li><b>Default view = Indie + new IP.</b> Major/AAA titles and sequels are one toggle away, never deleted.</li>
+      <li><b>Claude pass, survivors only.</b> After the traction bar, a language-model pass resolves the real game behind a post ("Castle on Wheels" → Wanderburg), assigns tier and focus category, writes the punch tags, and drops noise (sports, memes, unrelated clips). It never writes a number.</li>
+    </ul>
+  </section>`;
+}
+function setView(v){
+  state.view=v;
+  document.querySelectorAll("[data-view]").forEach(x=>x.setAttribute("aria-pressed",String(x.dataset.view===v)));
+  document.getElementById("feedcontrols").style.display=v==="feed"?"":"none";
+  document.getElementById("content").style.display=v==="feed"?"":"none";
+  document.getElementById("method").classList.toggle("on",v==="method");
+  try{history.replaceState(null,"",v==="method"?"#methodology":location.pathname+location.search)}catch(e){}
+}
+
 let rows=[], byDate=null, io=null;
 function render(reset=true){
   const content=document.getElementById("content");
@@ -229,7 +287,8 @@ document.querySelectorAll("#focus [data-cat]").forEach(cb=>cb.addEventListener("
 document.addEventListener("click",e=>{
   if(!e.target.closest("#focus")) document.getElementById("focus").removeAttribute("open");
   const b=e.target.closest("button");if(!b)return;
-  if(b.id==="savedchip"){state.savedOnly=!state.savedOnly;render()}
+  if(b.dataset.view){setView(b.dataset.view)}
+  else if(b.id==="savedchip"){state.savedOnly=!state.savedOnly;render()}
   else if(b.dataset.star){const id=b.dataset.star;state.stars.has(id)?state.stars.delete(id):state.stars.add(id);try{localStorage.setItem("socialscan_stars",JSON.stringify([...state.stars]))}catch(err){}
     const art=b.closest(".card");art.classList.toggle("starred",state.stars.has(id));b.setAttribute("aria-pressed",state.stars.has(id));b.textContent=state.stars.has(id)?"★":"☆";document.getElementById("starcount").textContent=state.stars.size?`★ ${state.stars.size} saved`:""}
   else if(b.dataset.src){const id=b.dataset.src;const art=b.closest(".card");const s=art.querySelector(".srcs");state.open.has(id)?state.open.delete(id):state.open.add(id);s.classList.toggle("open");b.textContent=state.open.has(id)?"less":"+"+s.children.length}
@@ -244,7 +303,10 @@ document.getElementById("incproto").addEventListener("change",e=>{state.incProto
 document.getElementById("autoplay").addEventListener("change",e=>{state.autoplay=e.target.checked;document.querySelectorAll(".hero video").forEach(v=>state.autoplay?v.play().catch(()=>{}):v.pause());});
 // ---- per-day loading: harvester writes data/YYYY-MM-DD.json and data/index.json ----
 (async function boot(){
+  document.getElementById("method").innerHTML=methodHTML();
+  if(location.hash==="#methodology") setView("method");
   try{const idx=await (await fetch("data/index.json",{cache:"no-store"})).json(); window.__days=idx.days||[]; window.__meta=idx.meta||window.__meta;
+    if(idx.method&&Object.keys(idx.method).length){Object.assign(METHOD,idx.method);document.getElementById("method").innerHTML=methodHTML()}
     for(const d of window.__days.slice(0,3)){const j=await (await fetch("data/"+d+".json",{cache:"no-store"})).json(); for(const c of j){if(!CARDS.find(x=>x.id===c.id)) CARDS.push(c);} }
     window.__dayCursor=3;}catch(e){}
   render();
