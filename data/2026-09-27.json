@@ -1,0 +1,2083 @@
+[
+{
+"id": "steam_3669870",
+"title": "CONTROL Resonant",
+"alias": "Remedy Entertainment",
+"genre": [
+"Hack and Slash",
+"Action RPG",
+"Story Rich"
+],
+"punch": [
+"Explore a warped Manhattan on the brink of paranatural annihilation in t",
+"Very Positive 89% · 6.5k reviews"
+],
+"released": "2026-09-24",
+"surfaced": "2026-09-27",
+"platforms": [
+"steam"
+],
+"region": "Global",
+"media": {
+"kind": "mp4",
+"src": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3669870/extras/a781ba775646b4aa744fd57a6c9e8f75.mp4"
+},
+"evidence": [
+{
+"t": "6.5k reviews · 7d",
+"v": "steam"
+},
+{
+"t": "launched this week",
+"v": "new"
+},
+{
+"t": "31.4k playing now",
+"v": "steam"
+},
+{
+"t": "19 YouTube clips · 6.6M views · 7d",
+"v": "yt"
+}
+],
+"top": {
+"platform": "youtube",
+"label": "Markiplier — 1.8M views · 3d ago",
+"url": "https://www.youtube.com/watch?v=oQ-5vejXO7c"
+},
+"more": [],
+"decon": [],
+"tier": "Major",
+"kind": "new IP",
+"cat": "games",
+"velocity": {
+"total": 6531,
+"w7": 6531,
+"prev7": 0,
+"m30": 6531,
+"desc": "Very Positive",
+"pct": 89,
+"ccu": 31371
+},
+"yt": {
+"n": 19,
+"sum": 6580237,
+"top": "oQ-5vejXO7c",
+"topViews": 1840457
+},
+"bili": null,
+"x": null,
+"reddit": null,
+"score": 14.23,
+"novelty": 2.0,
+"surprise": 3.03,
+"mech": 5.62,
+"eng": 14230,
+"curated": false,
+"aaa": false,
+"rating": 89,
+"dropped": false
+},
+{
+"id": "steam_4080220",
+"title": "EA SPORTS FC™ 27",
+"alias": "EA CANADA",
+"genre": [
+"Sports",
+"Football (Soccer)",
+"Multiplayer"
+],
+"punch": [
+"Welcome to The World’s Game in EA SPORTS FC™ 27",
+"Mixed 55% · 4.5k reviews"
+],
+"released": "2026-09-24",
+"surfaced": "2026-09-27",
+"platforms": [
+"steam"
+],
+"region": "Global",
+"media": {
+"kind": "yt",
+"id": "EhVld3P43OI"
+},
+"evidence": [
+{
+"t": "3.1k reviews · 7d",
+"v": "steam"
+},
+{
+"t": "▲ 2.2× wk/wk",
+"v": "up"
+},
+{
+"t": "49.3k playing now",
+"v": "steam"
+},
+{
+"t": "3 YouTube clips · 690.5k views · 7d",
+"v": "yt"
+}
+],
+"top": {
+"platform": "youtube",
+"label": "EA SPORTS FC MOBILE — 337.5k views · 4d ago",
+"url": "https://www.youtube.com/watch?v=EhVld3P43OI"
+},
+"more": [],
+"decon": [],
+"tier": "Major",
+"kind": "new IP",
+"cat": "games",
+"velocity": {
+"total": 4521,
+"w7": 3119,
+"prev7": 1402,
+"m30": 4521,
+"desc": "Mixed",
+"pct": 55,
+"ccu": 49290
+},
+"yt": {
+"n": 3,
+"sum": 690500,
+"top": "EhVld3P43OI",
+"topViews": 337464
+},
+"bili": null,
+"x": null,
+"reddit": null,
+"score": 13.59,
+"novelty": 1.91,
+"surprise": 2.15,
+"mech": 4.81,
+"eng": 13590,
+"curated": false,
+"aaa": false,
+"rating": 55,
+"dropped": false
+},
+{
+"id": "steam_4019220",
+"title": "Dressmaker",
+"alias": "Cozy Lives",
+"genre": [
+"Crafting",
+"Design & Illustration",
+"Job Simulator"
+],
+"punch": [
+"Become a dressmaker!",
+"Overwhelmingly Positive 98% · 4.9k reviews"
+],
+"released": "2026-09-21",
+"surfaced": "2026-09-27",
+"platforms": [
+"steam"
+],
+"region": "Global",
+"media": {
+"kind": "mp4",
+"src": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4019220/extras/25edb1280d57e7d270c5945a01e7305d.mp4"
+},
+"evidence": [
+{
+"t": "4.9k reviews · 7d",
+"v": "steam"
+},
+{
+"t": "launched this week",
+"v": "new"
+},
+{
+"t": "30.0k playing now",
+"v": "steam"
+},
+{
+"t": "19 YouTube clips · 1.8M views · 7d",
+"v": "yt"
+}
+],
+"top": {
+"platform": "youtube",
+"label": "ルンルン / Lunlun【にじさんじ】 — 197.6k views · Streamed 5d ago",
+"url": "https://www.youtube.com/watch?v=kowEK4vKqcU"
+},
+"more": [],
+"decon": [],
+"tier": "Indie",
+"kind": "new IP",
+"cat": "games",
+"velocity": {
+"total": 4861,
+"w7": 4861,
+"prev7": 0,
+"m30": 4861,
+"desc": "Overwhelmingly Positive",
+"pct": 98,
+"ccu": 29979
+},
+"yt": {
+"n": 19,
+"sum": 1787410,
+"top": "kowEK4vKqcU",
+"topViews": 197631
+},
+"bili": null,
+"x": null,
+"reddit": null,
+"score": 13.52,
+"novelty": 2.26,
+"surprise": 4.04,
+"mech": 7.34,
+"eng": 13520,
+"curated": false,
+"aaa": false,
+"rating": 98,
+"dropped": false
+},
+{
+"id": "steam_4165890",
+"title": "Steam Frame",
+"alias": "",
+"genre": [],
+"punch": [
+"No user reviews 0% · 0 reviews"
+],
+"released": "2026-09-14",
+"surfaced": "2026-09-27",
+"platforms": [
+"steam"
+],
+"region": "Global",
+"media": {
+"kind": "yt",
+"id": "vHtnf9LBl9Q"
+},
+"evidence": [
+{
+"t": "13 YouTube clips · 2.1M views · 7d",
+"v": "yt"
+}
+],
+"top": {
+"platform": "youtube",
+"label": "iFixit — 319.3k views · 4d ago",
+"url": "https://www.youtube.com/watch?v=vHtnf9LBl9Q"
+},
+"more": [],
+"decon": [],
+"tier": "Indie",
+"kind": "new IP",
+"cat": "games",
+"velocity": {
+"total": 0,
+"w7": 0,
+"prev7": 0,
+"m30": 0,
+"desc": "No user reviews",
+"pct": 0,
+"ccu": 0
+},
+"yt": {
+"n": 13,
+"sum": 2062552,
+"top": "vHtnf9LBl9Q",
+"topViews": 319255
+},
+"bili": null,
+"x": null,
+"reddit": null,
+"score": 6.31,
+"novelty": 0.0,
+"surprise": 5.71,
+"mech": 5.97,
+"eng": 6310,
+"curated": false,
+"aaa": false,
+"rating": 0,
+"dropped": false
+},
+{
+"id": "steam_2796640",
+"title": "The Magus Circle",
+"alias": "By Witchlight",
+"genre": [
+"Action",
+"Roguelike",
+"Action Roguelike"
+],
+"punch": [
+"Magic is Art",
+"Very Positive 89% · 244 reviews"
+],
+"released": "2026-09-24",
+"surfaced": "2026-09-27",
+"platforms": [
+"steam"
+],
+"region": "Global",
+"media": {
+"kind": "mp4",
+"src": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2796640/extras/8caccb9aa6f32020a5b26eef51ba3353.mp4"
+},
+"evidence": [
+{
+"t": "244 reviews · 7d",
+"v": "steam"
+},
+{
+"t": "launched this week",
+"v": "new"
+},
+{
+"t": "428 playing now",
+"v": "steam"
+},
+{
+"t": "10 YouTube clips · 1.6k views · 7d",
+"v": "yt"
+}
+],
+"top": {
+"platform": "youtube",
+"label": "ADRIAN — 958 views · Streamed 2d ago",
+"url": "https://www.youtube.com/watch?v=0Wktp6vbf3k"
+},
+"more": [],
+"decon": [],
+"tier": "Indie",
+"kind": "new IP",
+"cat": "games",
+"velocity": {
+"total": 244,
+"w7": 244,
+"prev7": 0,
+"m30": 244,
+"desc": "Very Positive",
+"pct": 89,
+"ccu": 428
+},
+"yt": {
+"n": 10,
+"sum": 1630,
+"top": "0Wktp6vbf3k",
+"topViews": 958
+},
+"bili": null,
+"x": null,
+"reddit": null,
+"score": 7.71,
+"novelty": 1.96,
+"surprise": 1.77,
+"mech": 5.17,
+"eng": 7710,
+"curated": false,
+"aaa": false,
+"rating": 89,
+"dropped": false
+},
+{
+"id": "steam_2085540",
+"title": "Stick It to the Stickman",
+"alias": "Free Lives",
+"genre": [
+"Action",
+"Beat 'em up",
+"Multiplayer"
+],
+"punch": [
+"Stick it to the Stickman is a rogue-lite physics brawler where you bruta",
+"Very Positive 95% · 5.1k reviews"
+],
+"released": "2026-09-23",
+"surfaced": "2026-09-27",
+"platforms": [
+"steam"
+],
+"region": "Global",
+"media": {
+"kind": "mp4",
+"src": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2085540/extras/9186ca171bd3b332d1ede05f6504917e.mp4"
+},
+"evidence": [
+{
+"t": "397 reviews · 7d",
+"v": "steam"
+},
+{
+"t": "▲ 12.0× wk/wk",
+"v": "up"
+},
+{
+"t": "1.5k playing now",
+"v": "steam"
+},
+{
+"t": "14 YouTube clips · 474.0k views · 7d",
+"v": "yt"
+}
+],
+"top": {
+"platform": "youtube",
+"label": "Blitz — 80.7k views · 4d ago",
+"url": "https://www.youtube.com/watch?v=GjndL7jNxvw"
+},
+"more": [],
+"decon": [],
+"tier": "Indie",
+"kind": "new IP",
+"cat": "games",
+"velocity": {
+"total": 5105,
+"w7": 397,
+"prev7": 33,
+"m30": 516,
+"desc": "Very Positive",
+"pct": 95,
+"ccu": 1545
+},
+"yt": {
+"n": 14,
+"sum": 474012,
+"top": "GjndL7jNxvw",
+"topViews": 80671
+},
+"bili": null,
+"x": null,
+"reddit": null,
+"score": 11.33,
+"novelty": 2.45,
+"surprise": 3.45,
+"mech": 7.1,
+"eng": 11330,
+"curated": false,
+"aaa": false,
+"rating": 95,
+"dropped": false
+},
+{
+"id": "steam_3255500",
+"title": "Ved: Recure",
+"alias": "SummerClip",
+"genre": [
+"Action",
+"RPG",
+"Adventure"
+],
+"punch": [
+"&quot;Ved: Recure&quot; is a fast-paced action roguelite where you find",
+"Mixed 68% · 610 reviews"
+],
+"released": "2026-09-21",
+"surfaced": "2026-09-27",
+"platforms": [
+"steam"
+],
+"region": "Global",
+"media": {
+"kind": "mp4",
+"src": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3255500/extras/cae17f739461a5e0dac63f6e755ecfba.mp4"
+},
+"evidence": [
+{
+"t": "610 reviews · 7d",
+"v": "steam"
+},
+{
+"t": "launched this week",
+"v": "new"
+},
+{
+"t": "199 playing now",
+"v": "steam"
+},
+{
+"t": "13 YouTube clips · 339.6k views · 7d",
+"v": "yt"
+}
+],
+"top": {
+"platform": "youtube",
+"label": "Indie Games Hub — 143.2k views · 5d ago",
+"url": "https://www.youtube.com/watch?v=3v_wyXKu62o"
+},
+"more": [],
+"decon": [],
+"tier": "Indie",
+"kind": "new IP",
+"cat": "games",
+"velocity": {
+"total": 610,
+"w7": 610,
+"prev7": 0,
+"m30": 610,
+"desc": "Mixed",
+"pct": 68,
+"ccu": 199
+},
+"yt": {
+"n": 13,
+"sum": 339640,
+"top": "3v_wyXKu62o",
+"topViews": 143170
+},
+"bili": null,
+"x": null,
+"reddit": null,
+"score": 10.16,
+"novelty": 2.04,
+"surprise": 3.86,
+"mech": 6.94,
+"eng": 10160,
+"curated": false,
+"aaa": false,
+"rating": 68,
+"dropped": false
+},
+{
+"id": "steam_4259190",
+"title": "Kingdom Rush 6: Genesis TD",
+"alias": "Ironhide Game Studio",
+"genre": [
+"Strategy",
+"Tower Defense",
+"Action"
+],
+"punch": [
+"Kingdom Rush 6: Genesis is a fantasy tower defense strategy game that ta",
+"Mixed 64% · 2.5k reviews"
+],
+"released": "2026-09-24",
+"surfaced": "2026-09-27",
+"platforms": [
+"steam"
+],
+"region": "Global",
+"media": {
+"kind": "mp4",
+"src": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4259190/extras/dfb99310d5adbf1e5052360e357fe9a7.mp4"
+},
+"evidence": [
+{
+"t": "2.5k reviews · 7d",
+"v": "steam"
+},
+{
+"t": "launched this week",
+"v": "new"
+},
+{
+"t": "2.5k playing now",
+"v": "steam"
+},
+{
+"t": "19 YouTube clips · 429.1k views · 7d",
+"v": "yt"
+}
+],
+"top": {
+"platform": "youtube",
+"label": "Alex Playz - Kingdom Rush — 53.3k views · 3d ago",
+"url": "https://www.youtube.com/watch?v=4tCPEFLFVNQ"
+},
+"more": [],
+"decon": [],
+"tier": "Indie",
+"kind": "new IP",
+"cat": "games",
+"velocity": {
+"total": 2462,
+"w7": 2462,
+"prev7": 0,
+"m30": 2462,
+"desc": "Mixed",
+"pct": 64,
+"ccu": 2500
+},
+"yt": {
+"n": 19,
+"sum": 429081,
+"top": "4tCPEFLFVNQ",
+"topViews": 53325
+},
+"bili": null,
+"x": null,
+"reddit": null,
+"score": 11.74,
+"novelty": 1.87,
+"surprise": 3.6,
+"mech": 6.52,
+"eng": 11740,
+"curated": false,
+"aaa": false,
+"rating": 64,
+"dropped": false
+},
+{
+"id": "steam_3836120",
+"title": "Land of Glarefall",
+"alias": "BLAIKE GAMES",
+"genre": [
+"Action RPG",
+"Hack and Slash",
+"Tower Defense"
+],
+"punch": [
+"An action-adventure survival game where every night could be your last",
+"Very Positive 91% · 204 reviews"
+],
+"released": "2026-09-24",
+"surfaced": "2026-09-27",
+"platforms": [
+"steam"
+],
+"region": "Global",
+"media": {
+"kind": "mp4",
+"src": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3836120/extras/a38157ce6d16edef60508b6b296790b3.mp4"
+},
+"evidence": [
+{
+"t": "204 reviews · 7d",
+"v": "steam"
+},
+{
+"t": "launched this week",
+"v": "new"
+},
+{
+"t": "120 playing now",
+"v": "steam"
+},
+{
+"t": "13 YouTube clips · 20.2k views · 7d",
+"v": "yt"
+}
+],
+"top": {
+"platform": "youtube",
+"label": "BLAIKE GAMES — 7.5k views · 4d ago",
+"url": "https://www.youtube.com/watch?v=CQMhE1tUimA"
+},
+"more": [],
+"decon": [],
+"tier": "Indie",
+"kind": "new IP",
+"cat": "games",
+"velocity": {
+"total": 204,
+"w7": 204,
+"prev7": 0,
+"m30": 204,
+"desc": "Very Positive",
+"pct": 91,
+"ccu": 120
+},
+"yt": {
+"n": 13,
+"sum": 20173,
+"top": "CQMhE1tUimA",
+"topViews": 7473
+},
+"bili": null,
+"x": null,
+"reddit": null,
+"score": 8.28,
+"novelty": 2.22,
+"surprise": 2.91,
+"mech": 6.39,
+"eng": 8280,
+"curated": false,
+"aaa": false,
+"rating": 91,
+"dropped": false
+},
+{
+"id": "steam_4364730",
+"title": "IGTAP: an Incremental Game That's Also a Platformer",
+"alias": "Pepper Tango Games",
+"genre": [
+"Incremental",
+"Idler",
+"2D Platformer"
+],
+"punch": [
+"Amass an army of clones to follow your tightly-optimised path",
+"Mostly Positive 77% · 886 reviews"
+],
+"released": "2026-09-21",
+"surfaced": "2026-09-27",
+"platforms": [
+"steam"
+],
+"region": "Global",
+"media": {
+"kind": "mp4",
+"src": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4364730/extras/a45e335152cb8da6ece68455a7e935e2.mp4"
+},
+"evidence": [
+{
+"t": "886 reviews · 7d",
+"v": "steam"
+},
+{
+"t": "launched this week",
+"v": "new"
+},
+{
+"t": "1.7k playing now",
+"v": "steam"
+},
+{
+"t": "6 YouTube clips · 552.6k views · 7d",
+"v": "yt"
+}
+],
+"top": {
+"platform": "youtube",
+"label": "Idle cub — 215.0k views · 6d ago",
+"url": "https://www.youtube.com/watch?v=mcO-6S_KMew"
+},
+"more": [],
+"decon": [],
+"tier": "Indie",
+"kind": "new IP",
+"cat": "games",
+"velocity": {
+"total": 886,
+"w7": 886,
+"prev7": 0,
+"m30": 886,
+"desc": "Mostly Positive",
+"pct": 77,
+"ccu": 1692
+},
+"yt": {
+"n": 6,
+"sum": 552630,
+"top": "mcO-6S_KMew",
+"topViews": 215022
+},
+"bili": null,
+"x": null,
+"reddit": null,
+"score": 11.27,
+"novelty": 1.59,
+"surprise": 3.97,
+"mech": 6.48,
+"eng": 11270,
+"curated": false,
+"aaa": false,
+"rating": 77,
+"dropped": false
+},
+{
+"id": "steam_4671380",
+"title": "Scapewatch: Idle MMO",
+"alias": "Puzzle Drop Studios",
+"genre": [
+"Idler",
+"Incremental",
+"RPG"
+],
+"punch": [
+"30 skills"
+],
+"released": "2026-09-25",
+"surfaced": "2026-09-27",
+"platforms": [
+"steam"
+],
+"region": "Global",
+"media": {
+"kind": "mp4",
+"src": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4671380/extras/81ddc2be82c239b755f331202979037f.mp4"
+},
+"evidence": [
+{
+"t": "1.6k playing now",
+"v": "steam"
+},
+{
+"t": "10 YouTube clips · 10.6k views · 7d",
+"v": "yt"
+}
+],
+"top": {
+"platform": "youtube",
+"label": "Graphic — 7.3k views · 1d ago",
+"url": "https://www.youtube.com/watch?v=ellDBWzecf4"
+},
+"more": [],
+"decon": [],
+"tier": "Indie",
+"kind": "new IP",
+"cat": "games",
+"velocity": {
+"total": 0,
+"w7": 0,
+"prev7": 0,
+"m30": 211,
+"desc": "",
+"pct": 0,
+"ccu": 1594
+},
+"yt": {
+"n": 10,
+"sum": 10586,
+"top": "ellDBWzecf4",
+"topViews": 7308
+},
+"bili": null,
+"x": null,
+"reddit": null,
+"score": 6.59,
+"novelty": 1.41,
+"surprise": 3.42,
+"mech": 5.83,
+"eng": 6590,
+"curated": false,
+"aaa": false,
+"rating": 0,
+"dropped": false
+},
+{
+"id": "steam_3936270",
+"title": "It's Fine",
+"alias": "Buma Games",
+"genre": [
+"Idler",
+"Incremental",
+"Strategy"
+],
+"punch": [
+"Idle / Incremental about developing a game with your dog Joe",
+"Very Positive 89% · 326 reviews"
+],
+"released": "2026-09-23",
+"surfaced": "2026-09-27",
+"platforms": [
+"steam"
+],
+"region": "Global",
+"media": {
+"kind": "mp4",
+"src": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3936270/extras/1df52815394a1da8206273809278a0d0.mp4"
+},
+"evidence": [
+{
+"t": "326 reviews · 7d",
+"v": "steam"
+},
+{
+"t": "launched this week",
+"v": "new"
+},
+{
+"t": "1.7k playing now",
+"v": "steam"
+},
+{
+"t": "7 YouTube clips · 380.7k views · 7d",
+"v": "yt"
+}
+],
+"top": {
+"platform": "youtube",
+"label": "Hero Hei — 241.4k views · 6d ago",
+"url": "https://www.youtube.com/watch?v=C7fq3ozk0T0"
+},
+"more": [],
+"decon": [],
+"tier": "Indie",
+"kind": "new IP",
+"cat": "games",
+"velocity": {
+"total": 326,
+"w7": 326,
+"prev7": 0,
+"m30": 326,
+"desc": "Very Positive",
+"pct": 89,
+"ccu": 1678
+},
+"yt": {
+"n": 7,
+"sum": 380706,
+"top": "C7fq3ozk0T0",
+"topViews": 241443
+},
+"bili": null,
+"x": null,
+"reddit": null,
+"score": 10.68,
+"novelty": 1.29,
+"surprise": 4.06,
+"mech": 6.2,
+"eng": 10680,
+"curated": false,
+"aaa": false,
+"rating": 89,
+"dropped": false
+},
+{
+"id": "steam_2288340",
+"title": "ACE COMBAT 8: WINGS OF THEVE",
+"alias": "Bandai Namco Aces Inc.",
+"genre": [
+"Flight",
+"Action",
+"Shooter"
+],
+"punch": [
+"Soar through the skies and rise above every challenge to earn your place",
+"No user reviews 0% · 0 reviews"
+],
+"released": "2026-10-01",
+"surfaced": "2026-09-27",
+"platforms": [
+"steam"
+],
+"region": "Global",
+"media": {
+"kind": "mp4",
+"src": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2288340/extras/73d9b5f6de26f3e52a3d80f8a44c8f82.mp4"
+},
+"evidence": [
+{
+"t": "17 YouTube clips · 4.6M views · 7d",
+"v": "yt"
+}
+],
+"top": {
+"platform": "youtube",
+"label": "Bandai Namco Entertainment America — 853.2k views · 4d ago",
+"url": "https://www.youtube.com/watch?v=XuA2dycvmnc"
+},
+"more": [],
+"decon": [],
+"tier": "Major",
+"kind": "new IP",
+"cat": "games",
+"velocity": {
+"total": 0,
+"w7": 0,
+"prev7": 0,
+"m30": 0,
+"desc": "No user reviews",
+"pct": 0,
+"ccu": null
+},
+"yt": {
+"n": 17,
+"sum": 4574072,
+"top": "XuA2dycvmnc",
+"topViews": 853184
+},
+"bili": null,
+"x": null,
+"reddit": null,
+"score": 6.66,
+"novelty": 1.76,
+"surprise": 4.56,
+"mech": 6.56,
+"eng": 6660,
+"curated": false,
+"aaa": false,
+"rating": 0,
+"dropped": false
+},
+{
+"id": "steam_1912410",
+"title": "Minecraft Dungeons II",
+"alias": "Mojang Studios",
+"genre": [
+"Action",
+"Adventure",
+"RPG"
+],
+"punch": [
+"Drop the pickaxe, grab a sword, and charge into a new adventure in Minec",
+"No user reviews 0% · 0 reviews"
+],
+"released": "2026-09-29",
+"surfaced": "2026-09-27",
+"platforms": [
+"steam"
+],
+"region": "Global",
+"media": {
+"kind": "mp4",
+"src": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1912410/extras/c092590ac458d8f8fa455f677b1d6186.mp4"
+},
+"evidence": [
+{
+"t": "7 YouTube clips · 1.7M views · 7d",
+"v": "yt"
+}
+],
+"top": {
+"platform": "youtube",
+"label": "Minecraft — 876.6k views · 6d ago",
+"url": "https://www.youtube.com/watch?v=WD9GtlgU8_c"
+},
+"more": [],
+"decon": [],
+"tier": "Major",
+"kind": "franchise / sequel / remake",
+"cat": "games",
+"velocity": {
+"total": 0,
+"w7": 0,
+"prev7": 0,
+"m30": 0,
+"desc": "No user reviews",
+"pct": 0,
+"ccu": null
+},
+"yt": {
+"n": 7,
+"sum": 1688022,
+"top": "WD9GtlgU8_c",
+"topViews": 876585
+},
+"bili": null,
+"x": null,
+"reddit": null,
+"score": 6.23,
+"novelty": 1.64,
+"surprise": 3.63,
+"mech": 4.87,
+"eng": 6230,
+"curated": false,
+"aaa": false,
+"rating": 0,
+"dropped": false
+},
+{
+"id": "steam_3010850",
+"title": "Gears of War: E-Day",
+"alias": "The Coalition",
+"genre": [
+"Action",
+"Adventure",
+"Shooter"
+],
+"punch": [
+"Experience Emergence Day – the brutal origin story of one of gaming’s mo",
+"No user reviews 0% · 0 reviews"
+],
+"released": "2026-10-06",
+"surfaced": "2026-09-27",
+"platforms": [
+"steam"
+],
+"region": "Global",
+"media": {
+"kind": "mp4",
+"src": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3010850/extras/d551e4025e898de3f6096bd2bdbbeb3b.mp4"
+},
+"evidence": [
+{
+"t": "3 YouTube clips · 220.2k views · 7d",
+"v": "yt"
+}
+],
+"top": {
+"platform": "youtube",
+"label": "Open World Games — 131.9k views · 6d ago",
+"url": "https://www.youtube.com/watch?v=uzEqAofTB8g"
+},
+"more": [],
+"decon": [],
+"tier": "Major",
+"kind": "new IP",
+"cat": "games",
+"velocity": {
+"total": 0,
+"w7": 0,
+"prev7": 0,
+"m30": 0,
+"desc": "No user reviews",
+"pct": 0,
+"ccu": null
+},
+"yt": {
+"n": 3,
+"sum": 220203,
+"top": "uzEqAofTB8g",
+"topViews": 131893
+},
+"bili": null,
+"x": null,
+"reddit": null,
+"score": 5.34,
+"novelty": 1.69,
+"surprise": 3.24,
+"mech": 5.42,
+"eng": 5340,
+"curated": false,
+"aaa": false,
+"rating": 0,
+"dropped": false
+},
+{
+"id": "steam_4173620",
+"title": "I Know a Guy: Shady Life Simulator",
+"alias": "Bunch'o'Nerds",
+"genre": [
+"Simulation",
+"Co-op",
+"Cooking"
+],
+"punch": [
+"Run your pizza shop up front and handle shady business out back",
+"Very Positive 90% · 522 reviews"
+],
+"released": "2026-09-25",
+"surfaced": "2026-09-27",
+"platforms": [
+"steam"
+],
+"region": "Global",
+"media": {
+"kind": "mp4",
+"src": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4173620/extras/749983d831f446e16c70712b6298a342.mp4"
+},
+"evidence": [
+{
+"t": "70 reviews · 7d",
+"v": "steam"
+},
+{
+"t": "▲ 8.8× wk/wk",
+"v": "up"
+},
+{
+"t": "1.4k playing now",
+"v": "steam"
+}
+],
+"top": {
+"platform": "steam",
+"label": "Steam page · Very Positive",
+"url": "https://store.steampowered.com/app/4173620/"
+},
+"more": [],
+"decon": [],
+"tier": "Indie",
+"kind": "new IP",
+"cat": "games",
+"velocity": {
+"total": 522,
+"w7": 70,
+"prev7": 8,
+"m30": 90,
+"desc": "Very Positive",
+"pct": 90,
+"ccu": 1376
+},
+"yt": null,
+"bili": null,
+"x": null,
+"reddit": null,
+"score": 4.86,
+"novelty": 2.15,
+"surprise": -1.64,
+"mech": 2.67,
+"eng": 4860,
+"curated": false,
+"aaa": false,
+"rating": 90,
+"dropped": false
+},
+{
+"id": "steam_4435490",
+"title": "Call of Duty®: Modern Warfare® 4",
+"alias": "Infinity Ward",
+"genre": [
+"Action",
+"Shooter",
+"FPS"
+],
+"punch": [
+"War erupts on the Korean Peninsula as North Korea launches an invasion t",
+"No user reviews 0% · 0 reviews"
+],
+"released": "2026-10-22",
+"surfaced": "2026-09-27",
+"platforms": [
+"steam"
+],
+"region": "Global",
+"media": {
+"kind": "mp4",
+"src": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4435490/extras/11d525c5c065309c5449779e1e524e36.mp4"
+},
+"evidence": [
+{
+"t": "1 YouTube clips · 185.4k views · 7d",
+"v": "yt"
+}
+],
+"top": {
+"platform": "youtube",
+"label": "IlloReacts — 185.4k views · 6d ago",
+"url": "https://www.youtube.com/watch?v=lYwQkzssQAE"
+},
+"more": [],
+"decon": [],
+"tier": "Major",
+"kind": "franchise / sequel / remake",
+"cat": "games",
+"velocity": {
+"total": 0,
+"w7": 0,
+"prev7": 0,
+"m30": 0,
+"desc": "No user reviews",
+"pct": 0,
+"ccu": null
+},
+"yt": {
+"n": 1,
+"sum": 185418,
+"top": "lYwQkzssQAE",
+"topViews": 185418
+},
+"bili": null,
+"x": null,
+"reddit": null,
+"score": 5.27,
+"novelty": 1.72,
+"surprise": 2.67,
+"mech": 4.2,
+"eng": 5270,
+"curated": false,
+"aaa": false,
+"rating": 0,
+"dropped": false
+},
+{
+"id": "steam_3831210",
+"title": "Lawn Mowing Simulator 2",
+"alias": "Skyhook Games",
+"genre": [
+"Casual",
+"Simulation",
+"Relaxing"
+],
+"punch": [
+"Head to the USA and grow your own business with a realistic and relaxing",
+"Mixed 48% · 124 reviews"
+],
+"released": "2026-09-23",
+"surfaced": "2026-09-27",
+"platforms": [
+"steam"
+],
+"region": "Global",
+"media": {
+"kind": "mp4",
+"src": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3831210/extras/02938f7bda04cd7c39734683c4f2b592.mp4"
+},
+"evidence": [
+{
+"t": "124 reviews · 7d",
+"v": "steam"
+},
+{
+"t": "launched this week",
+"v": "new"
+},
+{
+"t": "382 playing now",
+"v": "steam"
+},
+{
+"t": "12 YouTube clips · 1.1M views · 7d",
+"v": "yt"
+}
+],
+"top": {
+"platform": "youtube",
+"label": "TmarTn2 — 476.3k views · 4d ago",
+"url": "https://www.youtube.com/watch?v=5upD-4U9BPY"
+},
+"more": [],
+"decon": [],
+"tier": "Indie",
+"kind": "franchise / sequel / remake",
+"cat": "games",
+"velocity": {
+"total": 124,
+"w7": 124,
+"prev7": 0,
+"m30": 124,
+"desc": "Mixed",
+"pct": 48,
+"ccu": 382
+},
+"yt": {
+"n": 12,
+"sum": 1103540,
+"top": "5upD-4U9BPY",
+"topViews": 476271
+},
+"bili": null,
+"x": null,
+"reddit": null,
+"score": 10.21,
+"novelty": 1.5,
+"surprise": 4.27,
+"mech": 5.82,
+"eng": 10210,
+"curated": false,
+"aaa": false,
+"rating": 48,
+"dropped": false
+},
+{
+"id": "steam_5064340",
+"title": "DinoBones: Tidy Up the Museum",
+"alias": "Indie Souls Studio",
+"genre": [
+"Relaxing",
+"Casual",
+"Organizing"
+],
+"punch": [
+"DinoBones: Tidy Up the Museum!",
+"Very Positive 93% · 427 reviews"
+],
+"released": "2026-09-25",
+"surfaced": "2026-09-27",
+"platforms": [
+"steam"
+],
+"region": "Global",
+"media": {
+"kind": "mp4",
+"src": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5064340/extras/715ff5111a21958f5c9645516f23910a.mp4"
+},
+"evidence": [
+{
+"t": "427 reviews · 7d",
+"v": "steam"
+},
+{
+"t": "launched this week",
+"v": "new"
+},
+{
+"t": "830 playing now",
+"v": "steam"
+},
+{
+"t": "19 YouTube clips · 25.4k views · 7d",
+"v": "yt"
+}
+],
+"top": {
+"platform": "youtube",
+"label": "Zish Gaming — 8.4k views · 2d ago",
+"url": "https://www.youtube.com/watch?v=0qmPWWT-WK0"
+},
+"more": [],
+"decon": [],
+"tier": "Indie",
+"kind": "new IP",
+"cat": "games",
+"velocity": {
+"total": 427,
+"w7": 427,
+"prev7": 0,
+"m30": 427,
+"desc": "Very Positive",
+"pct": 93,
+"ccu": 830
+},
+"yt": {
+"n": 19,
+"sum": 25420,
+"top": "0qmPWWT-WK0",
+"topViews": 8374
+},
+"bili": null,
+"x": null,
+"reddit": null,
+"score": 9.37,
+"novelty": 1.74,
+"surprise": 2.82,
+"mech": 5.74,
+"eng": 9370,
+"curated": false,
+"aaa": false,
+"rating": 93,
+"dropped": false
+},
+{
+"id": "steam_3510740",
+"title": "Normal Golf Game",
+"alias": "Luke Muscat",
+"genre": [
+"Golf",
+"Physics",
+"Simulation"
+],
+"punch": [
+"A very normal golf simulator",
+"Overwhelmingly Positive 99% · 867 reviews"
+],
+"released": "2026-09-21",
+"surfaced": "2026-09-27",
+"platforms": [
+"steam"
+],
+"region": "Global",
+"media": {
+"kind": "mp4",
+"src": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3510740/extras/0c4b8036f2fdee51a72191b79e821a85.mp4"
+},
+"evidence": [
+{
+"t": "867 reviews · 7d",
+"v": "steam"
+},
+{
+"t": "launched this week",
+"v": "new"
+},
+{
+"t": "888 playing now",
+"v": "steam"
+},
+{
+"t": "12 YouTube clips · 594.5k views · 7d",
+"v": "yt"
+}
+],
+"top": {
+"platform": "youtube",
+"label": "ImCade — 139.6k views · 4d ago",
+"url": "https://www.youtube.com/watch?v=jbmpkeGiiJM"
+},
+"more": [],
+"decon": [],
+"tier": "Indie",
+"kind": "new IP",
+"cat": "games",
+"velocity": {
+"total": 867,
+"w7": 867,
+"prev7": 0,
+"m30": 867,
+"desc": "Overwhelmingly Positive",
+"pct": 99,
+"ccu": 888
+},
+"yt": {
+"n": 12,
+"sum": 594452,
+"top": "jbmpkeGiiJM",
+"topViews": 139573
+},
+"bili": null,
+"x": null,
+"reddit": null,
+"score": 11.07,
+"novelty": 2.13,
+"surprise": 4.01,
+"mech": 7.16,
+"eng": 11070,
+"curated": false,
+"aaa": false,
+"rating": 99,
+"dropped": false
+},
+{
+"id": "steam_4981570",
+"title": "Wand &amp; Order: Tidy up the magic shop!",
+"alias": "OnSkull Games",
+"genre": [
+"Relaxing",
+"Organizing",
+"Puzzle"
+],
+"punch": [
+"Cozy first person co-op organizing and cleaning simulator!",
+"Very Positive 91% · 191 reviews"
+],
+"released": "2026-09-23",
+"surfaced": "2026-09-27",
+"platforms": [
+"steam"
+],
+"region": "Global",
+"media": {
+"kind": "mp4",
+"src": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4981570/extras/0e02eee2c99b6628ccf9709d7b91ebfd.mp4"
+},
+"evidence": [
+{
+"t": "191 reviews · 7d",
+"v": "steam"
+},
+{
+"t": "launched this week",
+"v": "new"
+},
+{
+"t": "956 playing now",
+"v": "steam"
+},
+{
+"t": "16 YouTube clips · 15.8k views · 7d",
+"v": "yt"
+}
+],
+"top": {
+"platform": "youtube",
+"label": "Zhain Gaming — 6.8k views · 3d ago",
+"url": "https://www.youtube.com/watch?v=Ys1MRbl_BLQ"
+},
+"more": [],
+"decon": [],
+"tier": "Indie",
+"kind": "new IP",
+"cat": "games",
+"velocity": {
+"total": 191,
+"w7": 191,
+"prev7": 0,
+"m30": 191,
+"desc": "Very Positive",
+"pct": 91,
+"ccu": 956
+},
+"yt": {
+"n": 16,
+"sum": 15828,
+"top": "Ys1MRbl_BLQ",
+"topViews": 6848
+},
+"bili": null,
+"x": null,
+"reddit": null,
+"score": 8.87,
+"novelty": 2.02,
+"surprise": 2.82,
+"mech": 6.08,
+"eng": 8870,
+"curated": false,
+"aaa": false,
+"rating": 91,
+"dropped": false
+},
+{
+"id": "steam_3445190",
+"title": "Breakout Garage",
+"alias": "Breakout Studio",
+"genre": [
+"Racing",
+"Simulation",
+"Automobile Sim"
+],
+"punch": [
+"Breakout Garage is an open world racing game, created by 2 indie develop",
+"Very Positive 87% · 126 reviews"
+],
+"released": "2026-09-22",
+"surfaced": "2026-09-27",
+"platforms": [
+"steam"
+],
+"region": "Global",
+"media": {
+"kind": "yt",
+"id": "0Imvhbw2GdU"
+},
+"evidence": [
+{
+"t": "126 reviews · 7d",
+"v": "steam"
+},
+{
+"t": "launched this week",
+"v": "new"
+},
+{
+"t": "426 playing now",
+"v": "steam"
+},
+{
+"t": "19 YouTube clips · 54.6k views · 7d",
+"v": "yt"
+}
+],
+"top": {
+"platform": "youtube",
+"label": "ENDLESSGAMING — 17.5k views · 7d ago",
+"url": "https://www.youtube.com/watch?v=0Imvhbw2GdU"
+},
+"more": [],
+"decon": [],
+"tier": "Major",
+"kind": "new IP",
+"cat": "games",
+"velocity": {
+"total": 126,
+"w7": 126,
+"prev7": 0,
+"m30": 126,
+"desc": "Very Positive",
+"pct": 87,
+"ccu": 426
+},
+"yt": {
+"n": 19,
+"sum": 54613,
+"top": "0Imvhbw2GdU",
+"topViews": 17457
+},
+"bili": null,
+"x": null,
+"reddit": null,
+"score": 8.95,
+"novelty": 1.81,
+"surprise": 1.96,
+"mech": 4.54,
+"eng": 8950,
+"curated": false,
+"aaa": false,
+"rating": 87,
+"dropped": false
+},
+{
+"id": "steam_4146760",
+"title": "Apocalypter",
+"alias": "SawyerK Games",
+"genre": [
+"Driving",
+"Open World",
+"Action"
+],
+"punch": [
+"Apocalypter is a post-apocalyptic, driving, survival, fps, open-world ga",
+"Very Positive 88% · 276 reviews"
+],
+"released": "2026-09-23",
+"surfaced": "2026-09-27",
+"platforms": [
+"steam"
+],
+"region": "Global",
+"media": {
+"kind": "mp4",
+"src": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4146760/extras/202fe3e1e5d1267be164ce364a54f0f3.mp4"
+},
+"evidence": [
+{
+"t": "276 reviews · 7d",
+"v": "steam"
+},
+{
+"t": "launched this week",
+"v": "new"
+},
+{
+"t": "719 playing now",
+"v": "steam"
+},
+{
+"t": "18 YouTube clips · 483.4k views · 7d",
+"v": "yt"
+}
+],
+"top": {
+"platform": "youtube",
+"label": "Slapper — 179.3k views · 3d ago",
+"url": "https://www.youtube.com/watch?v=dY4C1Gi1BJM"
+},
+"more": [],
+"decon": [],
+"tier": "Indie",
+"kind": "new IP",
+"cat": "games",
+"velocity": {
+"total": 276,
+"w7": 276,
+"prev7": 0,
+"m30": 276,
+"desc": "Very Positive",
+"pct": 88,
+"ccu": 719
+},
+"yt": {
+"n": 18,
+"sum": 483411,
+"top": "dY4C1Gi1BJM",
+"topViews": 179295
+},
+"bili": null,
+"x": null,
+"reddit": null,
+"score": 10.41,
+"novelty": 1.74,
+"surprise": 4.21,
+"mech": 6.86,
+"eng": 10410,
+"curated": false,
+"aaa": false,
+"rating": 88,
+"dropped": false
+},
+{
+"id": "steam_4964580",
+"title": "Museologist: Tidy Up the Museum!",
+"alias": "Tobo Games",
+"genre": [
+"Relaxing",
+"Organizing",
+"Casual"
+],
+"punch": [
+"Museologist: Tidy Up the Museum!",
+"Very Positive 88% · 65 reviews"
+],
+"released": "2026-09-25",
+"surfaced": "2026-09-27",
+"platforms": [
+"steam"
+],
+"region": "Global",
+"media": {
+"kind": "mp4",
+"src": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4964580/extras/5f4dd8556c2540f8df4a45506383a08d.mp4"
+},
+"evidence": [
+{
+"t": "65 reviews · 7d",
+"v": "steam"
+},
+{
+"t": "launched this week",
+"v": "new"
+},
+{
+"t": "760 playing now",
+"v": "steam"
+},
+{
+"t": "12 YouTube clips · 20.7k views · 7d",
+"v": "yt"
+}
+],
+"top": {
+"platform": "youtube",
+"label": "Zish Gaming — 8.4k views · 2d ago",
+"url": "https://www.youtube.com/watch?v=0qmPWWT-WK0"
+},
+"more": [],
+"decon": [],
+"tier": "Indie",
+"kind": "new IP",
+"cat": "games",
+"velocity": {
+"total": 65,
+"w7": 65,
+"prev7": 0,
+"m30": 65,
+"desc": "Very Positive",
+"pct": 88,
+"ccu": 760
+},
+"yt": {
+"n": 12,
+"sum": 20721,
+"top": "0qmPWWT-WK0",
+"topViews": 8374
+},
+"bili": null,
+"x": null,
+"reddit": null,
+"score": 8.44,
+"novelty": 1.74,
+"surprise": 3.19,
+"mech": 6.04,
+"eng": 8440,
+"curated": false,
+"aaa": false,
+"rating": 88,
+"dropped": false
+},
+{
+"id": "steam_3565480",
+"title": "Roadhouse Simulator",
+"alias": "DRAGO entertainment",
+"genre": [
+"Casual",
+"Simulation",
+"Life Sim"
+],
+"punch": [
+"Pour beer, break up brawls, distill your own liquor, run pig races, deal",
+"Mostly Positive 76% · 246 reviews"
+],
+"released": "2026-09-21",
+"surfaced": "2026-09-27",
+"platforms": [
+"steam"
+],
+"region": "Global",
+"media": {
+"kind": "mp4",
+"src": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3565480/extras/3e8df5dd9d4b9545f30536ea3562feaa.mp4"
+},
+"evidence": [
+{
+"t": "246 reviews · 7d",
+"v": "steam"
+},
+{
+"t": "launched this week",
+"v": "new"
+},
+{
+"t": "154 playing now",
+"v": "steam"
+},
+{
+"t": "19 YouTube clips · 1.9M views · 7d",
+"v": "yt"
+}
+],
+"top": {
+"platform": "youtube",
+"label": "Windah Basudara — 847.1k views · Streamed 1d ago",
+"url": "https://www.youtube.com/watch?v=E5f7dQTgb1I"
+},
+"more": [],
+"decon": [],
+"tier": "Indie",
+"kind": "new IP",
+"cat": "games",
+"velocity": {
+"total": 246,
+"w7": 246,
+"prev7": 0,
+"m30": 246,
+"desc": "Mostly Positive",
+"pct": 76,
+"ccu": 154
+},
+"yt": {
+"n": 19,
+"sum": 1885863,
+"top": "E5f7dQTgb1I",
+"topViews": 847133
+},
+"bili": null,
+"x": null,
+"reddit": null,
+"score": 10.42,
+"novelty": 1.63,
+"surprise": 4.83,
+"mech": 7.22,
+"eng": 10420,
+"curated": false,
+"aaa": false,
+"rating": 76,
+"dropped": false
+},
+{
+"id": "steam_3880400",
+"title": "FRUKT",
+"alias": "tripledose",
+"genre": [
+"Gore",
+"Sandbox",
+"Violent"
+],
+"punch": [
+"A voxel-based death sandbox",
+"Very Positive 93% · 201 reviews"
+],
+"released": "2026-09-24",
+"surfaced": "2026-09-27",
+"platforms": [
+"steam"
+],
+"region": "Global",
+"media": {
+"kind": "mp4",
+"src": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3880400/extras/73ab807b49f737eab1c8a1dfffde63cb.mp4"
+},
+"evidence": [
+{
+"t": "201 reviews · 7d",
+"v": "steam"
+},
+{
+"t": "launched this week",
+"v": "new"
+},
+{
+"t": "72 playing now",
+"v": "steam"
+},
+{
+"t": "4 YouTube clips · 1.9k views · 7d",
+"v": "yt"
+}
+],
+"top": {
+"platform": "youtube",
+"label": "Father Lamb — 884 views · 2d ago",
+"url": "https://www.youtube.com/watch?v=MEzxpHD7eds"
+},
+"more": [],
+"decon": [],
+"tier": "Indie",
+"kind": "new IP",
+"cat": "games",
+"velocity": {
+"total": 201,
+"w7": 201,
+"prev7": 0,
+"m30": 201,
+"desc": "Very Positive",
+"pct": 93,
+"ccu": 72
+},
+"yt": {
+"n": 4,
+"sum": 1873,
+"top": "MEzxpHD7eds",
+"topViews": 884
+},
+"bili": null,
+"x": null,
+"reddit": null,
+"score": 7.07,
+"novelty": 2.32,
+"surprise": 1.88,
+"mech": 5.69,
+"eng": 7070,
+"curated": false,
+"aaa": false,
+"rating": 93,
+"dropped": false
+},
+{
+"id": "rb_1_clean_leaves_adventure",
+"title": "+1 Clean Leaves Adventure",
+"alias": "Leaf Cleaning Crew",
+"genre": [],
+"punch": [],
+"released": "",
+"surfaced": "2026-09-27",
+"platforms": [
+"roblox"
+],
+"region": "Global",
+"media": {
+"kind": "img",
+"src": "https://tr.rbxcdn.com/180DAY-cbb151e6ecc5b0b196f6c6482dbf4425/768/432/Image/Png/noFilter"
+},
+"evidence": [
+{
+"t": "10.7k CCU · Roblox · today",
+"v": "rb"
+},
+{
+"t": "▲ 7.4k rank move · 24h",
+"v": "up"
+}
+],
+"top": {
+"platform": "roblox",
+"label": "Roblox — +1 Clean Leaves Adventure",
+"url": "https://www.roblox.com/games/114711399407052"
+},
+"more": [],
+"decon": [],
+"tier": "Indie",
+"kind": "new IP",
+"cat": "games",
+"velocity": {},
+"yt": null,
+"bili": null,
+"x": null,
+"reddit": null,
+"score": 0.0,
+"novelty": 0.0,
+"surprise": -0.6,
+"mech": 0.92,
+"eng": 0,
+"curated": false,
+"aaa": false,
+"rating": null,
+"dropped": false,
+"roblox": {
+"ccu": 10661,
+"move": 7358
+}
+},
+{
+"id": "rb_judge_simulator",
+"title": "Judge Simulator",
+"alias": "SimWorld Games",
+"genre": [],
+"punch": [],
+"released": "",
+"surfaced": "2026-09-27",
+"platforms": [
+"roblox"
+],
+"region": "Global",
+"media": {
+"kind": "img",
+"src": "https://tr.rbxcdn.com/180DAY-92bf1e622ae6e5570ce82f0e486b4d4e/768/432/Image/Png/noFilter"
+},
+"evidence": [
+{
+"t": "38.1k CCU · Roblox · today",
+"v": "rb"
+},
+{
+"t": "▲ 8.2k rank move · 24h",
+"v": "up"
+}
+],
+"top": {
+"platform": "roblox",
+"label": "Roblox — Judge Simulator",
+"url": "https://www.roblox.com/games/127774488725016"
+},
+"more": [],
+"decon": [],
+"tier": "Indie",
+"kind": "new IP",
+"cat": "games",
+"velocity": {},
+"yt": null,
+"bili": null,
+"x": null,
+"reddit": null,
+"score": 0.0,
+"novelty": 0.0,
+"surprise": -0.6,
+"mech": 0.92,
+"eng": 0,
+"curated": false,
+"aaa": false,
+"rating": null,
+"dropped": false,
+"roblox": {
+"ccu": 38059,
+"move": 8243
+}
+}
+]
