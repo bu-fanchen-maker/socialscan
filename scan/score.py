@@ -45,4 +45,5 @@ def meets_bar(c, th):
     return any([(v.get("w7") or 0) >= th["steam_reviews_7d"], (v.get("ccu") or 0) >= th["steam_players_now"],
                 ((c.get("yt") or {}).get("sum", 0)) >= th["youtube_views_7d"], ((c.get("bili") or {}).get("sum", 0)) >= th["bilibili_plays_30d"],
                 ((c.get("x") or {}).get("likes", 0)) >= th["x_likes_7d"], ((c.get("reddit") or {}).get("score", 0)) >= th["reddit_upvotes_7d"],
-                ((c.get("roblox") or {}).get("ccu", 0)) >= th["roblox_ccu"], ((c.get("roblox") or {}).get("move", 0)) >= th["roblox_rank_move_24h"]])
+                ((c.get("roblox") or {}).get("ccu", 0)) >= th["roblox_ccu"], ((c.get("roblox") or {}).get("move", 0)) >= th["roblox_rank_move_24h"],
+                ((c.get("tiktok") or {}).get("views", 0)) >= th.get("tiktok_views_7d", float("inf"))])

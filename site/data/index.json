@@ -8,7 +8,7 @@
 ],
 "meta": {
 "date": "measured 2026-09-28",
-"sources": "Steam, YouTube, Reddit, Roblox",
+"sources": "Steam, YouTube, Reddit, Roblox, TikTok",
 "read": ""
 },
 "method": {
@@ -20,7 +20,8 @@
 "x_likes_7d": 2000,
 "reddit_upvotes_7d": 2000,
 "roblox_ccu": 5000,
-"roblox_rank_move_24h": 2000
+"roblox_rank_move_24h": 2000,
+"tiktok_views_7d": 2000000
 },
 "released_within_days": 45,
 "subreddits": [

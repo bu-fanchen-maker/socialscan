@@ -137,8 +137,8 @@ function visible(){
   if(state.platform) rows=rows.filter(c=>c.platforms.includes(state.platform));
   if(state.region) rows=rows.filter(c=>c.region===state.region);
   if(state.q){const q=state.q.toLowerCase();rows=rows.filter(c=>(c.title+" "+(c.alias||"")+" "+c.genre.join(" ")+" "+c.punch.join(" ")).toLowerCase().includes(q))}
-  const key={mech:c=>c.mech||0,surprise:c=>c.surprise||-99,trend:c=>c.score||0,new:c=>c.surfaced,eng:c=>c.eng||0,rating:c=>(c.rating??-1)*1e6+(c.eng||0)}[state.sort];
-  rows.sort((a,b)=>key(b)>key(a)?1:key(b)<key(a)?-1:0);
+  // newest pull first, mechanics score within a pull
+  rows.sort((a,b)=>{const p=(b._pull||"").localeCompare(a._pull||"");return p!==0?p:(b.mech||0)-(a.mech||0)});
   return rows;
 }
 
@@ -152,6 +152,7 @@ function mediaHTML(c){
   if(k==="x") return `<iframe src="https://platform.twitter.com/embed/Tweet.html?id=${m.id}&theme=dark&dnt=true&hideThread=true" style="background:#000" title="${esc(c.title)}"></iframe>`;
   if(k==="reddit") return `<video src="${m.src}" muted loop playsinline preload="metadata" ${state.autoplay?"autoplay":""} controls></video>`;
   if(k==="bili") return `<iframe src="https://player.bilibili.com/player.html?bvid=${m.id}&autoplay=${ap}&muted=1&danmaku=0&high_quality=1" referrerpolicy="strict-origin-when-cross-origin" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen title="${esc(c.title)}"></iframe>`;
+  if(k==="tiktok") return `<iframe src="https://www.tiktok.com/embed/v2/${m.id}" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen title="${esc(c.title)}"></iframe>`;
   if(k==="img") return `<img class="full" src="${m.src}" alt="" loading="lazy">`;
   return `<span class="ph">${esc(c.title.slice(0,2))}</span>`;
 }
@@ -181,18 +182,12 @@ function card(c){
 </article>`;
 }
 
-function rising(){
-  const score={},games={};
-  CARDS.filter(c=>!c.aaa).forEach(c=>c.genre.concat(c.curated?c.punch:[]).forEach(t=>{const w=Math.log10((c.eng||0)+10);score[t]=(score[t]||0)+w;(games[t]=games[t]||[]).push(c.title)}));
-  const rows=Object.entries(score).sort((a,b)=>b[1]-a[1]).slice(0,14);const max=rows[0]?.[1]||1;
-  return `<div class="rising"><div><h3>Tags with the most weight in this feed</h3>${rows.map(([t,v])=>`<div class="bar2"><span class="name">${esc(t)}<small>${games[t].slice(0,3).join(", ")}${games[t].length>3?" +"+(games[t].length-3):""}</small></span><span class="track"><span class="fill" style="width:${Math.round(v/max*100)}%"></span></span><span class="n">${games[t].length}</span></div>`).join("")}</div>
-  <div class="note"><p>Weight = count of cards carrying the tag, scaled by each card's engagement. With the real harvester this becomes week-over-week momentum.</p><p id="weekly-read">${(window.__meta||{}).read||""}</p></div></div>`;
-}
 
 const THRL={steam_reviews_7d:["Steam reviews","written in the last 7 days"],steam_players_now:["Steam players","concurrent, measured live"],
   youtube_views_7d:["YouTube views","summed across this week's clips"],bilibili_plays_30d:["Bilibili plays","summed over the last 30 days"],
   x_likes_7d:["X likes","on a single post, last 7 days"],reddit_upvotes_7d:["Reddit upvotes","on a single post, last 7 days"],
-  roblox_ccu:["Roblox players","concurrent today"],roblox_rank_move_24h:["Roblox rank climb","places moved in 24 hours"]};
+  roblox_ccu:["Roblox players","concurrent today"],roblox_rank_move_24h:["Roblox rank climb","places moved in 24 hours"],
+  tiktok_views_7d:["TikTok views","on a Games hashtag, last 7 days"]};
 function methodHTML(){
   const nf=n=>Number(n).toLocaleString("en-US");
   const srcs=[
@@ -203,7 +198,8 @@ function methodHTML(){
     ["Bilibili","Newest clips for CN mini-game keywords, plays summed over 30 days. Ready in the pipeline; waiting on a login cookie.","off","off this week"],
     ["X","Hashtag and milestone searches (#indiedev, “copies sold”, 手游…) with per-query like floors.",METHOD.x_enabled?"on":"off",METHOD.x_enabled?"active":"off this week"],
     ["GameDiscoverCo","Newsletter deconstructions attached to matching cards as analysis links.","on","active"],
-    ["DataEye · TikTok · Sensor Tower","Douyin/WeChat mini-game charts, trending hashtags in games, breakout downloads and ad-spend ramps.","todo","planned"]];
+    ["TikTok","Creative Center's trending hashtags in Games (posts + views over 7 days). A hashtag ships only when it names a game measured elsewhere this run — a confirmation signal, never a generic tag. The card's clip is the game's top YouTube video of the week.","on","active"],
+    ["DataEye · Sensor Tower","Douyin/WeChat mini-game charts, breakout downloads and ad-spend ramps.","todo","planned"]];
   const th=METHOD.thresholds||{};
   return `
   <section><h2>Where the data comes from</h2><p class="lead">One harvest per week, Monday 06:00 JST.</p>
@@ -241,7 +237,7 @@ function render(reset=true){
   rows=visible(); state.shown=0;
   document.getElementById("subtitle").textContent=`${visible().length} shown of ${CARDS.length} · Indie + new IP · ${(window.__meta||{}).sources||""} · ${(window.__meta||{}).date||""}`;
   document.getElementById("hint").textContent=rows.length?`${rows.length} card${rows.length===1?"":"s"}`:"";
-  content.innerHTML=`<details class="rising-wrap"><summary>Rising tags</summary>${rising()}</details><div class="grid" id="grid"></div>`;
+  content.innerHTML=`<div class="grid" id="grid"></div>`;
   if(!rows.length){document.getElementById("grid").innerHTML=`<div class="empty" style="grid-column:1/-1"><b>${state.savedOnly?"Nothing saved yet":"Nothing matches"}</b>${state.savedOnly?"Star a card to build your reference list.":"Clear a filter or the search box."}</div>`;return}
   more();
 }
@@ -249,9 +245,11 @@ function more(){
   const grid=document.getElementById("grid"); if(!grid) return;
   const old=grid.querySelector(".sentinel"); if(old) old.remove();
   const slice=rows.slice(state.shown,state.shown+PAGE); let html="";
-  let last=state.shown>0?rows[state.shown-1].surfaced:null;
+  let last=state.shown>0?rows[state.shown-1]._pull:null;
+  const newest=(window.__days||[])[0];
   for(const c of slice){
-    if(state.sort==="new" && c.surfaced!==last){const n=rows.filter(r=>r.surfaced===c.surfaced).length;html+=`<div class="divider">${fmtDate(c.surfaced)} <small>${n} card${n===1?"":"s"}</small></div>`;last=c.surfaced}
+    if(c._pull!==last){const n=rows.filter(r=>r._pull===c._pull).length;
+      html+=`<div class="divider">${c._pull===newest?"This pull":"Previous pull"} — ${fmtDate(c._pull)} <small>${n} card${n===1?"":"s"}</small></div>`;last=c._pull}
     html+=card(c);
   }
   state.shown+=slice.length;
@@ -307,11 +305,12 @@ document.getElementById("autoplay").addEventListener("change",e=>{state.autoplay
   if(location.hash==="#methodology") setView("method");
   try{const idx=await (await fetch("data/index.json",{cache:"no-store"})).json(); window.__days=idx.days||[]; window.__meta=idx.meta||window.__meta;
     if(idx.method&&Object.keys(idx.method).length){Object.assign(METHOD,idx.method);document.getElementById("method").innerHTML=methodHTML()}
-    for(const d of window.__days.slice(0,3)){const j=await (await fetch("data/"+d+".json",{cache:"no-store"})).json(); for(const c of j){if(!CARDS.find(x=>x.id===c.id)) CARDS.push(c);} }
+    CARDS.length=0;   // rebuild from day files so every card knows which pull it belongs to
+    for(const d of window.__days.slice(0,3)){const j=await (await fetch("data/"+d+".json",{cache:"no-store"})).json(); for(const c of j){if(!CARDS.find(x=>x.id===c.id)){c._pull=d;CARDS.push(c)}} }
     window.__dayCursor=3;}catch(e){}
   render();
 })();
-const _more=more; more=async function(){ if(state.shown>=rows.length && window.__days && window.__dayCursor<window.__days.length){ const d=window.__days[window.__dayCursor++]; try{const j=await (await fetch("data/"+d+".json",{cache:"no-store"})).json(); for(const c of j){if(!CARDS.find(x=>x.id===c.id)) CARDS.push(c);} rows=visible();}catch(e){} } _more(); };
+const _more=more; more=async function(){ if(state.shown>=rows.length && window.__days && window.__dayCursor<window.__days.length){ const d=window.__days[window.__dayCursor++]; try{const j=await (await fetch("data/"+d+".json",{cache:"no-store"})).json(); for(const c of j){if(!CARDS.find(x=>x.id===c.id)){c._pull=d;CARDS.push(c)}} rows=visible();}catch(e){} } _more(); };
 </script>
 </body>
 </html>

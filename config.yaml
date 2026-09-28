@@ -8,6 +8,7 @@ thresholds:            # a card needs ANY one of these
   reddit_upvotes_7d: 2000
   roblox_ccu: 5000
   roblox_rank_move_24h: 2000
+  tiktok_views_7d: 2000000
 
 steam:
   lists:

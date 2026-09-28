@@ -26,6 +26,10 @@ Owner: Bu Fan (Publishing Manager, Voodoo). Purpose: surface hot new game mechan
 10. **English titles (CN ok), plain words.** Punch tags in English; pure-JP/other posts are noise unless
     the game resolves to an English title. No scene jargon. Trend-cluster cards need ≥3 measured member
     games and a hero from the top member — otherwise ship the members as individual game cards.
+11. **Ideation relevance** (Bu Fan, 28 Sep 2026): engagement is not relevance. Hardware news (Steam
+    Frame), milestone/thank-you posts, memes, industry op-eds are noise no matter the numbers. A card
+    must show a playable game, a mechanic, or a visual style. Reddit candidates additionally require a
+    video hero (meta posts rarely have one). Feed is grouped by pull — newest pull first, old pulls kept.
 
 ## What we learned about each source
 - Steam `appdetails` no longer returns movie URLs; trailers are HLS. Use the `extras/*.mp4` loops in the

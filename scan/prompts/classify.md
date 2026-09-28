@@ -17,5 +17,9 @@ parentheses only when it helps recognition. Chinese-language source content is f
 Identifiability: if you cannot name the specific game OR the specific mechanic a post is about, set
 noise=true — "interesting but unidentifiable" is noise. A post in a language other than English or
 Chinese is noise unless you can resolve the game and retitle it in English.
+Relevance: the feed exists to spark new game ideas. Hardware/gadget announcements (headsets, consoles,
+peripherals), industry commentary and op-eds ("X companies are healthier because..."), studio/business
+news, milestone celebrations and thank-you posts, and platform news are ALL noise=true — however high
+their engagement — unless the post itself shows a playable game, mechanic, or visual style.
 Plain words: no scene jargon in titles ("friendslop", "obby" alone). A trend/cluster card must say the
 mechanic in words a producer who never saw the meme understands.

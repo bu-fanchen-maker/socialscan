@@ -693,67 +693,6 @@
 "dropped": false
 },
 {
-"id": "steam_4165890",
-"title": "Steam Frame",
-"alias": "",
-"genre": [],
-"punch": [
-"No user reviews 0% · 0 reviews"
-],
-"released": "2026-09-14",
-"surfaced": "2026-09-23",
-"platforms": [
-"steam"
-],
-"region": "Global",
-"media": {
-"kind": "yt",
-"id": "6hV54dNr4PU"
-},
-"evidence": [
-{
-"t": "13 YouTube clips · 2.1M views · 7d",
-"v": "yt"
-}
-],
-"top": {
-"platform": "youtube",
-"label": "SAMTIME — 777.8k views · 6 days ago",
-"url": "https://www.youtube.com/watch?v=6hV54dNr4PU"
-},
-"more": [],
-"decon": [],
-"tier": "Indie",
-"kind": "new IP",
-"velocity": {
-"total": 0,
-"w7": 0,
-"prev7": 0,
-"m30": 0,
-"desc": "No user reviews",
-"pct": 0,
-"ccu": 0
-},
-"yt": {
-"n": 13,
-"sum": 2084405,
-"top": "6hV54dNr4PU",
-"topViews": 777799
-},
-"bili": null,
-"x": null,
-"reddit": null,
-"score": 6.32,
-"novelty": 0.0,
-"surprise": 5.72,
-"mech": 5.98,
-"eng": 6320,
-"curated": false,
-"aaa": false,
-"rating": 0,
-"dropped": false
-},
-{
 "id": "steam_4019220",
 "title": "Dressmaker",
 "alias": "Cozy Lives",
@@ -5959,59 +5898,6 @@
 "dropped": false
 },
 {
-"id": "rd_1wk1zlo",
-"title": "It's actually pretty funny",
-"alias": "r/IndieDev",
-"genre": [],
-"punch": [],
-"released": "",
-"surfaced": "2026-09-18",
-"platforms": [
-"reddit"
-],
-"region": "Global",
-"media": {
-"kind": "img",
-"src": "https://preview.redd.it/2yd8itgmccqh1.jpeg?width=140&amp;height=140&amp;crop=1:1,smart&amp;auto=webp&amp;s=bd6c42674b16a119b10c4d0b1dbf6bdb8cda4ef7"
-},
-"evidence": [
-{
-"t": "3.2k upvotes · r/IndieDev · 7d",
-"v": "rd"
-},
-{
-"t": "151 comments",
-"v": "rd"
-}
-],
-"top": {
-"platform": "reddit",
-"label": "r/IndieDev — 3.2k upvotes",
-"url": "https://www.reddit.com/r/IndieDev/comments/1wk1zlo/its_actually_pretty_funny/"
-},
-"more": [],
-"decon": [],
-"tier": "Indie",
-"kind": "new IP",
-"velocity": {},
-"yt": null,
-"bili": null,
-"x": null,
-"reddit": {
-"score": 3172,
-"sum": 158600
-},
-"score": 4.68,
-"novelty": 0.0,
-"surprise": 4.6,
-"mech": 5.08,
-"eng": 4680,
-"curated": false,
-"aaa": false,
-"rating": null,
-"dropped": false
-},
-{
 "id": "rd_1wiq05c",
 "title": "I'm worrking on a cleaning game set AFTER the zombie apocalypse",
 "alias": "r/IndieGaming",
@@ -6165,59 +6051,6 @@
 "surprise": 4.47,
 "mech": 4.98,
 "eng": 4560,
-"curated": false,
-"aaa": false,
-"rating": null,
-"dropped": false
-},
-{
-"id": "rd_1wj46lq",
-"title": "Japanese companies like Nintendo, Capcom, and Konami are healthier because they have small",
-"alias": "r/gamedev",
-"genre": [],
-"punch": [],
-"released": "",
-"surfaced": "2026-09-17",
-"platforms": [
-"reddit"
-],
-"region": "Global",
-"media": {
-"kind": "img",
-"src": "https://external-preview.redd.it/cBkUY_Itz-N2NINgEgJzt7C3uZUT4RLgX1q64qT203g.jpeg?width=140&amp;height=78&amp;auto=webp&amp;s=0d25b4830772487885c142cd24cfcbb098ff632d"
-},
-"evidence": [
-{
-"t": "2.1k upvotes · r/gamedev · 7d",
-"v": "rd"
-},
-{
-"t": "196 comments",
-"v": "rd"
-}
-],
-"top": {
-"platform": "reddit",
-"label": "r/gamedev — 2.1k upvotes",
-"url": "https://www.reddit.com/r/gamedev/comments/1wj46lq/japanese_companies_like_nintendo_capcom_and/"
-},
-"more": [],
-"decon": [],
-"tier": "Indie",
-"kind": "new IP",
-"velocity": {},
-"yt": null,
-"bili": null,
-"x": null,
-"reddit": {
-"score": 2122,
-"sum": 106100
-},
-"score": 4.52,
-"novelty": 0.0,
-"surprise": 4.43,
-"mech": 4.94,
-"eng": 4520,
 "curated": false,
 "aaa": false,
 "rating": null,

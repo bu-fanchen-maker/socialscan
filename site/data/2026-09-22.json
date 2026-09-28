@@ -4807,66 +4807,6 @@
 }
 },
 {
-"id": "x_2099544354436370685",
-"title": "Steam Frame — Valve's wireless VR headset",
-"alias": "Valve hardware launch",
-"genre": [
-"Hardware",
-"VR",
-"AAA"
-],
-"punch": [
-"30.6k likes · 7.6M views",
-"Valve's biggest post this week",
-"platform news, not mechanic"
-],
-"released": "",
-"surfaced": "2026-09-14",
-"platforms": [
-"x"
-],
-"region": "Global",
-"media": {
-"kind": "x",
-"id": "2099544354436370685"
-},
-"velocity": {},
-"evidence": [
-{
-"t": "30.6k likes · X · 7d",
-"v": "x"
-},
-{
-"t": "7.6M views · X",
-"v": "x"
-},
-{
-"t": "single post",
-"v": "new"
-}
-],
-"top": {
-"platform": "x",
-"label": "Steam — 30.6k likes · 7.6M views",
-"url": "https://x.com/Steam/status/2099544354436370685"
-},
-"more": [],
-"curated": true,
-"aaa": true,
-"score": 9.13,
-"rating": null,
-"tier": "Major",
-"kind": "new IP",
-"novelty": 1.2,
-"surprise": 4.78,
-"mech": 6.06,
-"eng": 7627049,
-"x": {
-"likes": 30618,
-"views": 7627049
-}
-},
-{
 "id": "x_2099559285864751473",
 "title": "PAC-MAN × FORTNITE crossover",
 "alias": "Epic × Bandai Namco",

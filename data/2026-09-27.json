@@ -237,68 +237,6 @@
 "dropped": false
 },
 {
-"id": "steam_4165890",
-"title": "Steam Frame",
-"alias": "",
-"genre": [],
-"punch": [
-"No user reviews 0% · 0 reviews"
-],
-"released": "2026-09-14",
-"surfaced": "2026-09-27",
-"platforms": [
-"steam"
-],
-"region": "Global",
-"media": {
-"kind": "yt",
-"id": "vHtnf9LBl9Q"
-},
-"evidence": [
-{
-"t": "13 YouTube clips · 2.1M views · 7d",
-"v": "yt"
-}
-],
-"top": {
-"platform": "youtube",
-"label": "iFixit — 319.3k views · 4d ago",
-"url": "https://www.youtube.com/watch?v=vHtnf9LBl9Q"
-},
-"more": [],
-"decon": [],
-"tier": "Indie",
-"kind": "new IP",
-"cat": "games",
-"velocity": {
-"total": 0,
-"w7": 0,
-"prev7": 0,
-"m30": 0,
-"desc": "No user reviews",
-"pct": 0,
-"ccu": 0
-},
-"yt": {
-"n": 13,
-"sum": 2062552,
-"top": "vHtnf9LBl9Q",
-"topViews": 319255
-},
-"bili": null,
-"x": null,
-"reddit": null,
-"score": 6.31,
-"novelty": 0.0,
-"surprise": 5.71,
-"mech": 5.97,
-"eng": 6310,
-"curated": false,
-"aaa": false,
-"rating": 0,
-"dropped": false
-},
-{
 "id": "steam_2796640",
 "title": "The Magus Circle",
 "alias": "By Witchlight",

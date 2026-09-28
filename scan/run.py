@@ -11,8 +11,11 @@ def main(argv):
     th = cfg["thresholds"]; memory = load_json("data/_memory.json", {"seen": {}})
     cards = []
 
-    # 1. Steam candidates → store page → measurements
+    # 1. Steam candidates → store page → measurements. The store also sells hardware (Steam Frame/Deck);
+    #    hardware is never a card (Bu Fan, 28 Sep).
+    HARDWARE = re.compile(r"\bsteam\s+(frame|deck|machine|controller)\b|\bvalve\s+index\b", re.I)
     for row in steam.discover(cfg["steam"]["lists"], cfg["steam"]["released_within_days"]):
+        if HARDWARE.search(row["name"]): continue
         sp = steam.store_page(row["id"]) or {}
         c = Card(id=f"steam_{row['id']}", title=row["name"], alias=sp.get("developer", ""), genre=sp.get("tags", [])[:3],
                  punch=[re.split(r"(?<=[.!?])\s", sp.get("short", ""))[0][:72].rstrip(" .")] if sp.get("short") else [],
@@ -25,17 +28,24 @@ def main(argv):
         if re.search(cfg["tiers"]["sequel_regex"], row["name"], re.I): c["kind"] = "franchise / sequel / remake"
         cards.append(c); time.sleep(0.3)
 
-    # 2. Reddit
+    # 2. Reddit — relevance heuristics (Bu Fan, 28 Sep): a card must show a playable game/mechanic/visual.
+    #    Celebration/milestone posts, discussion threads and industry news have big numbers and zero ideation
+    #    value. Cheap filters here; the Claude pass is the real judge once enabled.
+    NOISE_TITLE = re.compile(r"\bthank(s| you)\b|\bmilestone\b|\bwishlist(s|ed)?\b.*\b(hit|reached|passed)\b|\b(hit|reached|passed)\b.*\bwishlist", re.I)
+    NOISE_FLAIR = {"discussion", "news", "article", "meme"}
     for p in reddit.top_week(cfg["reddit"]["subreddits"], cfg["reddit"]["min_score"]):
+        if NOISE_TITLE.search(p["title"]) or (p.get("flair") or "").lower() in NOISE_FLAIR: continue
+        if not p["video"] and not p["yt"]: continue   # gameplay shows itself; text/screenshot-only top posts are usually meta
         c = Card(id=f"rd_{p['id']}", title=p["title"][:90], alias=f"r/{p['sub']}", platforms=["reddit"], surfaced=p["created"],
                  media={"kind": "reddit", "src": p["video"]} if p["video"] else ({"kind": "yt", "id": p["yt"].split("v=")[-1][:11]} if p["yt"] else {"kind": "img", "src": p["thumb"] or ""}),
                  evidence=[{"t": f"{k(p['score'])} upvotes · r/{p['sub']} · 7d", "v": "rd"}, {"t": f"{k(p['comments'])} comments", "v": "rd"}],
                  top={"platform": "reddit", "label": f"r/{p['sub']} — {k(p['score'])} upvotes", "url": p["url"]}).dict()
         c["reddit"] = {"score": p["score"], "sum": p["score"] * 50}; cards.append(c)
 
-    # 3. Roblox (Rotrends → real game page + official thumbnail)
+    # 3. Roblox (Rotrends → real game page + official thumbnail). Pace the API: bursts get rate-limited.
     for g in roblox.rotrends(cfg["roblox"]["rotrends_url"]):
-        rg = roblox.resolve(g["name"]) or {}
+        time.sleep(1.0)
+        rg = roblox.resolve(g["name"]) or roblox.resolve(g["name"]) or {}
         c = Card(id=f"rb_{slug(g['name'])}", title=g["name"], alias=g.get("studio") or g["section"], platforms=["roblox"], surfaced=today(),
                  media={"kind": "img", "src": rg["thumb"]} if rg.get("thumb") else {"kind": "none"},
                  evidence=[{"t": f"{k(g['ccu'])} CCU · Roblox · today", "v": "rb"}] + ([{"t": f"▲ {k(g['move'])} rank move · 24h", "v": "up"}] if g.get("move") else []),
@@ -55,8 +65,28 @@ def main(argv):
                 c["x"] = {"likes": t["likes"], "views": t["views"], "sum": t["views"]}; cards.append(c)
         except Exception as e: print("[x] skipped:", e)
 
+    # 4b. TikTok Creative Center — trending Games hashtags (public). Hashtags are game names;
+    #     hero = top YouTube clip of the game (CC detail pages are login-gated, no clip ids).
+    try:
+        from .sources import tiktok_cc
+        # confirmation rule: a hashtag ships only when it names a game measured elsewhere this run —
+        # generic hashtags (#deal) and creator tags are exactly the noise Bu Fan flagged.
+        names = {re.sub(r"[^0-9a-z]+", "", c["title"].lower()) for c in cards}
+        for t in tiktok_cc.hashtags():
+            nt = re.sub(r"[^0-9a-z]+", "", t["tag"].lower())
+            if not any(nt == n or (len(nt) >= 6 and nt in n) for n in names):
+                print(f"[tiktok] #{t['tag']} skipped: no matching measured game"); continue
+            c = Card(id=f"tt_{slug(t['tag'])}", title=f"#{t['tag']}", alias="TikTok Games hashtag", platforms=["tiktok"],
+                     surfaced=today(), cat="other",
+                     evidence=[{"t": f"{k(t['posts'])} TikTok posts · 7d", "v": "mob"}, {"t": f"{k(t['views'])} TikTok views · 7d", "v": "mob"}],
+                     top={"platform": "tiktok", "label": f"TikTok Creative Center — #{t['tag']} (Games)", "url": t["url"]}).dict()
+            measure.measure_youtube(c, t["tag"])
+            c["tiktok"] = {"posts": t["posts"], "views": t["views"], "sum": t["views"]}
+            cards.append(c)
+    except Exception as e: print("[tiktok] skipped:", e)
+
     # 5. Stubs (skip themselves without creds)
-    for fn in (stubs.dataeye, stubs.tiktok_creative_center, stubs.sensortower):
+    for fn in (stubs.dataeye, stubs.sensortower):
         try: cards += fn()
         except NotImplementedError as e: print(f"[{fn.__name__}] TODO: {e}")
 
