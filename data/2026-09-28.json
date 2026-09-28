@@ -1,0 +1,791 @@
+[
+{
+"id": "steam_4165890",
+"title": "Steam Frame",
+"alias": "",
+"genre": [],
+"punch": [
+"No user reviews 0% · 0 reviews"
+],
+"released": "2026-09-14",
+"surfaced": "2026-09-28",
+"platforms": [
+"steam"
+],
+"region": "Global",
+"media": {
+"kind": "yt",
+"id": "vHtnf9LBl9Q"
+},
+"evidence": [
+{
+"t": "14 YouTube clips · 2.0M views · 7d",
+"v": "yt"
+}
+],
+"top": {
+"platform": "youtube",
+"label": "iFixit — 331.3k views · 4d ago",
+"url": "https://www.youtube.com/watch?v=vHtnf9LBl9Q"
+},
+"more": [],
+"decon": [],
+"tier": "Indie",
+"kind": "new IP",
+"cat": "games",
+"velocity": {
+"total": 0,
+"w7": 0,
+"prev7": 0,
+"m30": 0,
+"desc": "No user reviews",
+"pct": 0,
+"ccu": 0
+},
+"yt": {
+"n": 14,
+"sum": 1957905,
+"top": "vHtnf9LBl9Q",
+"topViews": 331262
+},
+"bili": null,
+"x": null,
+"reddit": null,
+"score": 6.29,
+"novelty": 0.0,
+"surprise": 5.69,
+"mech": 5.95,
+"eng": 6290,
+"curated": false,
+"aaa": false,
+"rating": 0,
+"dropped": false
+},
+{
+"id": "steam_4671380",
+"title": "Scapewatch: Idle MMO",
+"alias": "Puzzle Drop Studios",
+"genre": [
+"Idler",
+"Incremental",
+"RPG"
+],
+"punch": [
+"30 skills",
+"Very Positive 85% · 238 reviews"
+],
+"released": "2026-09-25",
+"surfaced": "2026-09-28",
+"platforms": [
+"steam"
+],
+"region": "Global",
+"media": {
+"kind": "mp4",
+"src": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4671380/extras/81ddc2be82c239b755f331202979037f.mp4"
+},
+"evidence": [
+{
+"t": "238 reviews · 7d",
+"v": "steam"
+},
+{
+"t": "launched this week",
+"v": "new"
+},
+{
+"t": "1.6k playing now",
+"v": "steam"
+},
+{
+"t": "10 YouTube clips · 13.9k views · 7d",
+"v": "yt"
+}
+],
+"top": {
+"platform": "youtube",
+"label": "Graphic — 7.6k views · 1d ago",
+"url": "https://www.youtube.com/watch?v=ellDBWzecf4"
+},
+"more": [],
+"decon": [],
+"tier": "Indie",
+"kind": "new IP",
+"cat": "games",
+"velocity": {
+"total": 238,
+"w7": 238,
+"prev7": 0,
+"m30": 238,
+"desc": "Very Positive",
+"pct": 85,
+"ccu": 1558
+},
+"yt": {
+"n": 10,
+"sum": 13865,
+"top": "ellDBWzecf4",
+"topViews": 7631
+},
+"bili": null,
+"x": null,
+"reddit": null,
+"score": 9.07,
+"novelty": 1.36,
+"surprise": 2.71,
+"mech": 5.2,
+"eng": 9070,
+"curated": false,
+"aaa": false,
+"rating": 85,
+"dropped": false
+},
+{
+"id": "steam_2288340",
+"title": "ACE COMBAT 8: WINGS OF THEVE",
+"alias": "Bandai Namco Aces Inc.",
+"genre": [
+"Flight",
+"Action",
+"Shooter"
+],
+"punch": [
+"Soar through the skies and rise above every challenge to earn your place",
+"No user reviews 0% · 0 reviews"
+],
+"released": "2026-10-01",
+"surfaced": "2026-09-28",
+"platforms": [
+"steam"
+],
+"region": "Global",
+"media": {
+"kind": "mp4",
+"src": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2288340/extras/73d9b5f6de26f3e52a3d80f8a44c8f82.mp4"
+},
+"evidence": [
+{
+"t": "17 YouTube clips · 4.9M views · 7d",
+"v": "yt"
+}
+],
+"top": {
+"platform": "youtube",
+"label": "Bandai Namco Entertainment America — 961.1k views · 4d ago",
+"url": "https://www.youtube.com/watch?v=XuA2dycvmnc"
+},
+"more": [],
+"decon": [],
+"tier": "Major",
+"kind": "new IP",
+"cat": "games",
+"velocity": {
+"total": 0,
+"w7": 0,
+"prev7": 0,
+"m30": 0,
+"desc": "No user reviews",
+"pct": 0,
+"ccu": null
+},
+"yt": {
+"n": 17,
+"sum": 4898304,
+"top": "XuA2dycvmnc",
+"topViews": 961112
+},
+"bili": null,
+"x": null,
+"reddit": null,
+"score": 6.69,
+"novelty": 1.74,
+"surprise": 4.59,
+"mech": 6.56,
+"eng": 6690,
+"curated": false,
+"aaa": false,
+"rating": 0,
+"dropped": false
+},
+{
+"id": "steam_1912410",
+"title": "Minecraft Dungeons II",
+"alias": "Mojang Studios",
+"genre": [
+"Action",
+"Adventure",
+"RPG"
+],
+"punch": [
+"Drop the pickaxe, grab a sword, and charge into a new adventure in Minec",
+"No user reviews 0% · 0 reviews"
+],
+"released": "2026-09-29",
+"surfaced": "2026-09-28",
+"platforms": [
+"steam"
+],
+"region": "Global",
+"media": {
+"kind": "mp4",
+"src": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1912410/extras/c092590ac458d8f8fa455f677b1d6186.mp4"
+},
+"evidence": [
+{
+"t": "8 YouTube clips · 1.9M views · 7d",
+"v": "yt"
+}
+],
+"top": {
+"platform": "youtube",
+"label": "Minecraft — 890.6k views · 6d ago",
+"url": "https://www.youtube.com/watch?v=WD9GtlgU8_c"
+},
+"more": [],
+"decon": [],
+"tier": "Major",
+"kind": "franchise / sequel / remake",
+"cat": "games",
+"velocity": {
+"total": 0,
+"w7": 0,
+"prev7": 0,
+"m30": 0,
+"desc": "No user reviews",
+"pct": 0,
+"ccu": null
+},
+"yt": {
+"n": 8,
+"sum": 1890330,
+"top": "WD9GtlgU8_c",
+"topViews": 890575
+},
+"bili": null,
+"x": null,
+"reddit": null,
+"score": 6.28,
+"novelty": 1.62,
+"surprise": 3.68,
+"mech": 4.89,
+"eng": 6280,
+"curated": false,
+"aaa": false,
+"rating": 0,
+"dropped": false
+},
+{
+"id": "steam_3010850",
+"title": "Gears of War: E-Day",
+"alias": "The Coalition",
+"genre": [
+"Action",
+"Adventure",
+"Shooter"
+],
+"punch": [
+"Experience Emergence Day – the brutal origin story of one of gaming’s mo",
+"No user reviews 0% · 0 reviews"
+],
+"released": "2026-10-06",
+"surfaced": "2026-09-28",
+"platforms": [
+"steam"
+],
+"region": "Global",
+"media": {
+"kind": "mp4",
+"src": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3010850/extras/d551e4025e898de3f6096bd2bdbbeb3b.mp4"
+},
+"evidence": [
+{
+"t": "6 YouTube clips · 651.6k views · 7d",
+"v": "yt"
+}
+],
+"top": {
+"platform": "youtube",
+"label": "Kelski — 365.1k views · 4d ago",
+"url": "https://www.youtube.com/watch?v=y_-GhJ9_bBI"
+},
+"more": [],
+"decon": [],
+"tier": "Major",
+"kind": "new IP",
+"cat": "games",
+"velocity": {
+"total": 0,
+"w7": 0,
+"prev7": 0,
+"m30": 0,
+"desc": "No user reviews",
+"pct": 0,
+"ccu": null
+},
+"yt": {
+"n": 6,
+"sum": 651626,
+"top": "y_-GhJ9_bBI",
+"topViews": 365128
+},
+"bili": null,
+"x": null,
+"reddit": null,
+"score": 5.81,
+"novelty": 1.66,
+"surprise": 3.71,
+"mech": 5.76,
+"eng": 5810,
+"curated": false,
+"aaa": false,
+"rating": 0,
+"dropped": false
+},
+{
+"id": "steam_4435490",
+"title": "Call of Duty®: Modern Warfare® 4",
+"alias": "Infinity Ward",
+"genre": [
+"Action",
+"Shooter",
+"FPS"
+],
+"punch": [
+"War erupts on the Korean Peninsula as North Korea launches an invasion t",
+"No user reviews 0% · 0 reviews"
+],
+"released": "2026-10-22",
+"surfaced": "2026-09-28",
+"platforms": [
+"steam"
+],
+"region": "Global",
+"media": {
+"kind": "mp4",
+"src": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4435490/extras/11d525c5c065309c5449779e1e524e36.mp4"
+},
+"evidence": [
+{
+"t": "1 YouTube clips · 186.1k views · 7d",
+"v": "yt"
+}
+],
+"top": {
+"platform": "youtube",
+"label": "IlloReacts — 186.1k views · 6d ago",
+"url": "https://www.youtube.com/watch?v=lYwQkzssQAE"
+},
+"more": [],
+"decon": [],
+"tier": "Major",
+"kind": "franchise / sequel / remake",
+"cat": "games",
+"velocity": {
+"total": 0,
+"w7": 0,
+"prev7": 0,
+"m30": 0,
+"desc": "No user reviews",
+"pct": 0,
+"ccu": null
+},
+"yt": {
+"n": 1,
+"sum": 186088,
+"top": "lYwQkzssQAE",
+"topViews": 186088
+},
+"bili": null,
+"x": null,
+"reddit": null,
+"score": 5.27,
+"novelty": 1.66,
+"surprise": 2.67,
+"mech": 4.13,
+"eng": 5270,
+"curated": false,
+"aaa": false,
+"rating": 0,
+"dropped": false
+},
+{
+"id": "rd_1wq043w",
+"title": "We're sick of platformers so we made one where you get to be the bad guy",
+"alias": "r/IndieDev",
+"genre": [],
+"punch": [],
+"released": "",
+"surfaced": "2026-09-25",
+"platforms": [
+"reddit"
+],
+"region": "Global",
+"media": {
+"kind": "reddit",
+"src": "https://v.redd.it/vm27d6o7uorh1/CMAF_1080.mp4"
+},
+"evidence": [
+{
+"t": "15.6k upvotes · r/IndieDev · 7d",
+"v": "rd"
+},
+{
+"t": "535 comments",
+"v": "rd"
+}
+],
+"top": {
+"platform": "reddit",
+"label": "r/IndieDev — 15.6k upvotes",
+"url": "https://www.reddit.com/r/IndieDev/comments/1wq043w/were_sick_of_platformers_so_we_made_one_where_you/"
+},
+"more": [],
+"decon": [],
+"tier": "Indie",
+"kind": "new IP",
+"cat": "games",
+"velocity": {},
+"yt": null,
+"bili": null,
+"x": null,
+"reddit": {
+"score": 15610,
+"sum": 780500
+},
+"score": 5.3,
+"novelty": 0.0,
+"surprise": 5.29,
+"mech": 5.63,
+"eng": 5300,
+"curated": false,
+"aaa": false,
+"rating": null,
+"dropped": false
+},
+{
+"id": "rd_1wnnngj",
+"title": "Thank you all!",
+"alias": "r/IndieDev",
+"genre": [],
+"punch": [],
+"released": "",
+"surfaced": "2026-09-22",
+"platforms": [
+"reddit"
+],
+"region": "Global",
+"media": {
+"kind": "img",
+"src": "https://preview.redd.it/rt1aj2hd85rh1.png?width=140&amp;height=130&amp;auto=webp&amp;s=1dcd5f09216e8a4b4e1604125563e190d4e81bf2"
+},
+"evidence": [
+{
+"t": "5.6k upvotes · r/IndieDev · 7d",
+"v": "rd"
+},
+{
+"t": "545 comments",
+"v": "rd"
+}
+],
+"top": {
+"platform": "reddit",
+"label": "r/IndieDev — 5.6k upvotes",
+"url": "https://www.reddit.com/r/IndieDev/comments/1wnnngj/thank_you_all/"
+},
+"more": [],
+"decon": [],
+"tier": "Indie",
+"kind": "new IP",
+"cat": "games",
+"velocity": {},
+"yt": null,
+"bili": null,
+"x": null,
+"reddit": {
+"score": 5633,
+"sum": 281650
+},
+"score": 4.9,
+"novelty": 0.0,
+"surprise": 4.85,
+"mech": 5.28,
+"eng": 4900,
+"curated": false,
+"aaa": false,
+"rating": null,
+"dropped": false
+},
+{
+"id": "rd_1wpzt4h",
+"title": "I’m making a game where you actually have to understand magic",
+"alias": "r/IndieDev",
+"genre": [],
+"punch": [],
+"released": "",
+"surfaced": "2026-09-25",
+"platforms": [
+"reddit"
+],
+"region": "Global",
+"media": {
+"kind": "reddit",
+"src": "https://v.redd.it/jl2hwtoatorh1/CMAF_1080.mp4"
+},
+"evidence": [
+{
+"t": "5.4k upvotes · r/IndieDev · 7d",
+"v": "rd"
+},
+{
+"t": "422 comments",
+"v": "rd"
+}
+],
+"top": {
+"platform": "reddit",
+"label": "r/IndieDev — 5.4k upvotes",
+"url": "https://www.reddit.com/r/IndieDev/comments/1wpzt4h/im_making_a_game_where_you_actually_have_to/"
+},
+"more": [],
+"decon": [],
+"tier": "Indie",
+"kind": "new IP",
+"cat": "games",
+"velocity": {},
+"yt": null,
+"bili": null,
+"x": null,
+"reddit": {
+"score": 5384,
+"sum": 269200
+},
+"score": 4.89,
+"novelty": 0.0,
+"surprise": 4.83,
+"mech": 5.26,
+"eng": 4890,
+"curated": false,
+"aaa": false,
+"rating": null,
+"dropped": false
+},
+{
+"id": "rd_1wmjgtx",
+"title": "I’m making an anti-shooter where you must avoid people. You can play the Demo now!!",
+"alias": "r/IndieGaming",
+"genre": [],
+"punch": [],
+"released": "",
+"surfaced": "2026-09-21",
+"platforms": [
+"reddit"
+],
+"region": "Global",
+"media": {
+"kind": "reddit",
+"src": "https://v.redd.it/hf9sso14swqh1/CMAF_1080.mp4"
+},
+"evidence": [
+{
+"t": "3.2k upvotes · r/IndieGaming · 7d",
+"v": "rd"
+},
+{
+"t": "132 comments",
+"v": "rd"
+}
+],
+"top": {
+"platform": "reddit",
+"label": "r/IndieGaming — 3.2k upvotes",
+"url": "https://www.reddit.com/r/IndieGaming/comments/1wmjgtx/im_making_an_antishooter_where_you_must_avoid/"
+},
+"more": [],
+"decon": [],
+"tier": "Indie",
+"kind": "new IP",
+"cat": "games",
+"velocity": {},
+"yt": null,
+"bili": null,
+"x": null,
+"reddit": {
+"score": 3163,
+"sum": 158150
+},
+"score": 4.68,
+"novelty": 0.0,
+"surprise": 4.6,
+"mech": 5.08,
+"eng": 4680,
+"curated": false,
+"aaa": false,
+"rating": null,
+"dropped": false
+},
+{
+"id": "rd_1wmjego",
+"title": "I made an anti-shooter where you must avoid people. You can play the Demo now!!",
+"alias": "r/IndieDev",
+"genre": [],
+"punch": [],
+"released": "",
+"surfaced": "2026-09-21",
+"platforms": [
+"reddit"
+],
+"region": "Global",
+"media": {
+"kind": "reddit",
+"src": "https://v.redd.it/qmusgcqjrwqh1/CMAF_1080.mp4"
+},
+"evidence": [
+{
+"t": "3.0k upvotes · r/IndieDev · 7d",
+"v": "rd"
+},
+{
+"t": "99 comments",
+"v": "rd"
+}
+],
+"top": {
+"platform": "reddit",
+"label": "r/IndieDev — 3.0k upvotes",
+"url": "https://www.reddit.com/r/IndieDev/comments/1wmjego/i_made_an_antishooter_where_you_must_avoid_people/"
+},
+"more": [],
+"decon": [],
+"tier": "Indie",
+"kind": "new IP",
+"cat": "games",
+"velocity": {},
+"yt": null,
+"bili": null,
+"x": null,
+"reddit": {
+"score": 2979,
+"sum": 148950
+},
+"score": 4.66,
+"novelty": 0.0,
+"surprise": 4.57,
+"mech": 5.06,
+"eng": 4660,
+"curated": false,
+"aaa": false,
+"rating": null,
+"dropped": false
+},
+{
+"id": "rb_1_clean_leaves_adventure",
+"title": "+1 Clean Leaves Adventure",
+"alias": "Leaf Cleaning Crew",
+"genre": [],
+"punch": [],
+"released": "",
+"surfaced": "2026-09-28",
+"platforms": [
+"roblox"
+],
+"region": "Global",
+"media": {
+"kind": "img",
+"src": "https://tr.rbxcdn.com/180DAY-cbb151e6ecc5b0b196f6c6482dbf4425/768/432/Image/Png/noFilter"
+},
+"evidence": [
+{
+"t": "10.7k CCU · Roblox · today",
+"v": "rb"
+},
+{
+"t": "▲ 7.4k rank move · 24h",
+"v": "up"
+}
+],
+"top": {
+"platform": "roblox",
+"label": "Roblox — +1 Clean Leaves Adventure",
+"url": "https://www.roblox.com/games/114711399407052"
+},
+"more": [],
+"decon": [],
+"tier": "Indie",
+"kind": "new IP",
+"cat": "games",
+"velocity": {},
+"yt": null,
+"bili": null,
+"x": null,
+"reddit": null,
+"score": 0.0,
+"novelty": 0.0,
+"surprise": -0.6,
+"mech": 0.92,
+"eng": 0,
+"curated": false,
+"aaa": false,
+"rating": null,
+"dropped": false,
+"roblox": {
+"ccu": 10661,
+"move": 7358
+}
+},
+{
+"id": "rb_judge_simulator",
+"title": "Judge Simulator",
+"alias": "SimWorld Games",
+"genre": [],
+"punch": [],
+"released": "",
+"surfaced": "2026-09-28",
+"platforms": [
+"roblox"
+],
+"region": "Global",
+"media": {
+"kind": "img",
+"src": "https://tr.rbxcdn.com/180DAY-92bf1e622ae6e5570ce82f0e486b4d4e/768/432/Image/Png/noFilter"
+},
+"evidence": [
+{
+"t": "38.1k CCU · Roblox · today",
+"v": "rb"
+},
+{
+"t": "▲ 8.2k rank move · 24h",
+"v": "up"
+}
+],
+"top": {
+"platform": "roblox",
+"label": "Roblox — Judge Simulator",
+"url": "https://www.roblox.com/games/127774488725016"
+},
+"more": [],
+"decon": [],
+"tier": "Indie",
+"kind": "new IP",
+"cat": "games",
+"velocity": {},
+"yt": null,
+"bili": null,
+"x": null,
+"reddit": null,
+"score": 0.0,
+"novelty": 0.0,
+"surprise": -0.6,
+"mech": 0.92,
+"eng": 0,
+"curated": false,
+"aaa": false,
+"rating": null,
+"dropped": false,
+"roblox": {
+"ccu": 38059,
+"move": 8243
+}
+}
+]
