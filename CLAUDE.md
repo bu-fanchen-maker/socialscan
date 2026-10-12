@@ -30,6 +30,11 @@ Owner: Bu Fan (Publishing Manager, Voodoo). Purpose: surface hot new game mechan
     Frame), milestone/thank-you posts, memes, industry op-eds are noise no matter the numbers. A card
     must show a playable game, a mechanic, or a visual style. Reddit candidates additionally require a
     video hero (meta posts rarely have one). Feed is grouped by pull — newest pull first, old pulls kept.
+12. **Curated picks override the bar, never the accuracy** (Bu Fan, 12 Oct 2026, FEED THE AI): a card
+    Bu Fan stars/picks survives audits and threshold cleanups as `curated: true` with its real measured
+    numbers — thresholds are NOT loosened to admit it. YouTube evidence must title-match as an ordered
+    phrase for short names (scattered "feed"+"ai" hits are not the game); verify stored clip ids via
+    oembed when auditing. YouTube heroes are click-to-play (pre-roll ads); Steam loops stay autoplay.
 
 ## What we learned about each source
 - Steam `appdetails` no longer returns movie URLs; trailers are HLS. Use the `extras/*.mp4` loops in the

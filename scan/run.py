@@ -33,9 +33,15 @@ def main(argv):
     #    value. Cheap filters here; the Claude pass is the real judge once enabled.
     NOISE_TITLE = re.compile(r"\bthank(s| you)\b|\bmilestone\b|\bwishlist(s|ed)?\b.*\b(hit|reached|passed)\b|\b(hit|reached|passed)\b.*\bwishlist", re.I)
     NOISE_FLAIR = {"discussion", "news", "article", "meme"}
-    for p in reddit.top_week(cfg["reddit"]["subreddits"], cfg["reddit"]["min_score"]):
+    STOPW = {"the", "a", "an", "and", "of", "in", "on", "to", "you", "your", "i", "im", "my", "we", "our", "can", "now"}
+    def _tokens(s): return frozenset(w for w in re.findall(r"[a-z0-9]+", s.lower()) if w not in STOPW)
+    seen_rd = []   # cross-post dedup: same video, or near-identical title, posted to several subreddits
+    for p in sorted(reddit.top_week(cfg["reddit"]["subreddits"], cfg["reddit"]["min_score"]), key=lambda x: -x["score"]):
         if NOISE_TITLE.search(p["title"]) or (p.get("flair") or "").lower() in NOISE_FLAIR: continue
         if not p["video"] and not p["yt"]: continue   # gameplay shows itself; text/screenshot-only top posts are usually meta
+        tk = _tokens(p["title"])
+        if any((p["video"] and p["video"] == v) or (tk and t and len(tk & t) / max(1, len(tk | t)) >= 0.6) for v, t in seen_rd): continue
+        seen_rd.append((p["video"], tk))
         c = Card(id=f"rd_{p['id']}", title=p["title"][:90], alias=f"r/{p['sub']}", platforms=["reddit"], surfaced=p["created"],
                  media={"kind": "reddit", "src": p["video"]} if p["video"] else ({"kind": "yt", "id": p["yt"].split("v=")[-1][:11]} if p["yt"] else {"kind": "img", "src": p["thumb"] or ""}),
                  evidence=[{"t": f"{k(p['score'])} upvotes · r/{p['sub']} · 7d", "v": "rd"}, {"t": f"{k(p['comments'])} comments", "v": "rd"}],
@@ -84,6 +90,13 @@ def main(argv):
             c["tiktok"] = {"posts": t["posts"], "views": t["views"], "sum": t["views"]}
             cards.append(c)
     except Exception as e: print("[tiktok] skipped:", e)
+
+    # 4c. Bilibili measurement for CN-titled candidates (search API answers without a cookie since Oct 2026)
+    CJK = re.compile(r"[一-鿿]")
+    for c in cards:
+        if c.get("bili") or not CJK.search(c["title"]): continue
+        try: measure.measure_bilibili(c, re.sub(r"\s*\(.*\)$", "", c["title"]))
+        except Exception: pass
 
     # 5. Stubs (skip themselves without creds)
     for fn in (stubs.dataeye, stubs.sensortower):

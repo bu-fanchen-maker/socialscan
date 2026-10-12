@@ -1,5 +1,167 @@
 [
 {
+"id": "rd_1wq043w",
+"title": "We're sick of platformers so we made one where you get to be the bad guy",
+"alias": "r/IndieDev",
+"genre": [],
+"punch": [],
+"released": "",
+"surfaced": "2026-09-25",
+"platforms": [
+"reddit"
+],
+"region": "Global",
+"media": {
+"kind": "reddit",
+"src": "https://v.redd.it/vm27d6o7uorh1/CMAF_1080.mp4"
+},
+"evidence": [
+{
+"t": "15.6k upvotes · r/IndieDev · 7d",
+"v": "rd"
+},
+{
+"t": "537 comments",
+"v": "rd"
+}
+],
+"top": {
+"platform": "reddit",
+"label": "r/IndieDev — 15.6k upvotes",
+"url": "https://www.reddit.com/r/IndieDev/comments/1wq043w/were_sick_of_platformers_so_we_made_one_where_you/"
+},
+"more": [],
+"decon": [],
+"tier": "Indie",
+"kind": "new IP",
+"cat": "games",
+"velocity": {},
+"yt": null,
+"bili": null,
+"x": null,
+"reddit": {
+"score": 15648,
+"sum": 782400
+},
+"score": 5.3,
+"novelty": 0.0,
+"surprise": 5.29,
+"mech": 5.63,
+"eng": 5300,
+"curated": false,
+"aaa": false,
+"rating": null,
+"dropped": false
+},
+{
+"id": "rd_1wpzt4h",
+"title": "I’m making a game where you actually have to understand magic",
+"alias": "r/IndieDev",
+"genre": [],
+"punch": [],
+"released": "",
+"surfaced": "2026-09-25",
+"platforms": [
+"reddit"
+],
+"region": "Global",
+"media": {
+"kind": "reddit",
+"src": "https://v.redd.it/jl2hwtoatorh1/CMAF_1080.mp4"
+},
+"evidence": [
+{
+"t": "5.4k upvotes · r/IndieDev · 7d",
+"v": "rd"
+},
+{
+"t": "425 comments",
+"v": "rd"
+}
+],
+"top": {
+"platform": "reddit",
+"label": "r/IndieDev — 5.4k upvotes",
+"url": "https://www.reddit.com/r/IndieDev/comments/1wpzt4h/im_making_a_game_where_you_actually_have_to/"
+},
+"more": [],
+"decon": [],
+"tier": "Indie",
+"kind": "new IP",
+"cat": "games",
+"velocity": {},
+"yt": null,
+"bili": null,
+"x": null,
+"reddit": {
+"score": 5403,
+"sum": 270150
+},
+"score": 4.89,
+"novelty": 0.0,
+"surprise": 4.83,
+"mech": 5.26,
+"eng": 4890,
+"curated": false,
+"aaa": false,
+"rating": null,
+"dropped": false
+},
+{
+"id": "rd_1wmjgtx",
+"title": "I’m making an anti-shooter where you must avoid people. You can play the Demo now!!",
+"alias": "r/IndieGaming",
+"genre": [],
+"punch": [],
+"released": "",
+"surfaced": "2026-09-21",
+"platforms": [
+"reddit"
+],
+"region": "Global",
+"media": {
+"kind": "reddit",
+"src": "https://v.redd.it/hf9sso14swqh1/CMAF_1080.mp4"
+},
+"evidence": [
+{
+"t": "3.2k upvotes · r/IndieGaming · 7d",
+"v": "rd"
+},
+{
+"t": "132 comments",
+"v": "rd"
+}
+],
+"top": {
+"platform": "reddit",
+"label": "r/IndieGaming — 3.2k upvotes",
+"url": "https://www.reddit.com/r/IndieGaming/comments/1wmjgtx/im_making_an_antishooter_where_you_must_avoid/"
+},
+"more": [],
+"decon": [],
+"tier": "Indie",
+"kind": "new IP",
+"cat": "games",
+"velocity": {},
+"yt": null,
+"bili": null,
+"x": null,
+"reddit": {
+"score": 3171,
+"sum": 158550
+},
+"score": 4.68,
+"novelty": 0.0,
+"surprise": 4.6,
+"mech": 5.08,
+"eng": 4680,
+"curated": false,
+"aaa": false,
+"rating": null,
+"dropped": false
+},
+{
 "id": "steam_4671380",
 "title": "Scapewatch: Idle MMO",
 "alias": "Puzzle Drop Studios",
@@ -344,222 +506,6 @@
 "curated": false,
 "aaa": false,
 "rating": 0,
-"dropped": false
-},
-{
-"id": "rd_1wq043w",
-"title": "We're sick of platformers so we made one where you get to be the bad guy",
-"alias": "r/IndieDev",
-"genre": [],
-"punch": [],
-"released": "",
-"surfaced": "2026-09-25",
-"platforms": [
-"reddit"
-],
-"region": "Global",
-"media": {
-"kind": "reddit",
-"src": "https://v.redd.it/vm27d6o7uorh1/CMAF_1080.mp4"
-},
-"evidence": [
-{
-"t": "15.6k upvotes · r/IndieDev · 7d",
-"v": "rd"
-},
-{
-"t": "537 comments",
-"v": "rd"
-}
-],
-"top": {
-"platform": "reddit",
-"label": "r/IndieDev — 15.6k upvotes",
-"url": "https://www.reddit.com/r/IndieDev/comments/1wq043w/were_sick_of_platformers_so_we_made_one_where_you/"
-},
-"more": [],
-"decon": [],
-"tier": "Indie",
-"kind": "new IP",
-"cat": "games",
-"velocity": {},
-"yt": null,
-"bili": null,
-"x": null,
-"reddit": {
-"score": 15648,
-"sum": 782400
-},
-"score": 5.3,
-"novelty": 0.0,
-"surprise": 5.29,
-"mech": 5.63,
-"eng": 5300,
-"curated": false,
-"aaa": false,
-"rating": null,
-"dropped": false
-},
-{
-"id": "rd_1wpzt4h",
-"title": "I’m making a game where you actually have to understand magic",
-"alias": "r/IndieDev",
-"genre": [],
-"punch": [],
-"released": "",
-"surfaced": "2026-09-25",
-"platforms": [
-"reddit"
-],
-"region": "Global",
-"media": {
-"kind": "reddit",
-"src": "https://v.redd.it/jl2hwtoatorh1/CMAF_1080.mp4"
-},
-"evidence": [
-{
-"t": "5.4k upvotes · r/IndieDev · 7d",
-"v": "rd"
-},
-{
-"t": "425 comments",
-"v": "rd"
-}
-],
-"top": {
-"platform": "reddit",
-"label": "r/IndieDev — 5.4k upvotes",
-"url": "https://www.reddit.com/r/IndieDev/comments/1wpzt4h/im_making_a_game_where_you_actually_have_to/"
-},
-"more": [],
-"decon": [],
-"tier": "Indie",
-"kind": "new IP",
-"cat": "games",
-"velocity": {},
-"yt": null,
-"bili": null,
-"x": null,
-"reddit": {
-"score": 5403,
-"sum": 270150
-},
-"score": 4.89,
-"novelty": 0.0,
-"surprise": 4.83,
-"mech": 5.26,
-"eng": 4890,
-"curated": false,
-"aaa": false,
-"rating": null,
-"dropped": false
-},
-{
-"id": "rd_1wmjgtx",
-"title": "I’m making an anti-shooter where you must avoid people. You can play the Demo now!!",
-"alias": "r/IndieGaming",
-"genre": [],
-"punch": [],
-"released": "",
-"surfaced": "2026-09-21",
-"platforms": [
-"reddit"
-],
-"region": "Global",
-"media": {
-"kind": "reddit",
-"src": "https://v.redd.it/hf9sso14swqh1/CMAF_1080.mp4"
-},
-"evidence": [
-{
-"t": "3.2k upvotes · r/IndieGaming · 7d",
-"v": "rd"
-},
-{
-"t": "132 comments",
-"v": "rd"
-}
-],
-"top": {
-"platform": "reddit",
-"label": "r/IndieGaming — 3.2k upvotes",
-"url": "https://www.reddit.com/r/IndieGaming/comments/1wmjgtx/im_making_an_antishooter_where_you_must_avoid/"
-},
-"more": [],
-"decon": [],
-"tier": "Indie",
-"kind": "new IP",
-"cat": "games",
-"velocity": {},
-"yt": null,
-"bili": null,
-"x": null,
-"reddit": {
-"score": 3171,
-"sum": 158550
-},
-"score": 4.68,
-"novelty": 0.0,
-"surprise": 4.6,
-"mech": 5.08,
-"eng": 4680,
-"curated": false,
-"aaa": false,
-"rating": null,
-"dropped": false
-},
-{
-"id": "rd_1wmjego",
-"title": "I made an anti-shooter where you must avoid people. You can play the Demo now!!",
-"alias": "r/IndieDev",
-"genre": [],
-"punch": [],
-"released": "",
-"surfaced": "2026-09-21",
-"platforms": [
-"reddit"
-],
-"region": "Global",
-"media": {
-"kind": "reddit",
-"src": "https://v.redd.it/qmusgcqjrwqh1/CMAF_1080.mp4"
-},
-"evidence": [
-{
-"t": "3.0k upvotes · r/IndieDev · 7d",
-"v": "rd"
-},
-{
-"t": "99 comments",
-"v": "rd"
-}
-],
-"top": {
-"platform": "reddit",
-"label": "r/IndieDev — 3.0k upvotes",
-"url": "https://www.reddit.com/r/IndieDev/comments/1wmjego/i_made_an_antishooter_where_you_must_avoid_people/"
-},
-"more": [],
-"decon": [],
-"tier": "Indie",
-"kind": "new IP",
-"cat": "games",
-"velocity": {},
-"yt": null,
-"bili": null,
-"x": null,
-"reddit": {
-"score": 2983,
-"sum": 149150
-},
-"score": 4.66,
-"novelty": 0.0,
-"surprise": 4.57,
-"mech": 5.06,
-"eng": 4660,
-"curated": false,
-"aaa": false,
-"rating": null,
 "dropped": false
 },
 {
