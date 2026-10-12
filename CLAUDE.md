@@ -52,6 +52,18 @@ Owner: Bu Fan (Publishing Manager, Voodoo). Purpose: surface hot new game mechan
   confirmation signal and as the incubator for mobile-portable loops ("+1 per action" escape).
 - GameDiscoverCo is the best deconstruction source; attach as `decon` links and mint Analysis cards.
 
+## Ops (as of 12 Oct 2026)
+- Live site: https://bu-fanchen-maker.github.io/socialscan/ (Pages, build_type=workflow).
+- Deploy without re-harvesting: dispatch `daily.yml` with input `harvest=false`. GitHub token lives in
+  the macOS keychain (`git credential-osxkeychain get` for host github.com); `gh` is not installed.
+- Weekly: GitHub cron Sun 21:00 UTC (baseline, thin — datacenter IPs are blocked by Reddit and mostly
+  by Steam search), then launchd `com.voodoo.socialscan.weekly` Mon 06:30 Beijing runs
+  `scripts/weekly_local.sh` (rich local harvest → push → deploy) if the Mac is awake.
+- Claude pass still off: no ANTHROPIC_API_KEY yet. X needs a Playwright login session; DataEye needs
+  login + parser; Sensor Tower data arrives via Bu Fan's assisted sessions (no API token yet).
+- Roblox omni-search rate-limits bursts: pace ≥1s and retry; match names by normalized containment.
+- `tiktok_views_7d: 2000000` was set by Claude from observed chart scale — pending Bu Fan sign-off.
+
 ## Working style
 Bu Fan confirms approach before big builds, then refines on output. Show a small result early. He reads
 Slack-style prose; delegate items to named colleagues when relevant. Keep Voodoo terms in English inside
