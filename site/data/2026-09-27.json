@@ -350,16 +350,12 @@
 {
 "t": "1.5k playing now",
 "v": "steam"
-},
-{
-"t": "14 YouTube clips · 474.0k views · 7d",
-"v": "yt"
 }
 ],
 "top": {
-"platform": "youtube",
-"label": "Blitz — 80.7k views · 4d ago",
-"url": "https://www.youtube.com/watch?v=GjndL7jNxvw"
+"platform": "steam",
+"label": "Steam store page",
+"url": "https://store.steampowered.com/app/2085540/"
 },
 "more": [],
 "decon": [],
@@ -375,12 +371,7 @@
 "pct": 95,
 "ccu": 1545
 },
-"yt": {
-"n": 14,
-"sum": 474012,
-"top": "GjndL7jNxvw",
-"topViews": 80671
-},
+"yt": null,
 "bili": null,
 "x": null,
 "reddit": null,

@@ -3463,9 +3463,9 @@
 "alt": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3946950/extras/e1257afc7d5a20343a8b80c505a8afe5.mp4"
 },
 "top": {
-"platform": "youtube",
-"label": "Miguelillo_RL — 177.6k views · 1 day ago",
-"url": "https://www.youtube.com/watch?v=VnFL24UAIkQ"
+"platform": "steam",
+"label": "Steam store page",
+"url": "https://store.steampowered.com/app/3946950/"
 },
 "more": [],
 "curated": false,
@@ -3480,12 +3480,7 @@
 "m30": 4068,
 "ccu": 158
 },
-"yt": {
-"n": 13,
-"sum": 497876,
-"top": "VnFL24UAIkQ",
-"topViews": 177639
-},
+"yt": null,
 "evidence": [
 {
 "t": "273 reviews · 7d",
@@ -3498,10 +3493,6 @@
 {
 "t": "158 playing now",
 "v": "steam"
-},
-{
-"t": "13 YouTube clips · 497.9k views · 7d",
-"v": "yt"
 }
 ],
 "score": 9.9,
@@ -4426,75 +4417,6 @@
 "eng": 8900
 },
 {
-"id": "cluster_friendslop",
-"title": "Cheap co-op party games at $5–7",
-"alias": "mechanic cluster · How to Fish, Big Walk, Grain Rot, Bombanana, Mimic Party, WheelMates",
-"genre": [
-"Co-op",
-"Party Game",
-"Trend"
-],
-"punch": [
-"cheap, co-op, clippable",
-"How to Fish >6.3M units",
-"Big Walk >1.6M Steam + 3M PS+",
-"Grain Rot adds permanent progression",
-"Mimic Party: 7M YT views on 372 players"
-],
-"released": "",
-"surfaced": "2026-09-04",
-"platforms": [
-"steam",
-"youtube"
-],
-"region": "Global",
-"media": {
-"kind": "yt",
-"id": "0P7lNoOBbks"
-},
-"velocity": {},
-"evidence": [
-{
-"t": "6 games in the pattern this month",
-"v": "new"
-},
-{
-"t": "combined >8M units (GDCo)",
-"v": "new"
-},
-{
-"t": "YouTube: 9.5M + 7M + 4M views · 7d",
-"v": "yt"
-}
-],
-"top": {
-"platform": "article",
-"label": "GameDiscoverCo — 'the 2× million sellers? less expensive friendslop-adjacents'",
-"url": "https://newsletter.gamediscover.co/p/august-2026s-top-new-pc-and-console"
-},
-"decon": [
-[
-"GameDiscoverCo — Aug 2026 issue",
-"https://newsletter.gamediscover.co/p/august-2026s-top-new-pc-and-console"
-],
-[
-"GameDiscoverCo — co-op-only era?",
-"https://newsletter.gamediscover.co/i/212026664/will-big-walks-1m-usher-in-a-co-op-only-game-era"
-]
-],
-"more": [],
-"curated": true,
-"aaa": false,
-"score": 10.5,
-"rating": null,
-"tier": "Indie",
-"kind": "new IP",
-"novelty": 2.29,
-"surprise": 6.7,
-"mech": 9.51,
-"eng": 10500
-},
-{
 "id": "cluster_lofi_horror",
 "title": "Lo-fi horror: streams, doesn't sell",
 "alias": "mechanic cluster · The Skin Stapler, Gas Station Case",
@@ -5335,74 +5257,6 @@
 "surprise": 5.5,
 "mech": 9.4,
 "eng": 1300000
-},
-{
-"id": "cluster_satisfying_clear",
-"title": "Satisfying clearing",
-"alias": "mechanic cluster · Leaf it Alone (Steam) → Clean Leaves Adventure, Merge & Cut Grass (Roblox)",
-"genre": [
-"Cleaning",
-"Satisfying clear",
-"Cross-platform"
-],
-"punch": [
-"before/after in one clip",
-"Steam hit → Roblox clones in weeks",
-"Leaf it Alone 3.3k reviews 95%",
-"10.7k + 18.8k CCU on Roblox today"
-],
-"released": "",
-"surfaced": "2026-09-21",
-"platforms": [
-"steam",
-"roblox",
-"youtube"
-],
-"region": "Global",
-"media": {
-"kind": "yt",
-"id": "mu0461eJFaM"
-},
-"velocity": {},
-"evidence": [
-{
-"t": "69 reviews · 7d · Leaf it Alone",
-"v": "steam"
-},
-{
-"t": "10.7k CCU · Clean Leaves Adventure · Roblox",
-"v": "rb"
-},
-{
-"t": "18.8k CCU · Merge & Cut Grass · Roblox",
-"v": "rb"
-},
-{
-"t": "13 YouTube clips · 25.8k views · 7d",
-"v": "yt"
-}
-],
-"top": {
-"platform": "youtube",
-"label": "Rotrends — Clean Leaves Adventure +7,358 ranks",
-"url": "https://www.youtube.com/watch?v=mu0461eJFaM"
-},
-"more": [
-[
-"Steam — Leaf it Alone",
-"https://store.steampowered.com/app/3981100/Leaf_it_Alone/"
-]
-],
-"curated": true,
-"aaa": false,
-"score": 6.8,
-"rating": null,
-"tier": "Indie",
-"kind": "new IP",
-"novelty": 2.6,
-"surprise": 4.2,
-"mech": 8.1,
-"eng": 1200000
 },
 {
 "id": "x_2101271571126206648",

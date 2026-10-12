@@ -3502,8 +3502,8 @@
 ],
 "region": "Global",
 "media": {
-"kind": "yt",
-"id": "ioQvnl4GYDA"
+"kind": "img",
+"src": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4513060/header.jpg"
 },
 "evidence": [
 {
@@ -3517,16 +3517,12 @@
 {
 "t": "36 playing now",
 "v": "steam"
-},
-{
-"t": "5 YouTube clips · 33.0k views · 7d",
-"v": "yt"
 }
 ],
 "top": {
-"platform": "youtube",
-"label": "스콘 Official — 21.9k views · 6 days ago",
-"url": "https://www.youtube.com/watch?v=ioQvnl4GYDA"
+"platform": "steam",
+"label": "Steam store page",
+"url": "https://store.steampowered.com/app/4513060/"
 },
 "more": [],
 "decon": [],
@@ -3541,12 +3537,7 @@
 "pct": 60,
 "ccu": 36
 },
-"yt": {
-"n": 5,
-"sum": 32999,
-"top": "ioQvnl4GYDA",
-"topViews": 21891
-},
+"yt": null,
 "bili": null,
 "x": null,
 "reddit": null,
@@ -3907,16 +3898,12 @@
 {
 "t": "170 playing now",
 "v": "steam"
-},
-{
-"t": "15 YouTube clips · 563.6k views · 7d",
-"v": "yt"
 }
 ],
 "top": {
-"platform": "youtube",
-"label": "Miguelillo_RL — 213.7k views · 3 days ago",
-"url": "https://www.youtube.com/watch?v=VnFL24UAIkQ"
+"platform": "steam",
+"label": "Steam store page",
+"url": "https://store.steampowered.com/app/3946950/"
 },
 "more": [],
 "decon": [],
@@ -3931,12 +3918,7 @@
 "pct": 94,
 "ccu": 170
 },
-"yt": {
-"n": 15,
-"sum": 563551,
-"top": "VnFL24UAIkQ",
-"topViews": 213740
-},
+"yt": null,
 "bili": null,
 "x": null,
 "reddit": null,
@@ -4017,84 +3999,6 @@
 "curated": false,
 "aaa": false,
 "rating": 87,
-"dropped": false
-},
-{
-"id": "steam_4626940",
-"title": "Scratch the Ticket",
-"alias": "Shilenok",
-"genre": [
-"Gambling",
-"Simulation",
-"Idler"
-],
-"punch": [
-"Scratch the Ticket is a first‑person incremental gambling sim where ever",
-"Mixed 49% · 205 reviews"
-],
-"released": "2026-08-13",
-"surfaced": "2026-09-23",
-"platforms": [
-"steam"
-],
-"region": "Global",
-"media": {
-"kind": "mp4",
-"src": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4626940/extras/2dbd448830c0a149ad9b8e156ce54ac0.mp4"
-},
-"evidence": [
-{
-"t": "7 reviews · 7d",
-"v": "steam"
-},
-{
-"t": "▼ 0.9× wk/wk",
-"v": "down"
-},
-{
-"t": "15 playing now",
-"v": "steam"
-},
-{
-"t": "14 YouTube clips · 251.4k views · 7d",
-"v": "yt"
-}
-],
-"top": {
-"platform": "youtube",
-"label": "Street Team  — 87.0k views · Streamed 4 days ago",
-"url": "https://www.youtube.com/watch?v=nUMnZdflVLo"
-},
-"more": [],
-"decon": [],
-"tier": "Indie",
-"kind": "new IP",
-"velocity": {
-"total": 205,
-"w7": 7,
-"prev7": 8,
-"m30": 52,
-"desc": "Mixed",
-"pct": 49,
-"ccu": 15
-},
-"yt": {
-"n": 14,
-"sum": 251392,
-"top": "nUMnZdflVLo",
-"topViews": 87047
-},
-"bili": null,
-"x": null,
-"reddit": null,
-"score": 7.27,
-"novelty": 2.01,
-"surprise": 4.0,
-"mech": 7.01,
-"eng": 7270,
-"curated": false,
-"aaa": false,
-"rating": 49,
 "dropped": false
 },
 {
@@ -4859,16 +4763,12 @@
 {
 "t": "1.1k playing now",
 "v": "steam"
-},
-{
-"t": "16 YouTube clips · 301.3k views · 7d",
-"v": "yt"
 }
 ],
 "top": {
-"platform": "youtube",
-"label": "BeckBroPlays — 178.4k views · 5 days ago",
-"url": "https://www.youtube.com/watch?v=sofD8nSrDMg"
+"platform": "steam",
+"label": "Steam store page",
+"url": "https://store.steampowered.com/app/3510740/"
 },
 "more": [],
 "decon": [],
@@ -4883,12 +4783,7 @@
 "pct": 98,
 "ccu": 1120
 },
-"yt": {
-"n": 16,
-"sum": 301312,
-"top": "sofD8nSrDMg",
-"topViews": 178369
-},
+"yt": null,
 "bili": null,
 "x": null,
 "reddit": null,

@@ -882,16 +882,12 @@
 {
 "t": "37.7k playing now",
 "v": "steam"
-},
-{
-"t": "16 YouTube clips · 124.0k views · 7d",
-"v": "yt"
 }
 ],
 "top": {
-"platform": "youtube",
-"label": "咖啡樂's — 17.2k views · 6d ago",
-"url": "https://www.youtube.com/watch?v=YKrmIOX0rYI"
+"platform": "steam",
+"label": "Steam store page",
+"url": "https://store.steampowered.com/app/4623570/"
 },
 "more": [],
 "decon": [],
@@ -907,12 +903,7 @@
 "pct": 67,
 "ccu": 37672
 },
-"yt": {
-"n": 16,
-"sum": 123994,
-"top": "YKrmIOX0rYI",
-"topViews": 17249
-},
+"yt": null,
 "bili": null,
 "x": null,
 "reddit": null,
@@ -924,85 +915,6 @@
 "curated": false,
 "aaa": false,
 "rating": 67,
-"dropped": false
-},
-{
-"id": "steam_4486870",
-"title": "FEED THE AI",
-"alias": "Weird Kid Games",
-"genre": [
-"Incremental",
-"Casual",
-"Simulation"
-],
-"punch": [
-"Feed the AI",
-"Very Positive 90% · 606 reviews"
-],
-"released": "2026-08-24",
-"surfaced": "2026-10-04",
-"platforms": [
-"steam"
-],
-"region": "Global",
-"media": {
-"kind": "mp4",
-"src": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4486870/extras/48ed43d7fba4d86558147dd1b17c5c66.mp4"
-},
-"evidence": [
-{
-"t": "11 reviews · 7d",
-"v": "steam"
-},
-{
-"t": "▼ 0.7× wk/wk",
-"v": "down"
-},
-{
-"t": "42 playing now",
-"v": "steam"
-},
-{
-"t": "7 YouTube clips · 166.0k views · 7d",
-"v": "yt"
-}
-],
-"top": {
-"platform": "youtube",
-"label": "Kindly Keyin — 163.2k views · 5d ago",
-"url": "https://www.youtube.com/watch?v=Vlmw5shuMAw"
-},
-"more": [],
-"decon": [],
-"tier": "Indie",
-"kind": "new IP",
-"cat": "games",
-"velocity": {
-"total": 606,
-"w7": 11,
-"prev7": 15,
-"m30": 126,
-"desc": "Very Positive",
-"pct": 90,
-"ccu": 42
-},
-"yt": {
-"n": 7,
-"sum": 165960,
-"top": "Vlmw5shuMAw",
-"topViews": 163249
-},
-"bili": null,
-"x": null,
-"reddit": null,
-"score": 7.61,
-"novelty": 1.62,
-"surprise": 3.55,
-"mech": 6.18,
-"eng": 7610,
-"curated": false,
-"aaa": false,
-"rating": 90,
 "dropped": false
 },
 {
@@ -1397,16 +1309,12 @@
 {
 "t": "254 playing now",
 "v": "steam"
-},
-{
-"t": "6 YouTube clips · 432.5k views · 7d",
-"v": "yt"
 }
 ],
 "top": {
-"platform": "youtube",
-"label": "3DJuegos — 167.3k views · 5d ago",
-"url": "https://www.youtube.com/watch?v=xIThgrNiCQI"
+"platform": "steam",
+"label": "Steam store page",
+"url": "https://store.steampowered.com/app/3634190/"
 },
 "more": [],
 "decon": [],
@@ -1422,12 +1330,7 @@
 "pct": 58,
 "ccu": 254
 },
-"yt": {
-"n": 6,
-"sum": 432453,
-"top": "xIThgrNiCQI",
-"topViews": 167324
-},
+"yt": null,
 "bili": null,
 "x": null,
 "reddit": null,
@@ -1476,16 +1379,12 @@
 {
 "t": "391 playing now",
 "v": "steam"
-},
-{
-"t": "8 YouTube clips · 3.4M views · 7d",
-"v": "yt"
 }
 ],
 "top": {
-"platform": "youtube",
-"label": "Trymacs — 1.0M views · 5d ago",
-"url": "https://www.youtube.com/watch?v=EPF5Sd-D0TQ"
+"platform": "steam",
+"label": "Steam store page",
+"url": "https://store.steampowered.com/app/5085740/"
 },
 "more": [],
 "decon": [],
@@ -1501,12 +1400,7 @@
 "pct": 70,
 "ccu": 391
 },
-"yt": {
-"n": 8,
-"sum": 3386973,
-"top": "EPF5Sd-D0TQ",
-"topViews": 1030027
-},
+"yt": null,
 "bili": null,
 "x": null,
 "reddit": null,
